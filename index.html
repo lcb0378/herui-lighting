@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Herui Lighting 赫瑞照明 | Wholesale Catalog Prototype</title>
+    <meta
+      name="description"
+      content="Herui Lighting wholesale decorative lighting catalog prototype for Africa, Middle East and Asia buyers."
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260730-models" />
+  </head>
+  <body>
+    <header class="topbar">
+      <nav>
+        <button class="cart-toggle" id="cartToggle" type="button" aria-label="Open cart">
+          <span class="cart-icon" aria-hidden="true"><span></span></span>
+          <span>Cart</span>
+          <strong id="cartBadge">0</strong>
+        </button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-slides" aria-hidden="true">
+          <img src="./hero-resort-lounge.jpg" alt="" />
+          <img src="./hero-villa-reception.jpg" alt="" />
+          <img src="./hero-hotel-lobby.jpg" alt="" />
+          <img src="./hero-villa-living.jpg" alt="" />
+        </div>
+        <div class="shade"></div>
+        <div class="hero-inner">
+          <div class="hero-text">
+            <div class="hero-brand-block">
+              <img class="hero-logo" src="./logo-herui.svg?v=3" alt="Herui Lighting 赫瑞照明" />
+              <p class="eyebrow hero-market">
+                <span>Africa</span><span>Middle East</span><span>Asia</span>
+              </p>
+            </div>
+            <div class="hero-copy">
+              <p>
+                Mobile-first wholesale lighting catalog for chandeliers,
+                pendant lights, wall sconces and ceiling lights. Built for
+                importers, contractors, hotel projects and retail distributors
+                who need reliable decorative lighting, clear specifications and
+                fast inquiry support from China.
+              </p>
+            </div>
+            <div class="actions">
+              <a class="primary" href="#catalog">Web catalog</a>
+              <a class="ghost" href="#mobile">Mobile view</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics">
+        <div><strong>1,000+</strong><span>selected launch catalog SKUs</span></div>
+        <div><strong>Quote</strong><span>prices hidden from public pages</span></div>
+        <div><strong>Mobile</strong><span>ready for QR and phone sharing</span></div>
+        <div><strong>Scenes</strong><span>hotel, villa, apartment, retail</span></div>
+      </section>
+
+      <section class="section catalog-section" id="catalog">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Directory catalog sample</p>
+            <h2>Choose a category, then open product specifications.</h2>
+          </div>
+          <div class="mode-switch">
+            <a class="active" href="#catalog">Web catalog</a>
+            <a href="#mobile">Mobile view</a>
+          </div>
+        </div>
+
+        <div class="filters directory-search">
+          <label>
+            <span>Search</span>
+            <input id="search" placeholder="Try 9031, wall sconce, Africa..." />
+          </label>
+        </div>
+
+        <div class="directory-layout">
+          <aside class="category-menu" aria-label="Product category menu">
+            <div class="menu-heading">
+              <strong>Catalog Menu</strong>
+              <span>Based on supplier source categories</span>
+            </div>
+            <div id="categoryPanel"></div>
+          </aside>
+
+          <section class="catalog-results">
+            <div class="result-head">
+              <div>
+                <p class="eyebrow">Current selection</p>
+                <h3 id="categoryTitle">All Products</h3>
+              </div>
+              <span id="catalogCount"></span>
+            </div>
+            <div id="catalogView" class="catalog-grid"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="mini-section" id="mobile">
+        <div class="phone" aria-label="Mobile catalog preview">
+          <div class="phone-speaker"></div>
+          <div class="phone-screen">
+            <div class="phone-head">
+              <span class="mini-brand">
+                <img src="./logo-herui.svg?v=3" alt="Herui Lighting 赫瑞照明" />
+              </span>
+              <span>Product Catalog</span>
+            </div>
+            <div class="phone-hero">
+              <p>Mobile catalog for fast model selection.</p>
+              <strong><span id="miniCount">0</span> products in cart</strong>
+            </div>
+            <div class="chips">
+              <span>Chandelier</span>
+              <span>Sconce</span>
+              <span>Ceiling</span>
+            </div>
+            <div id="miniList" class="mini-list"></div>
+          </div>
+        </div>
+        <div class="mobile-qr-card">
+          <p class="eyebrow">Mobile catalog QR</p>
+          <img src="./mobile-catalog-qr.png" alt="QR code for Herui Lighting mobile catalog" />
+          <h2>Scan to open on phone.</h2>
+          <p>
+            Buyers scan the QR code to open the mobile catalog, browse models
+            and prepare a wholesale quote list.
+          </p>
+          <a class="primary" href="#catalog">Web catalog</a>
+        </div>
+      </section>
+
+      <section class="inquiry-section" id="quote">
+        <div>
+          <p class="eyebrow">Wholesale cart</p>
+          <h2>Build a quote cart while browsing.</h2>
+        </div>
+        <div class="inquiry">
+          <h3>Cart list</h3>
+          <div id="inquiryList">No products added yet.</div>
+          <div class="cart-actions">
+            <button id="submitCart">Submit quote list</button>
+          </div>
+          <div id="submitStatus" class="submit-status" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="productModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalCode">
+        <button class="modal-close" data-close-modal aria-label="Close product detail">×</button>
+        <div class="modal-media">
+          <div>
+            <span>Product image</span>
+            <img id="modalImage" src="" alt="" />
+          </div>
+        </div>
+        <div class="modal-info">
+          <p class="eyebrow">Product detail</p>
+          <h2 id="modalCode"></h2>
+          <p id="modalMarket"></p>
+          <dl id="modalSpecs"></dl>
+          <div class="modal-note">
+            <strong>Public price:</strong> hidden. Buyer sends inquiry for MOQ,
+            quantity, packing and latest wholesale quote.
+          </div>
+          <div class="actions dark">
+            <button id="addSelected">Add to cart</button>
+            <a href="mailto:sales@heruilighting.com?subject=Wholesale%20Lighting%20Inquiry">
+              Email inquiry
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="cart-drawer-backdrop" data-close-cart></div>
+      <aside class="cart-panel" aria-label="Quote cart">
+        <div class="cart-panel-head">
+          <div>
+            <p class="eyebrow">Wholesale cart</p>
+            <h2>Quote cart</h2>
+            <span id="drawerCartCount">0 products</span>
+          </div>
+          <button class="cart-close" type="button" data-close-cart aria-label="Close cart">×</button>
+        </div>
+        <div id="cartDrawerList" class="drawer-cart-list">No products added yet.</div>
+        <div class="cart-actions drawer-actions">
+          <button id="drawerSubmitCart" type="button">Submit quote list</button>
+        </div>
+        <div id="drawerSubmitStatus" class="submit-status" aria-live="polite"></div>
+      </aside>
+    </div>
+
+    <script src="./data.js?v=20260730-models"></script>
+    <script src="./app.js?v=20260730-models"></script>
+  </body>
+</html>

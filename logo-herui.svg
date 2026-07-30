@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="160" viewBox="0 0 600 160" role="img" aria-labelledby="title desc">
+  <title id="title">Herui Lighting 赫瑞照明</title>
+  <desc id="desc">A professional lighting export company logo with an H-shaped lamp mark.</desc>
+  <defs>
+    <linearGradient id="gold" x1="48" x2="138" y1="24" y2="136" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e4c177"/>
+      <stop offset="0.48" stop-color="#b9843f"/>
+      <stop offset="1" stop-color="#8b5c28"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="160" rx="18" fill="#f6f4ee"/>
+  <g transform="translate(32 26)">
+    <rect x="0" y="0" width="108" height="108" rx="22" fill="#24524a"/>
+    <path d="M30 78V30h13v18h22V30h13v48H65V60H43v18H30Z" fill="#f6f4ee"/>
+    <path d="M24 88h60" stroke="url(#gold)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M54 18c12 10 19 21 19 34 0 10-5 19-19 31-14-12-19-21-19-31 0-13 7-24 19-34Z" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(168 28)">
+    <text x="0" y="34" fill="#191919" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" letter-spacing="0" textLength="382" lengthAdjust="spacingAndGlyphs">Herui Lighting</text>
+    <text x="2" y="70" fill="#24524a" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="24" font-weight="700" textLength="382" lengthAdjust="spacing">赫瑞照明</text>
+    <path d="M2 89h382" stroke="#b9843f" stroke-width="3" stroke-linecap="round"/>
+    <text x="2" y="113" fill="#68635b" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="0" textLength="382" lengthAdjust="spacing">EXPORT LIGHTING · WHOLESALE CATALOG</text>
+  </g>
+</svg>
