@@ -102,7 +102,7 @@ nav,
 nav {
   align-items: center;
   display: flex;
-  gap: 18px;
+  gap: 12px;
   font-size: 14px;
 }
 
@@ -142,6 +142,54 @@ nav {
   font-weight: 900;
   min-height: 44px;
   padding: 10px 16px;
+}
+
+.jump-link,
+.footer-jump {
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 900;
+  gap: 8px;
+  justify-content: center;
+  min-height: 44px;
+}
+
+.jump-link {
+  background: #eee9de;
+  border: 1px solid var(--line);
+  color: var(--green);
+  padding: 10px 14px;
+}
+
+.jump-link span,
+.footer-jump span {
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  font-size: 16px;
+  height: 22px;
+  justify-content: center;
+  line-height: 1;
+  width: 22px;
+}
+
+.jump-link span {
+  background: white;
+  color: var(--green);
+}
+
+.footer-jump {
+  background: var(--text);
+  border: 1px solid var(--text);
+  color: white;
+  padding: 10px 12px;
+}
+
+.footer-jump span {
+  background: rgba(255, 255, 255, 0.16);
+  color: white;
 }
 
 .cart-toggle {
@@ -988,6 +1036,11 @@ dd {
   padding: 10px 12px;
 }
 
+.footer-contact .footer-jump {
+  background: var(--text);
+  color: white;
+}
+
 #inquiryList {
   display: grid;
   gap: 10px;
@@ -1486,6 +1539,11 @@ dd {
     width: 100%;
   }
 
+  .jump-link {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
   .metrics {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1531,6 +1589,21 @@ dd {
   .top-contact {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  nav {
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+  }
+
+  .jump-link,
+  .contact-trigger {
+    width: 100%;
+  }
+
+  .jump-link strong {
+    display: none;
   }
 
   .brand-logo {
