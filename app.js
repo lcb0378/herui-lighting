@@ -108,6 +108,8 @@ function hasAny(...terms) {
 function productSearchText(product) {
   return [
     product.code,
+    product.previousWebsiteModel,
+    product.sourceModelRaw,
     product.title,
     product.category,
     product.market,
