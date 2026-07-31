@@ -60,6 +60,9 @@ const submitCart = document.querySelector("#submitCart");
 const drawerSubmitCart = document.querySelector("#drawerSubmitCart");
 const cartToggle = document.querySelector("#cartToggle");
 const cartDrawer = document.querySelector("#cartDrawer");
+const contactModal = document.querySelector("#contactModal");
+const contactForm = document.querySelector("#contactForm");
+const contactEmail = "sales@heruilighting.com";
 
 searchInput.addEventListener("input", (event) => {
   state.query = event.target.value;
@@ -78,11 +81,14 @@ modeButtons.forEach((button) => {
 
 document.querySelectorAll("[data-close-modal]").forEach((node) => node.addEventListener("click", closeModal));
 document.querySelectorAll("[data-close-cart]").forEach((node) => node.addEventListener("click", closeCartDrawer));
+document.querySelectorAll("[data-open-contact]").forEach((node) => node.addEventListener("click", openContactModal));
+document.querySelectorAll("[data-close-contact]").forEach((node) => node.addEventListener("click", closeContactModal));
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeModal();
     closeCartDrawer();
+    closeContactModal();
   }
 });
 
@@ -90,6 +96,7 @@ cartToggle.addEventListener("click", openCartDrawer);
 addSelected.addEventListener("click", () => addToCart(state.selected, addSelected));
 submitCart.addEventListener("click", submitQuoteList);
 drawerSubmitCart.addEventListener("click", submitQuoteList);
+contactForm.addEventListener("submit", submitContactForm);
 
 function hasAny(...terms) {
   return (product) => {
@@ -170,6 +177,52 @@ function closeCartDrawer() {
   cartDrawer.classList.remove("open");
   cartDrawer.setAttribute("aria-hidden", "true");
   cartToggle.setAttribute("aria-expanded", "false");
+}
+
+function openContactModal() {
+  contactModal.classList.add("open");
+  contactModal.setAttribute("aria-hidden", "false");
+  document.querySelector("#contactStatus").innerHTML = "";
+}
+
+function closeContactModal() {
+  contactModal.classList.remove("open");
+  contactModal.setAttribute("aria-hidden", "true");
+}
+
+function submitContactForm(event) {
+  event.preventDefault();
+  const formData = new FormData(contactForm);
+  const inquiry = {
+    subject: formData.get("subject")?.toString().trim(),
+    contact: formData.get("contact")?.toString().trim(),
+    message: formData.get("message")?.toString().trim(),
+    submittedAt: new Date().toISOString(),
+  };
+  const status = document.querySelector("#contactStatus");
+  if (!inquiry.subject || !inquiry.contact || !inquiry.message) {
+    status.textContent = "Please complete all fields before submitting.";
+    return;
+  }
+
+  try {
+    window.localStorage.setItem("heruiContactInquiry", JSON.stringify(inquiry));
+  } catch (error) {
+    console.warn("Contact inquiry could not be saved locally.", error);
+  }
+
+  const body = [
+    `Contact: ${inquiry.contact}`,
+    "",
+    "Message:",
+    inquiry.message,
+  ].join("\n");
+  const mailto = `mailto:${contactEmail}?subject=${encodeURIComponent(inquiry.subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailto;
+  status.innerHTML = `
+    <strong>Inquiry prepared.</strong>
+    <span>Your email app will open with the message. A direct form receiver can be connected before final launch.</span>
+  `;
 }
 
 function pulseCartButton() {

@@ -35,7 +35,8 @@ body::before {
 
 button,
 input,
-select {
+select,
+textarea {
   font: inherit;
 }
 
@@ -54,7 +55,8 @@ img {
   background: rgba(246, 244, 238, 0.94);
   border-bottom: 1px solid var(--line);
   display: flex;
-  justify-content: flex-end;
+  gap: 24px;
+  justify-content: space-between;
   left: 0;
   min-height: 74px;
   padding: 14px 0;
@@ -69,7 +71,8 @@ img {
 .metrics,
 .section,
 .mini-section,
-.inquiry-section {
+.inquiry-section,
+.site-footer {
   margin-left: auto;
   margin-right: auto;
   max-width: none;
@@ -101,6 +104,44 @@ nav {
   display: flex;
   gap: 18px;
   font-size: 14px;
+}
+
+.top-contact {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.top-contact a {
+  align-items: center;
+  display: inline-flex;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.top-contact a::before {
+  background: var(--gold);
+  border-radius: 50%;
+  content: "";
+  height: 6px;
+  width: 6px;
+}
+
+.contact-trigger,
+.footer-contact button,
+.contact-form button {
+  background: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 900;
+  min-height: 44px;
+  padding: 10px 16px;
 }
 
 .cart-toggle {
@@ -496,12 +537,21 @@ h2 {
 }
 
 .filters input,
-.filters select {
+.filters select,
+.contact-form input,
+.contact-form textarea {
   background: white;
   border: 1px solid var(--line);
   border-radius: 6px;
   min-height: 48px;
   padding: 0 14px;
+}
+
+.contact-form textarea {
+  line-height: 1.45;
+  min-height: 140px;
+  padding: 13px 14px;
+  resize: vertical;
 }
 
 .directory-layout {
@@ -902,6 +952,42 @@ dd {
   margin-top: 22px;
 }
 
+.site-footer {
+  align-items: center;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 28px;
+  justify-content: space-between;
+  padding: clamp(34px, 5vw, 62px) 0;
+}
+
+.site-footer h2 {
+  font-size: clamp(28px, 3vw, 40px);
+}
+
+.footer-contact {
+  align-items: stretch;
+  background: #eee9de;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 10px;
+  min-width: min(100%, 360px);
+  padding: 14px;
+}
+
+.footer-contact a {
+  align-items: center;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--text);
+  display: flex;
+  font-weight: 800;
+  min-height: 42px;
+  padding: 10px 12px;
+}
+
 #inquiryList {
   display: grid;
   gap: 10px;
@@ -1249,6 +1335,65 @@ dd {
   width: 100%;
 }
 
+.contact-modal {
+  display: none;
+  inset: 0;
+  padding: clamp(14px, 3vw, 42px);
+  position: fixed;
+  z-index: 70;
+}
+
+.contact-modal.open {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-backdrop {
+  background: rgba(10, 10, 10, 0.62);
+  inset: 0;
+  position: absolute;
+}
+
+.contact-card {
+  background: var(--bg);
+  border-radius: 8px;
+  max-height: min(760px, 92vh);
+  max-width: 620px;
+  overflow-y: auto;
+  padding: clamp(20px, 4vw, 34px);
+  position: relative;
+  width: 100%;
+}
+
+.contact-card > p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.contact-form {
+  display: grid;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 7px;
+}
+
+.contact-form label span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.contact-form button {
+  justify-content: center;
+  margin-top: 2px;
+}
+
 .modal-close {
   align-items: center;
   background: var(--text);
@@ -1330,8 +1475,15 @@ dd {
     display: none;
   }
 
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   nav {
+    justify-content: space-between;
     margin-left: auto;
+    width: 100%;
   }
 
   .metrics {
@@ -1345,9 +1497,15 @@ dd {
   .mini-section,
   .detail,
   .inquiry-section,
+  .site-footer,
   .directory-layout,
   .modal-card {
     grid-template-columns: 1fr;
+  }
+
+  .site-footer {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .category-menu {
@@ -1368,6 +1526,11 @@ dd {
 
   .brand small {
     display: none;
+  }
+
+  .top-contact {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .brand-logo {
