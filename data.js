@@ -7,14 +7,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0001",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 78 x 45 cm / 86 x 86 x 29",
+    "size": "Diameter 78 x 45 cm",
     "material": "iron art metal + acrylic + K9 crystal",
     "light": "E27 socket x 10",
     "finish": "antique brass brushed + enamel color",
     "image": "./products/catalog-0001-802-large.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "86 x 86 x 29 cm"
   },
   {
     "rank": 2,
@@ -24,14 +25,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0002",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 53 x 45 cm / 61 x 61 x 29",
+    "size": "Diameter 53 x 45 cm",
     "material": "iron art metal + acrylic + K9 crystal",
     "light": "E27 socket x 8",
     "finish": "antique brass brushed + enamel color",
     "image": "./products/catalog-0002-802-small.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "61 x 61 x 29 cm"
   },
   {
     "rank": 3,
@@ -41,14 +43,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0003",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 80 x 38 cm / 90 x 90 x 39",
+    "size": "Diameter 80 x 38 cm",
     "material": "iron art metal + acrylic",
     "light": "E27 socket x 8",
     "finish": "antique brass brushed + enamel color",
     "image": "./products/catalog-0003-801-800.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "90 x 90 x 39 cm"
   },
   {
     "rank": 4,
@@ -58,14 +61,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0004",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 55 x 36 cm / 60 x 60 x 39",
+    "size": "Diameter 55 x 36 cm",
     "material": "iron art metal + acrylic",
     "light": "E27 socket x 5",
     "finish": "antique brass brushed + enamel color",
     "image": "./products/catalog-0004-801-550.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "60 x 60 x 39 cm"
   },
   {
     "rank": 5,
@@ -75,14 +79,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0005",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 70 x 38 cm / 77 x 77 x 39",
+    "size": "Diameter 70 x 38 cm",
     "material": "iron art metal + acrylic",
     "light": "E27 socket x 6",
     "finish": "antique brass brushed + enamel color",
     "image": "./products/catalog-0005-801-700.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "77 x 77 x 39 cm"
   },
   {
     "rank": 6,
@@ -92,14 +97,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0006",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 90 x 56 cm / 61 x 47 x 21",
+    "size": "Diameter 90 x 56 cm",
     "material": "iron art metal + acrylic",
     "light": "E27 socket x 8",
     "finish": "antique brass brushed",
     "image": "./products/catalog-0006-803-8light.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "61 x 47 x 21 cm"
   },
   {
     "rank": 7,
@@ -109,14 +115,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0007",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 65 x 56 cm / 47 x 47 x 21",
+    "size": "Diameter 65 x 56 cm",
     "material": "iron art metal + acrylic",
     "light": "E27 socket x 3",
     "finish": "antique brass brushed",
     "image": "./products/catalog-0007-803-3light.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "47 x 47 x 21 cm"
   },
   {
     "rank": 8,
@@ -126,14 +133,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0008",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 87 x H60 cm / 118 x 55 x 19",
+    "size": "Diameter 87 x H60 cm",
     "material": "metal hardware + glass painted finish",
     "light": "E14 x 8",
     "finish": "chrome + coffee color",
     "image": "./products/catalog-0008-806-8chrome.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "118 x 55 x 19 cm"
   },
   {
     "rank": 9,
@@ -143,14 +151,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0009",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 65 x H60 cm / 57 x 40 x 19",
+    "size": "Diameter 65 x H60 cm",
     "material": "metal hardware + glass painted finish",
     "light": "E14 x 3",
     "finish": "gold + coffee color",
     "image": "./products/catalog-0009-806-3gold.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "57 x 40 x 19 cm"
   },
   {
     "rank": 10,
@@ -160,14 +169,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0010",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 65 x H60 cm / 57 x 40 x 19",
+    "size": "Diameter 65 x H60 cm",
     "material": "metal hardware + glass painted finish",
     "light": "E14 x 3",
     "finish": "chrome + coffee color",
     "image": "./products/catalog-0010-806-3chrome.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "57 x 40 x 19 cm"
   },
   {
     "rank": 11,
@@ -177,14 +187,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0011",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 500 x 435 / 58 x 58 x 16",
+    "size": "Diameter 500 x 435 mm",
     "material": "iron art metal+H acrylic+K9 crystal",
     "light": "108W",
     "finish": "coffee color",
     "image": "./products/catalog-0011-291-500semi-flush.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "58 x 58 x 16 cm"
   },
   {
     "rank": 12,
@@ -194,14 +205,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0012",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 500 x 410 / 58 x 58 x 16",
+    "size": "Diameter 500 x 410 mm",
     "material": "iron art metal + gold acrylic + aluminum",
     "light": "106W",
     "finish": "coffee color",
     "image": "./products/catalog-0012-292-500semi-flush.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "58 x 58 x 16 cm"
   },
   {
     "rank": 13,
@@ -211,14 +223,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0013",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 500 x 435 / 58 x 58 x 16",
+    "size": "Diameter 500 x 435 mm",
     "material": "iron art metal+H acrylic+K9 crystal",
     "light": "108W",
     "finish": "coffee color",
     "image": "./products/catalog-0013-295-500semi-flush.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "58 x 58 x 16 cm"
   },
   {
     "rank": 14,
@@ -228,14 +241,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0014",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 500 x 300 / 58 x 58 x 16",
+    "size": "Diameter 500 x 300 mm",
     "material": "iron art metal + glass + acrylic shade",
     "light": "96W",
     "finish": "coffee color + gold",
     "image": "./products/catalog-0014-293-500.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "58 x 58 x 16 cm"
   },
   {
     "rank": 15,
@@ -245,14 +259,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0015",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "500 x 335 / 58 x 58 x 16",
+    "size": "500 x 335 mm",
     "material": "iron art metal + gold acrylic",
     "light": "108W",
     "finish": "coffee color",
     "image": "./products/catalog-0015-8106-500semi-flush-crystal.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "58 x 58 x 16 cm"
   },
   {
     "rank": 16,
@@ -262,14 +277,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0016",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 500 x 410 / 58 x 58 x 16",
+    "size": "Diameter 500 x 410 mm",
     "material": "iron art metal + gold acrylic + aluminum",
     "light": "106W",
     "finish": "coffee color",
     "image": "./products/catalog-0016-288-500semi-flush.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "58 x 58 x 16 cm"
   },
   {
     "rank": 17,
@@ -282,7 +298,7 @@ window.PRODUCTS = [
     "size": "L530 x D530 x H320",
     "material": "glass + wood",
     "light": "dual-color LED light source 30W",
-    "finish": "To confirm from supplier",
+    "finish": "satin nickel",
     "image": "./products/catalog-0017-569-6.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
@@ -330,14 +346,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0020",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "D500 x H390 / 500 x 210 x 290",
+    "size": "D500 x H390 mm",
     "material": "iron art metal + glass",
     "light": "E27 x 3",
     "finish": "antique brass brushed",
     "image": "./products/catalog-0020-8025-3h.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "500 x 210 x 290 mm"
   },
   {
     "rank": 21,
@@ -347,14 +364,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0021",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "D930 x H460 / 650 x 490 x 320",
+    "size": "D930 x H460 mm",
     "material": "iron art metal + glass",
     "light": "E27 x 10",
     "finish": "antique brass brushed",
     "image": "./products/catalog-0021-8025-10h.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "650 x 490 x 320 mm"
   },
   {
     "rank": 22,
@@ -364,14 +382,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0022",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "D520 x H440 / 500 x 500 x 220",
+    "size": "D520 x H440 mm",
     "material": "iron art metal + crystal + / glass",
     "light": "E27 x 3",
     "finish": "antique brass brushed",
     "image": "./products/catalog-0022-9002-3h.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "500 x 500 x 220 mm"
   },
   {
     "rank": 23,
@@ -398,14 +417,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0024",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "120 x 120 x H170 / 300 x 190 x 180",
+    "size": "120 x 120 x H170 mm",
     "material": "To confirm from supplier",
     "light": "To confirm from supplier",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-0024-9001-1csquare.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "300 x 190 x 180 mm"
   },
   {
     "rank": 25,
@@ -456,7 +476,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0027-8802-1h.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "35 x 35 x 25 cm"
   },
   {
     "rank": 28,
@@ -534,14 +555,16 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0032",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "D720 x H335 mm(chain) / 630 x 630 x 180",
+    "size": "D720 x H335 mm(chain not included)",
     "material": "To confirm from supplier",
     "light": "E14 x 6",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-0032-9016-6h.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "weight": "7 kg",
+    "packageSize": "630 x 630 x 180 mm"
   },
   {
     "rank": 33,
@@ -551,14 +574,16 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0033",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "D1000 x H335 mm(chain) / 815 x 420 x 310",
+    "size": "D1000 x H335 mm(chain not included)",
     "material": "To confirm from supplier",
     "light": "E14 x 10",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-0033-9016-10h.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "weight": "11 kg",
+    "packageSize": "815 x 420 x 310 mm"
   },
   {
     "rank": 34,
@@ -585,14 +610,16 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0035",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "D770 x H350 mm(chain) / 720 x 570 x 280",
+    "size": "D770 x H350 mm(chain not included)",
     "material": "iron art metal(redantique brass brushed) / + glass shade",
     "light": "E14 x 5",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-0035-9026-5h.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "weight": "9.5 kg",
+    "packageSize": "720 x 570 x 280 mm"
   },
   {
     "rank": 36,
@@ -602,14 +629,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0036",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "D200 x H163 mm(1.5 m suspension wire adjustable) / 260 x 260 x 180",
+    "size": "D200 x H163 mm(1.5 m suspension wire adjustable)",
     "material": "iron art metal(redantique brass brushed) / + glass shade",
     "light": "E14 x 1",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-0036-9026-1p.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "260 x 260 x 180 mm"
   },
   {
     "rank": 37,
@@ -789,14 +817,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0047",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "D750 x H450 mm / chain / 57 x 39 x 31",
+    "size": "D750 x H450 mm chain not included",
     "material": "iron art metal + glass + crystal",
     "light": "E27 x 6",
     "finish": "natural copper + red / antique brass brushed",
     "image": "./products/catalog-0047-7778-6.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "57 x 39 x 31 cm"
   },
   {
     "rank": 48,
@@ -1384,14 +1413,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0082",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 600 x 410 / 46 x 42 x 40",
+    "size": "∅600 x 410 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "natural copper + walnut color",
     "image": "./products/catalog-0082-1021-3.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "46 x 42 x 40 cm"
   },
   {
     "rank": 83,
@@ -1401,14 +1431,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0083",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 610 x 400 / 46 x 42 x 40",
+    "size": "∅610 x 400 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "natural copper + walnut color",
     "image": "./products/catalog-0083-1028-3.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "46 x 42 x 40 cm"
   },
   {
     "rank": 84,
@@ -1418,14 +1449,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0084",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 650 x 580 / 46 x 42 x 40",
+    "size": "∅650 x 580 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "natural copper + walnut color",
     "image": "./products/catalog-0084-1030-3.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "46 x 42 x 40 cm"
   },
   {
     "rank": 85,
@@ -1435,14 +1467,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0085",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 500 x 530 / 59 x 49 x 23",
+    "size": "∅500 x 530 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "natural copper + walnut color",
     "image": "./products/catalog-0085-9007-3.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "59 x 49 x 23 cm"
   },
   {
     "rank": 86,
@@ -1452,14 +1485,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0086",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 640 x 580 / 59 x 49 x 28",
+    "size": "∅640 x 580 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "natural copper + walnut color",
     "image": "./products/catalog-0086-9008-3.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "59 x 49 x 28 cm"
   },
   {
     "rank": 87,
@@ -1469,14 +1503,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0087",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 700 x 440 / 67 x 67 x 22",
+    "size": "∅700 x 440 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "natural copper + walnut color",
     "image": "./products/catalog-0087-9012-6.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "67 x 67 x 22 cm"
   },
   {
     "rank": 88,
@@ -1486,14 +1521,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0088",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 690 x 320 / 54 x 46 x 40",
+    "size": "∅690 x 320 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "natural copper + walnut color",
     "image": "./products/catalog-0088-1027-6.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "54 x 46 x 40 cm"
   },
   {
     "rank": 89,
@@ -1503,14 +1539,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0089",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "600 x 420 / 46 x 42 x 40",
+    "size": "600 x 420 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "natural copper + walnut color",
     "image": "./products/catalog-0089-6002-4.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "46 x 42 x 40 cm"
   },
   {
     "rank": 90,
@@ -1520,14 +1557,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0090",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 650 x 580 / 46 x 42 x 40",
+    "size": "∅650 x 580 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "natural copper + walnut color",
     "image": "./products/catalog-0090-1045-3special.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "46 x 42 x 40 cm"
   },
   {
     "rank": 91,
@@ -1537,14 +1575,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0091",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "685 x 400 / 56 x 41 x 45",
+    "size": "685 x 400 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "natural copper + walnut color",
     "image": "./products/catalog-0091-9025-6.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "56 x 41 x 45 cm"
   },
   {
     "rank": 92,
@@ -1554,14 +1593,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0092",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "610 x 350 / 46 x 42 x 40",
+    "size": "610 x 350 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "natural copper + walnut color",
     "image": "./products/catalog-0092-1046-3.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "46 x 42 x 40 cm"
   },
   {
     "rank": 93,
@@ -1571,14 +1611,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0093",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "600 x 470 / 46 x 42 x 40",
+    "size": "600 x 470 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "brushed antique brass + walnut color",
     "image": "./products/catalog-0093-1047-3.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "46 x 42 x 40 cm"
   },
   {
     "rank": 94,
@@ -1588,14 +1629,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0094",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "650 x 430 / 46 x 42 x 40",
+    "size": "650 x 430 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "natural copper + walnut color",
     "image": "./products/catalog-0094-1043-3.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "46 x 42 x 40 cm"
   },
   {
     "rank": 95,
@@ -1605,14 +1647,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0095",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "750 x 400 / 61 x 51 x 40",
+    "size": "750 x 400 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "natural copper + walnut color",
     "image": "./products/catalog-0095-1080-6.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "61 x 51 x 40 cm"
   },
   {
     "rank": 96,
@@ -1656,14 +1699,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0098",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "760 x 450 / 61 x 51 x 40",
+    "size": "760 x 450 mm",
     "material": "copper + black walnut + glass",
     "light": "E27",
     "finish": "brushed antique brass + walnut color",
     "image": "./products/catalog-0098-8128-6.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "61 x 51 x 40 cm"
   },
   {
     "rank": 99,
@@ -1673,14 +1717,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0099",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "260 x 140 x 310 / 44 x 44 x 24",
+    "size": "260 x 140 x 310 mm",
     "material": "copper + black walnut + glass + acrylic",
     "light": "E27",
     "finish": "brushed antique brass + walnut color",
     "image": "./products/catalog-0099-8121-singlelight.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "44 x 44 x 24 cm"
   },
   {
     "rank": 100,
@@ -1690,14 +1735,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0100",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "610 x 530 / 46 x 42 x 40",
+    "size": "610 x 530 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "brushed antique brass + walnut color",
     "image": "./products/catalog-0100-9903-3special.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "46 x 42 x 40 cm"
   },
   {
     "rank": 101,
@@ -1707,14 +1753,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0101",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "Diameter 700 x 440 / 67 x 67 x 22",
+    "size": "∅700 x 440 mm",
     "material": "copper + black walnut + glass",
     "light": "E27",
     "finish": "natural copper + black walnut",
     "image": "./products/catalog-0101-6166-6.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "67 x 67 x 22 cm"
   },
   {
     "rank": 102,
@@ -1724,14 +1771,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0102",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "600 x 500 / 46 x 42 x 40",
+    "size": "600 x 500 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "brushed antique brass + walnut color",
     "image": "./products/catalog-0102-8156-3.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "46 x 42 x 40 cm"
   },
   {
     "rank": 103,
@@ -3322,14 +3370,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0002",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "Diameter 500 x 80 / 58 x 58 x 16",
+    "size": "Diameter 500 x 80 mm",
     "material": "iron art metal+H acrylic",
     "light": "108W",
     "finish": "black",
     "image": "./products/catalog-0196-290-500-black.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "58 x 58 x 16 cm"
   },
   {
     "rank": 197,
@@ -3339,14 +3388,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0003",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "Diameter 500 x 90 / 57 x 57 x 16",
+    "size": "Diameter 500 x 90 mm",
     "material": "iron art metal + gold acrylic",
     "light": "102W",
     "finish": "black",
     "image": "./products/catalog-0197-289-500.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "57 x 57 x 16 cm"
   },
   {
     "rank": 198,
@@ -3356,14 +3406,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0004",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "Diameter 500 x 80 / 57 x 57 x 16",
+    "size": "Diameter 500 x 80 mm",
     "material": "iron art metal + acrylic",
     "light": "52W x 2",
     "finish": "black",
     "image": "./products/catalog-0198-297-500round.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "57 x 57 x 16 cm"
   },
   {
     "rank": 199,
@@ -3373,14 +3424,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0005",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "110 x 700 x 80 / 117 x 77 x 16",
+    "size": "110 x 700 x 80 mm",
     "material": "iron art metal + acrylic",
     "light": "126W x 2",
     "finish": "black",
     "image": "./products/catalog-0199-297-110length.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "117 x 77 x 16 cm"
   },
   {
     "rank": 200,
@@ -3390,14 +3442,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0006",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "Diameter 500 x 11 / 58 x 58 x 16",
+    "size": "Diameter 500 x 11 mm",
     "material": "iron art metal+H acrylic",
     "light": "108W",
     "finish": "coffee color",
     "image": "./products/catalog-0200-298-500.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "58 x 58 x 16 cm"
   },
   {
     "rank": 201,
@@ -3407,14 +3460,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0007",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "1100 x 700 x 110 / 121 x 81 x 16",
+    "size": "1100 x 700 x 110 mm",
     "material": "metal hardware+H acrylic",
     "light": "360W",
     "finish": "black",
     "image": "./products/catalog-0201-290-110length-black.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "121 x 81 x 16 cm"
   },
   {
     "rank": 202,
@@ -3424,14 +3478,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0008",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "500 x 500 x 100 / 57 x 57 x 16",
+    "size": "500 x 500 x 100 mm",
     "material": "metal hardware+H acrylic",
     "light": "108W",
     "finish": "black",
     "image": "./products/catalog-0202-290-500square-black.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "57 x 57 x 16 cm"
   },
   {
     "rank": 203,
@@ -3441,14 +3496,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0009",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "500 x 500 x 80 / 57 x 57 x 16",
+    "size": "500 x 500 x 80 mm",
     "material": "iron art metal + acrylic + gold",
     "light": "63W x 2",
     "finish": "black",
     "image": "./products/catalog-0203-297-500square-gold.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "57 x 57 x 16 cm"
   },
   {
     "rank": 204,
@@ -3458,14 +3514,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0010",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "Diameter 500 x 80 / 57 x 57 x 16",
+    "size": "Diameter 500 x 80 mm",
     "material": "iron art metal + acrylic + gold",
     "light": "52W x 2",
     "finish": "black",
     "image": "./products/catalog-0204-297-500round-gold.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "57 x 57 x 16 cm"
   },
   {
     "rank": 205,
@@ -3475,14 +3532,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0011",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "500 x 105 / 58 x 58 x 16",
+    "size": "500 x 105 mm",
     "material": "iron art metal + K9 crystal + gold acrylic",
     "light": "106W",
     "finish": "coffee color",
     "image": "./products/catalog-0205-299-500coffee.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "58 x 58 x 16 cm"
   },
   {
     "rank": 206,
@@ -3492,14 +3550,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0012",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "500 x 105 / 58 x 58 x 16",
+    "size": "500 x 105 mm",
     "material": "iron art metal + K9 crystal + gold acrylic",
     "light": "106W",
     "finish": "black",
     "image": "./products/catalog-0206-299-500black.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "58 x 58 x 16 cm"
   },
   {
     "rank": 207,
@@ -3563,7 +3622,7 @@ window.PRODUCTS = [
     "size": "L550 x D550 x H580",
     "material": "glass + wood",
     "light": "E14 light source x 6",
-    "finish": "To confirm from supplier",
+    "finish": "electroplated satin nickel",
     "image": "./products/catalog-0210-9367-5-1.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
@@ -3611,14 +3670,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0019",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "D320 x H95 / 360 x 360 x 160",
+    "size": "D320 x H95 mm",
     "material": "iron art metal + glass",
     "light": "tri-color24W",
     "finish": "antique brass brushed",
     "image": "./products/catalog-0213-9003small.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "360 x 360 x 160 mm"
   },
   {
     "rank": 214,
@@ -3628,14 +3688,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0020",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "D330 x H115 / 380 x 380 x 160",
+    "size": "D330 x H115 mm",
     "material": "iron art metal + glass",
     "light": "tri-color18W",
     "finish": "antique brass brushed",
     "image": "./products/catalog-0214-9005small.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "380 x 380 x 160 mm"
   },
   {
     "rank": 215,
@@ -3652,7 +3713,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0215-8035-260.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "300 x 300 x 200 mm"
   },
   {
     "rank": 216,
@@ -3662,14 +3724,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0022",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "D300 x H105 / 360 x 360 x 170",
+    "size": "D300 x H105 mm",
     "material": "iron art metal + glass",
     "light": "tri-color36W",
     "finish": "antique brass brushed",
     "image": "./products/catalog-0216-9010small.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "360 x 360 x 170 mm"
   },
   {
     "rank": 217,
@@ -3679,14 +3742,15 @@ window.PRODUCTS = [
     "title": "Ceiling Light HR-CL-0023",
     "category": "Ceiling Light",
     "market": "Apartments, villas, hotels and wholesale replacement projects",
-    "size": "D380 / 42 x 42 x 24",
+    "size": "D380 mm",
     "material": "iron art metal + glass",
     "light": "tri-color 24W x 2",
     "finish": "antique brass brushed",
     "image": "./products/catalog-0217-9011-400.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Apartment living room, hotel room, villa bedroom ceiling.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
+    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching.",
+    "packageSize": "42 x 42 x 24 cm"
   },
   {
     "rank": 218,
@@ -4685,7 +4749,7 @@ window.PRODUCTS = [
     "size": "L200 x D200 x H230",
     "material": "glass + wood",
     "light": "E14 light source x 1",
-    "finish": "To confirm from supplier",
+    "finish": "electroplated satin nickel",
     "image": "./products/catalog-0276-9367-1.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom bedside, dining counter, apartment accent lighting.",
@@ -4699,14 +4763,15 @@ window.PRODUCTS = [
     "title": "Pendant / Small Pendant HR-PD-0027",
     "category": "Pendant / Small Pendant",
     "market": "Apartment, villa, cafe and retail wholesale buyers",
-    "size": "D120 x H1500 (adjustable) / 300 x 190 x 180",
+    "size": "D120 x H1500 (adjustable) mm",
     "material": "iron art metal + glass",
     "light": "To confirm from supplier",
     "finish": "antique brass brushed",
     "image": "./products/catalog-0277-9001-1pround.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom bedside, dining counter, apartment accent lighting.",
-    "description": "Decorative pendant for counters, bedside areas, corridors and dining corners, suitable for grouped specifications and mixed-model wholesale orders."
+    "description": "Decorative pendant for counters, bedside areas, corridors and dining corners, suitable for grouped specifications and mixed-model wholesale orders.",
+    "packageSize": "300 x 190 x 180 mm"
   },
   {
     "rank": 278,
@@ -4723,7 +4788,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0278-8115-singlelightsuspension-wire.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom bedside, dining counter, apartment accent lighting.",
-    "description": "Decorative pendant for counters, bedside areas, corridors and dining corners, suitable for grouped specifications and mixed-model wholesale orders."
+    "description": "Decorative pendant for counters, bedside areas, corridors and dining corners, suitable for grouped specifications and mixed-model wholesale orders.",
+    "packageSize": "44 x 44 x 24 cm"
   },
   {
     "rank": 279,
@@ -5617,14 +5683,15 @@ window.PRODUCTS = [
     "title": "Fan Light HR-FN-0001",
     "category": "Fan Light",
     "market": "Warm-climate residential, villa and apartment wholesale markets",
-    "size": "Diameter 500 x 465 / 58.5 x 53 x 21.5",
+    "size": "Diameter 500 x 465 mm",
     "material": "iron art metal+H acrylic+K9 crystal",
     "light": "108W",
     "finish": "coffee color",
     "image": "./products/catalog-0331-291-500semi-flush-fan-light.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
-    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
+    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
+    "packageSize": "58.5 x 53 x 21.5 cm"
   },
   {
     "rank": 332,
@@ -5634,14 +5701,15 @@ window.PRODUCTS = [
     "title": "Fan Light HR-FN-0002",
     "category": "Fan Light",
     "market": "Warm-climate residential, villa and apartment wholesale markets",
-    "size": "Diameter 500 x 455 / 58.5 x 53 x 21.5",
+    "size": "Diameter 500 x 455 mm",
     "material": "iron art metal+H acrylic+K9 crystal",
     "light": "108W",
     "finish": "coffee color",
     "image": "./products/catalog-0332-8106-500crystal-fan-light.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
-    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
+    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
+    "packageSize": "58.5 x 53 x 21.5 cm"
   },
   {
     "rank": 333,
@@ -5651,14 +5719,15 @@ window.PRODUCTS = [
     "title": "Fan Light HR-FN-0003",
     "category": "Fan Light",
     "market": "Warm-climate residential, villa and apartment wholesale markets",
-    "size": "Diameter 500 x 465 / 58.5 x 53 x 21.5",
+    "size": "Diameter 500 x 465 mm",
     "material": "iron art metal+H acrylic+K9 crystal",
     "light": "108W",
     "finish": "coffee color",
     "image": "./products/catalog-0333-295-500semi-flush-fan-light.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
-    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
+    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
+    "packageSize": "58.5 x 53 x 21.5 cm"
   },
   {
     "rank": 334,
@@ -5668,14 +5737,15 @@ window.PRODUCTS = [
     "title": "Fan Light HR-FN-0004",
     "category": "Fan Light",
     "market": "Warm-climate residential, villa and apartment wholesale markets",
-    "size": "Diameter 500 x 450 / 58.5 x 53 x 21.5",
+    "size": "Diameter 500 x 450 mm",
     "material": "iron art metal+H acrylic+K9 crystal",
     "light": "108W",
     "finish": "coffee color",
     "image": "./products/catalog-0334-292-500semi-flush-fan-light.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
-    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
+    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
+    "packageSize": "58.5 x 53 x 21.5 cm"
   },
   {
     "rank": 335,
@@ -5685,14 +5755,15 @@ window.PRODUCTS = [
     "title": "Fan Light HR-FN-0005",
     "category": "Fan Light",
     "market": "Warm-climate residential, villa and apartment wholesale markets",
-    "size": "500 x 380 / 58.5 x 53 x 21.5",
+    "size": "500 x 380 mm",
     "material": "iron art metal+H acrylic",
     "light": "108W",
     "finish": "black + chrome",
     "image": "./products/catalog-0335-290-500rod-fan-light.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
-    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
+    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
+    "packageSize": "58.5 x 53 x 21.5 cm"
   },
   {
     "rank": 336,
@@ -5702,14 +5773,15 @@ window.PRODUCTS = [
     "title": "Fan Light HR-FN-0006",
     "category": "Fan Light",
     "market": "Warm-climate residential, villa and apartment wholesale markets",
-    "size": "500 x 260 / 58.5 x 53 x 21.5",
+    "size": "500 x 260 mm",
     "material": "iron art metal+H acrylic",
     "light": "108W",
     "finish": "black",
     "image": "./products/catalog-0336-290-500-fan-light.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
-    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
+    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
+    "packageSize": "58.5 x 53 x 21.5 cm"
   },
   {
     "rank": 337,
@@ -5719,14 +5791,15 @@ window.PRODUCTS = [
     "title": "Fan Light HR-FN-0007",
     "category": "Fan Light",
     "market": "Warm-climate residential, villa and apartment wholesale markets",
-    "size": "500 x 380 / 58.5 x 53 x 21.5",
+    "size": "500 x 380 mm",
     "material": "iron art metal+H gold acrylic+K9 crystal",
     "light": "108W",
     "finish": "coffee color",
     "image": "./products/catalog-0337-299-500-fan-light-coffee.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
-    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
+    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
+    "packageSize": "58.5 x 53 x 21.5 cm"
   },
   {
     "rank": 338,
@@ -5736,14 +5809,15 @@ window.PRODUCTS = [
     "title": "Fan Light HR-FN-0008",
     "category": "Fan Light",
     "market": "Warm-climate residential, villa and apartment wholesale markets",
-    "size": "500 x 380 / 58.5 x 53 x 21.5",
+    "size": "500 x 380 mm",
     "material": "iron art metal+H gold acrylic+K9 crystal",
     "light": "108W",
     "finish": "black + chrome",
     "image": "./products/catalog-0338-299-500-fan-light-black.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
-    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
+    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
+    "packageSize": "58.5 x 53 x 21.5 cm"
   },
   {
     "rank": 339,
@@ -6077,13 +6151,14 @@ window.PRODUCTS = [
     "category": "Fan Light",
     "market": "Warm-climate residential, villa and apartment wholesale markets",
     "size": "D500 x H460 / size1080",
-    "material": "To confirm from supplier",
+    "material": "blackwalnut wood + white",
     "light": "LED 48W dual-color x 2",
     "finish": "blackwalnut color + white",
     "image": "./products/catalog-0358-f309.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
-    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
+    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
+    "weight": "10 kg"
   },
   {
     "rank": 359,
@@ -6094,13 +6169,14 @@ window.PRODUCTS = [
     "category": "Fan Light",
     "market": "Warm-climate residential, villa and apartment wholesale markets",
     "size": "D500 x H460 / size1080",
-    "material": "To confirm from supplier",
+    "material": "blackwalnut wood + white",
     "light": "LED 48W dual-color x 2",
     "finish": "blackwalnut color + white",
     "image": "./products/catalog-0359-f310.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
-    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
+    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
+    "weight": "10 kg"
   },
   {
     "rank": 360,
@@ -6112,7 +6188,7 @@ window.PRODUCTS = [
     "market": "Warm-climate residential, villa and apartment wholesale markets",
     "size": "36W dual-color",
     "material": "ABS",
-    "light": "To confirm from supplier",
+    "light": "36W dual-color",
     "finish": "black + walnut wood",
     "image": "./products/catalog-0360-abs.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
@@ -6163,7 +6239,7 @@ window.PRODUCTS = [
     "market": "Warm-climate residential, villa and apartment wholesale markets",
     "size": "E27 x 3",
     "material": "ABS",
-    "light": "To confirm from supplier",
+    "light": "E27 x 3(bulb not included)",
     "finish": "black + walnut wood",
     "image": "./products/catalog-0363-abs-3.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
@@ -6180,7 +6256,7 @@ window.PRODUCTS = [
     "market": "Warm-climate residential, villa and apartment wholesale markets",
     "size": "E27 x 5",
     "material": "ABS",
-    "light": "To confirm from supplier",
+    "light": "E27 x 5(bulb not included)",
     "finish": "black + walnut wood",
     "image": "./products/catalog-0364-abs-4.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
@@ -6197,7 +6273,7 @@ window.PRODUCTS = [
     "market": "Warm-climate residential, villa and apartment wholesale markets",
     "size": "15W dual-color",
     "material": "ABS",
-    "light": "To confirm from supplier",
+    "light": "15W dual-color",
     "finish": "nickel",
     "image": "./products/catalog-0365-abs-5.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
@@ -6236,7 +6312,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0367-36w-2.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
-    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
+    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
+    "packageSize": "60 x 60 x 35 cm"
   },
   {
     "rank": 368,
@@ -6253,7 +6330,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0368-24w-2.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
-    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
+    "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
+    "packageSize": "61 x 45 x 41 cm"
   },
   {
     "rank": 369,
@@ -6365,14 +6443,15 @@ window.PRODUCTS = [
     "title": "Stair / Lobby Light HR-SL-0001",
     "category": "Stair / Lobby Light",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "D120 x H170 / 300 x 190 x 180",
+    "size": "D120 x H170 mm",
     "material": "iron art metal + glass",
     "light": "E27 x 1",
     "finish": "antique brass brushed",
     "image": "./products/catalog-0375-9001-1cround.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Stairwell, duplex void, hotel lobby and project atrium.",
-    "description": "Stair and lobby light for duplex voids, hotel atriums and entrance spaces, suited to vertical installations and statement project areas."
+    "description": "Stair and lobby light for duplex voids, hotel atriums and entrance spaces, suited to vertical installations and statement project areas.",
+    "packageSize": "300 x 190 x 180 mm"
   },
   {
     "rank": 376,
@@ -6389,7 +6468,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0376-8115-corridor-light.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Stairwell, duplex void, hotel lobby and project atrium.",
-    "description": "Stair and lobby light for duplex voids, hotel atriums and entrance spaces, suited to vertical installations and statement project areas."
+    "description": "Stair and lobby light for duplex voids, hotel atriums and entrance spaces, suited to vertical installations and statement project areas.",
+    "packageSize": "44 x 44 x 24 cm"
   },
   {
     "rank": 377,
@@ -6406,7 +6486,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0377-a0466-1.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Stairwell, duplex void, hotel lobby and project atrium.",
-    "description": "Stair and lobby light for duplex voids, hotel atriums and entrance spaces, suited to vertical installations and statement project areas."
+    "description": "Stair and lobby light for duplex voids, hotel atriums and entrance spaces, suited to vertical installations and statement project areas.",
+    "weight": "3 kg"
   },
   {
     "rank": 378,
@@ -7130,14 +7211,15 @@ window.PRODUCTS = [
     "title": "Dining Light HR-DL-0034",
     "category": "Dining Light",
     "market": "Restaurants, dining rooms, cafes and apartment projects",
-    "size": "85 x 15 cm / 82 x 31 x 19",
+    "size": "85 x 15 cm",
     "material": "metal hardware + glass painted finish",
     "light": "E14 x 3",
     "finish": "chrome + coffee color",
     "image": "./products/catalog-0420-806-3-length-dining-light.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Dining room, restaurant table, cafe counter or kitchen island.",
-    "description": "Dining light for restaurant tables, kitchen islands, cafe counters and villa dining rooms, selected for linear or grouped focal lighting."
+    "description": "Dining light for restaurant tables, kitchen islands, cafe counters and villa dining rooms, selected for linear or grouped focal lighting.",
+    "packageSize": "82 x 31 x 19 cm"
   },
   {
     "rank": 421,
@@ -7150,7 +7232,7 @@ window.PRODUCTS = [
     "size": "L1170 x D440 x H210",
     "material": "glass + wood",
     "light": "dual-color LED light source 80W",
-    "finish": "To confirm from supplier",
+    "finish": "satin nickel",
     "image": "./products/catalog-0421-569-16.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Dining room, restaurant table, cafe counter or kitchen island.",
@@ -7167,7 +7249,7 @@ window.PRODUCTS = [
     "size": "L1190 x D500 x H490",
     "material": "glass + wood",
     "light": "E14 light source x 8",
-    "finish": "To confirm from supplier",
+    "finish": "electroplated satin nickel",
     "image": "./products/catalog-0422-9367-dining-light-8.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Dining room, restaurant table, cafe counter or kitchen island.",
@@ -7184,7 +7266,7 @@ window.PRODUCTS = [
     "size": "L1080 x D200 x H230",
     "material": "glass + wood",
     "light": "E14 light source x 5",
-    "finish": "To confirm from supplier",
+    "finish": "electroplated satin nickel",
     "image": "./products/catalog-0423-9367-dining-light-5.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Dining room, restaurant table, cafe counter or kitchen island.",
@@ -7199,13 +7281,14 @@ window.PRODUCTS = [
     "category": "Dining Light",
     "market": "Restaurants, dining rooms, cafes and apartment projects",
     "size": "L580 x W120 x H1500 (adjustable)",
-    "material": "To confirm from supplier",
+    "material": "antique brass brushed",
     "light": "E27 x 3",
     "finish": "antique brass brushed",
     "image": "./products/catalog-0424-9001-3p-1.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Dining room, restaurant table, cafe counter or kitchen island.",
-    "description": "Dining light for restaurant tables, kitchen islands, cafe counters and villa dining rooms, selected for linear or grouped focal lighting."
+    "description": "Dining light for restaurant tables, kitchen islands, cafe counters and villa dining rooms, selected for linear or grouped focal lighting.",
+    "packageSize": "610 x 240 x 180 mm"
   },
   {
     "rank": 425,
@@ -7216,13 +7299,14 @@ window.PRODUCTS = [
     "category": "Dining Light",
     "market": "Restaurants, dining rooms, cafes and apartment projects",
     "size": "L600 x W120 x H750 (adjustable)",
-    "material": "To confirm from supplier",
+    "material": "antique brass brushed",
     "light": "To confirm from supplier",
     "finish": "antique brass brushed",
     "image": "./products/catalog-0425-9001-3p.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Dining room, restaurant table, cafe counter or kitchen island.",
-    "description": "Dining light for restaurant tables, kitchen islands, cafe counters and villa dining rooms, selected for linear or grouped focal lighting."
+    "description": "Dining light for restaurant tables, kitchen islands, cafe counters and villa dining rooms, selected for linear or grouped focal lighting.",
+    "packageSize": "650 x 320 x 180 mm"
   },
   {
     "rank": 426,
@@ -7572,14 +7656,15 @@ window.PRODUCTS = [
     "title": "Dining Light HR-DL-0060",
     "category": "Dining Light",
     "market": "Restaurants, dining rooms, cafes and apartment projects",
-    "size": "850 x 390 / 46 x 42 x 40",
+    "size": "850 x 390 mm",
     "material": "copper + glass",
     "light": "E27",
     "finish": "brushed gold",
     "image": "./products/catalog-0446-1039-3dining-light.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Dining room, restaurant table, cafe counter or kitchen island.",
-    "description": "Dining light for restaurant tables, kitchen islands, cafe counters and villa dining rooms, selected for linear or grouped focal lighting."
+    "description": "Dining light for restaurant tables, kitchen islands, cafe counters and villa dining rooms, selected for linear or grouped focal lighting.",
+    "packageSize": "46 x 42 x 40 cm"
   },
   {
     "rank": 447,
@@ -7657,14 +7742,15 @@ window.PRODUCTS = [
     "title": "Dining Light HR-DL-0065",
     "category": "Dining Light",
     "market": "Restaurants, dining rooms, cafes and apartment projects",
-    "size": "1100 x 140 x 930 / 66 x 55 x 22",
+    "size": "1100 x 140 x 930 mm",
     "material": "iron art metal + glass",
     "light": "E27 x 4",
     "finish": "black + gold",
     "image": "./products/catalog-0451-6150-4dining-light.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Dining room, restaurant table, cafe counter or kitchen island.",
-    "description": "Dining light for restaurant tables, kitchen islands, cafe counters and villa dining rooms, selected for linear or grouped focal lighting."
+    "description": "Dining light for restaurant tables, kitchen islands, cafe counters and villa dining rooms, selected for linear or grouped focal lighting.",
+    "packageSize": "66 x 55 x 22 cm"
   },
   {
     "rank": 452,
@@ -7810,14 +7896,15 @@ window.PRODUCTS = [
     "title": "Table Lamp HR-TL-0006",
     "category": "Table Lamp",
     "market": "Hotel rooms, villas, apartments and showroom retail",
-    "size": "Diameter 25H35 / 43 x 36 x 36",
+    "size": "Diameter 25H35 mm",
     "material": "wood + fabric shade + ABS + metal hardware",
     "light": ":DC3.7-5V-4000MAH LED :200LM / color temperature:3-4-6000K",
     "finish": "walnut color + mwhite",
     "image": "./products/catalog-0460-t2208-bamboo-shadow.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "packageSize": "43 x 36 x 36 cm"
   },
   {
     "rank": 461,
@@ -7827,14 +7914,15 @@ window.PRODUCTS = [
     "title": "Table Lamp HR-TL-0007",
     "category": "Table Lamp",
     "market": "Hotel rooms, villas, apartments and showroom retail",
-    "size": "16 x 16 x 24 / 37 x 24 x 22",
+    "size": "16 x 16 x 24 mm",
     "material": "wood + PVC + metal hardware",
     "light": ":DC3.7-5V-2000MAH / color temperature:3-4-6000K / style220V / chandelierstyle220V",
     "finish": "walnut color + mwhite",
     "image": "./products/catalog-0461-t2209-bamboo-shadow.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "packageSize": "37 x 24 x 22 cm"
   },
   {
     "rank": 462,
@@ -7844,14 +7932,15 @@ window.PRODUCTS = [
     "title": "Table Lamp HR-TL-0008",
     "category": "Table Lamp",
     "market": "Hotel rooms, villas, apartments and showroom retail",
-    "size": "Diameter 18H30 / 36 x 27 x 27",
+    "size": "Diameter 18H30 mm",
     "material": "wood + fabric shade + metal hardware",
     "light": ":DC3.7-5V-2000MAH / color temperature:3-4-6000K / style220V / chandelierstyle220V",
     "finish": "walnut color + mwhite",
     "image": "./products/catalog-0462-t2210-best-wishes.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "packageSize": "36 x 27 x 27 cm"
   },
   {
     "rank": 463,
@@ -7861,14 +7950,15 @@ window.PRODUCTS = [
     "title": "Table Lamp HR-TL-0009",
     "category": "Table Lamp",
     "market": "Hotel rooms, villas, apartments and showroom retail",
-    "size": "30 x 18 / 36 x 27 x 27",
+    "size": "30 x 18 mm",
     "material": "wood + fabric shade + metal hardware",
     "light": ":DC3.7-5V-2000MAH / color temperature:3-4-6000K / style220V / chandelierstyle220V",
     "finish": "walnut color + mwhite",
     "image": "./products/catalog-0463-t2213.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "packageSize": "36 x 27 x 27 cm"
   },
   {
     "rank": 464,
@@ -7878,14 +7968,15 @@ window.PRODUCTS = [
     "title": "Table Lamp HR-TL-0010",
     "category": "Table Lamp",
     "market": "Hotel rooms, villas, apartments and showroom retail",
-    "size": "Diameter 18H30 / 36 x 27 x 27",
+    "size": "Diameter 18H30 mm",
     "material": "wood + fabric shade + metal hardware",
     "light": ":DC3.7-5V-2000MAH / color temperature:3-4-6000K",
     "finish": "walnut color + mwhite",
     "image": "./products/catalog-0464-t2205-best-wishes.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "packageSize": "36 x 27 x 27 cm"
   },
   {
     "rank": 465,
@@ -7895,14 +7986,15 @@ window.PRODUCTS = [
     "title": "Table Lamp HR-TL-0011",
     "category": "Table Lamp",
     "market": "Hotel rooms, villas, apartments and showroom retail",
-    "size": "30 x 18 / 36 x 27 x 27",
+    "size": "30 x 18 mm",
     "material": "wood + fabric shade + metal hardware",
     "light": ":DC3.7-5V-2000MAH / color temperature:3-4-6000K / style220V / chandelierstyle220V",
     "finish": "walnut color + mwhite",
     "image": "./products/catalog-0465-t2216.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "packageSize": "36 x 27 x 27 cm"
   },
   {
     "rank": 466,
@@ -7912,14 +8004,15 @@ window.PRODUCTS = [
     "title": "Table Lamp HR-TL-0012",
     "category": "Table Lamp",
     "market": "Hotel rooms, villas, apartments and showroom retail",
-    "size": "18 x 33 / 40 x 25 x 24",
+    "size": "18 x 33 mm",
     "material": "white wood + fabric shade + metal hardware",
     "light": "3",
     "finish": "walnut color + mwhite",
     "image": "./products/catalog-0466-t2220.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "packageSize": "40 x 25 x 24 cm"
   },
   {
     "rank": 467,
@@ -7929,14 +8022,15 @@ window.PRODUCTS = [
     "title": "Table Lamp HR-TL-0013",
     "category": "Table Lamp",
     "market": "Hotel rooms, villas, apartments and showroom retail",
-    "size": "30 x 18 / 36 x 27 x 27",
+    "size": "30 x 18 mm",
     "material": "wood + fabric shade + metal hardware",
     "light": "To confirm from supplier",
     "finish": "walnut color + mwhite",
     "image": "./products/catalog-0467-t2217-bamboo-shadow.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "packageSize": "36 x 27 x 27 cm"
   },
   {
     "rank": 468,
@@ -7946,14 +8040,15 @@ window.PRODUCTS = [
     "title": "Table Lamp HR-TL-0014",
     "category": "Table Lamp",
     "market": "Hotel rooms, villas, apartments and showroom retail",
-    "size": "30 x 18 / 36 x 27 x 27",
+    "size": "30 x 18 mm",
     "material": "white wood + fabric shade + metal hardware",
     "light": "To confirm from supplier",
     "finish": "walnut color + mwhite",
     "image": "./products/catalog-0468-t2218.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "packageSize": "36 x 27 x 27 cm"
   },
   {
     "rank": 469,
@@ -7963,14 +8058,15 @@ window.PRODUCTS = [
     "title": "Table Lamp HR-TL-0015",
     "category": "Table Lamp",
     "market": "Hotel rooms, villas, apartments and showroom retail",
-    "size": "18 x 34 / 40 x 25 x 24",
+    "size": "18 x 34 mm",
     "material": "wood + fabric shade + metal hardware",
     "light": "3",
     "finish": "walnut color + mwhite",
     "image": "./products/catalog-0469-t2221-bamboo-shadow.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "packageSize": "40 x 25 x 24 cm"
   },
   {
     "rank": 470,
@@ -8099,14 +8195,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0108",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "610 x 530 / 46 x 42 x 40",
+    "size": "610 x 530 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "brushed antique brass + walnut color",
     "image": "./products/catalog-0477-8146-3.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "46 x 42 x 40 cm"
   },
   {
     "rank": 478,
@@ -8116,14 +8213,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0109",
     "category": "Chandelier",
     "market": "Middle East villas, Africa hotels, Asia project buyers",
-    "size": "600 x 500 / 61 x 51 x 40",
+    "size": "600 x 500 mm",
     "material": "copper + wood + glass",
     "light": "E27",
     "finish": "brushed antique brass + walnut color",
     "image": "./products/catalog-0478-8145-3.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "61 x 51 x 40 cm"
   },
   {
     "rank": 479,
@@ -8905,7 +9003,9 @@ window.PRODUCTS = [
     "image": "./products/catalog-0524-floor-lamp-107-62.jpg",
     "reason": "Added from Vekla supplier floor lamp catalog to complete the wholesale product range.",
     "scene": "Hotel room, villa living room, apartment lounge and retail showroom.",
-    "description": "Floor lamp for living rooms, hotel suites, lounges and retail settings, selected for flexible placement without fixed ceiling installation."
+    "description": "Floor lamp for living rooms, hotel suites, lounges and retail settings, selected for flexible placement without fixed ceiling installation.",
+    "weight": "9 kg",
+    "packageSize": "154 x 21 x 21 cm"
   },
   {
     "rank": 525,
@@ -8952,7 +9052,7 @@ window.PRODUCTS = [
     "size": "770 x 1490",
     "material": "metal",
     "light": "To confirm from supplier",
-    "finish": "To confirm from supplier",
+    "finish": "metal + fiber",
     "image": "./products/catalog-0527-floor-lamp-526-66.jpg",
     "reason": "Added from Vekla supplier floor lamp catalog to complete the wholesale product range.",
     "scene": "Hotel room, villa living room, apartment lounge and retail showroom.",
@@ -9143,7 +9243,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0538-floor-lamp-7088-78.jpg",
     "reason": "Added from Vekla supplier floor lamp catalog to complete the wholesale product range.",
     "scene": "Hotel room, villa living room, apartment lounge and retail showroom.",
-    "description": "Floor lamp for living rooms, hotel suites, lounges and retail settings, selected for flexible placement without fixed ceiling installation."
+    "description": "Floor lamp for living rooms, hotel suites, lounges and retail settings, selected for flexible placement without fixed ceiling installation.",
+    "weight": "2.8 kg"
   },
   {
     "rank": 539,
@@ -9381,7 +9482,9 @@ window.PRODUCTS = [
     "image": "./products/catalog-0552-floor-lamp-wkl-437-98.jpg",
     "reason": "Added from Vekla supplier floor lamp catalog to complete the wholesale product range.",
     "scene": "Hotel room, villa living room, apartment lounge and retail showroom.",
-    "description": "Floor lamp for living rooms, hotel suites, lounges and retail settings, selected for flexible placement without fixed ceiling installation."
+    "description": "Floor lamp for living rooms, hotel suites, lounges and retail settings, selected for flexible placement without fixed ceiling installation.",
+    "weight": "6.5 kg",
+    "packageSize": "90 x 50 x 37 cm"
   },
   {
     "rank": 553,
@@ -9904,7 +10007,7 @@ window.PRODUCTS = [
     "size": "350 x 1750",
     "material": "metal",
     "light": "To confirm from supplier",
-    "finish": "To confirm from supplier",
+    "finish": "metal",
     "image": "./products/catalog-0583-floor-lamp-1153-129.jpg",
     "reason": "Added from Vekla supplier floor lamp catalog to complete the wholesale product range.",
     "scene": "Hotel room, villa living room, apartment lounge and retail showroom.",
@@ -10142,7 +10245,7 @@ window.PRODUCTS = [
     "size": "1600 1800 2000 2200 2500 pcssize",
     "material": "metal",
     "light": "To confirm from supplier",
-    "finish": "To confirm from supplier",
+    "finish": "metal",
     "image": "./products/catalog-0597-floor-lamp-1987-144.jpg",
     "reason": "Added from Vekla supplier floor lamp catalog to complete the wholesale product range.",
     "scene": "Hotel room, villa living room, apartment lounge and retail showroom.",
@@ -10380,7 +10483,7 @@ window.PRODUCTS = [
     "size": "400 x 2040",
     "material": "metal",
     "light": "To confirm from supplier",
-    "finish": "To confirm from supplier",
+    "finish": "metal + rotomolded globe",
     "image": "./products/catalog-0611-floor-lamp-2001-159.jpg",
     "reason": "Added from Vekla supplier floor lamp catalog to complete the wholesale product range.",
     "scene": "Hotel room, villa living room, apartment lounge and retail showroom.",
@@ -11098,7 +11201,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0653-table-lamp-7088-148.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "weight": "2.8 kg"
   },
   {
     "rank": 654,
@@ -11245,7 +11349,7 @@ window.PRODUCTS = [
     "category": "Table Lamp",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "200 x 500",
-    "material": "large ＋glass",
+    "material": "large + glass",
     "light": "To confirm from supplier",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-0662-table-lamp-wkl-93-218.jpg",
@@ -11370,7 +11474,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0669-table-lamp-wkl-485-365.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "packageSize": "40 x 40 x 56 cm"
   },
   {
     "rank": 670,
@@ -12135,7 +12240,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0714-wall-sconce-8918-17.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement."
+    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement.",
+    "packageSize": "72 x 10 x 2.5 cm"
   },
   {
     "rank": 715,
@@ -12213,14 +12319,15 @@ window.PRODUCTS = [
     "title": "Wall Sconce HR-WS-0044",
     "category": "Wall Sconce",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "single head / Height 49 Cm, W 14 Cm, wall distance: 12 cm / 315 x 70 x 65",
+    "size": "22 x 13 x 2.5 cm",
     "material": "iron art metal + acrylic",
     "light": "LED 4W x 2",
     "finish": "antique brass brushed",
     "image": "./products/catalog-0719-wall-sconce-antique-brass-235.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement."
+    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement.",
+    "packageSize": "315 x 70 x 65 mm"
   },
   {
     "rank": 720,
@@ -12662,7 +12769,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0745-wall-sconce-black-221.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement."
+    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement.",
+    "packageSize": "42 x 10 x 2.5 cm"
   },
   {
     "rank": 746,
@@ -12764,7 +12872,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0751-wall-sconce-black-222.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement."
+    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement.",
+    "packageSize": "42 x 10 x 2.5 cm"
   },
   {
     "rank": 752,
@@ -12866,7 +12975,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0757-wall-sconce-gold-223.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement."
+    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement.",
+    "packageSize": "42 x 10 x 2.5 cm"
   },
   {
     "rank": 758,
@@ -13189,7 +13299,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0776-wall-sconce-gold-34.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement."
+    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement.",
+    "packageSize": "52 x 10 x 2.5 cm"
   },
   {
     "rank": 777,
@@ -13206,7 +13317,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0777-wall-sconce-gold-39.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement."
+    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement.",
+    "packageSize": "72 x 10 x 2.5 cm"
   },
   {
     "rank": 778,
@@ -13308,7 +13420,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0783-wall-sconce-black-220.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement."
+    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement.",
+    "packageSize": "42 x 10 x 2.5 cm"
   },
   {
     "rank": 784,
@@ -13410,7 +13523,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0789-wall-sconce-gold-225.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement."
+    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement.",
+    "packageSize": "42 x 10 x 2.5 cm"
   },
   {
     "rank": 790,
@@ -13444,7 +13558,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0791-wall-sconce-gold-37.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement."
+    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement.",
+    "packageSize": "72 x 10 x 2.5 cm"
   },
   {
     "rank": 792,
@@ -13495,7 +13610,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0794-wall-sconce-gold-36.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement."
+    "description": "Wall sconce for corridors, bedside walls, stair areas and hospitality projects, useful for layered ambient lighting and accent placement.",
+    "packageSize": "52 x 10 x 2.5 cm"
   },
   {
     "rank": 795,
@@ -15008,7 +15124,9 @@ window.PRODUCTS = [
     "image": "./products/catalog-0884-ceiling-light-4349-dstyle-155.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "weight": "8.3 kg",
+    "packageSize": "80 x 80 x 18 cm"
   },
   {
     "rank": 885,
@@ -15042,7 +15160,9 @@ window.PRODUCTS = [
     "image": "./products/catalog-0886-ceiling-light-4349-bstyle-143.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "weight": "8.3 kg",
+    "packageSize": "80 x 80 x 18 cm"
   },
   {
     "rank": 887,
@@ -16244,12 +16364,13 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "D660H200L6",
     "material": "aluminum + resin + glass",
-    "light": "To confirm from supplier",
+    "light": "48Wfull-spectrumRa≥97",
     "finish": "black",
     "image": "./products/catalog-0957-chandelier-00019-6.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "74 x 68 x 28 cm"
   },
   {
     "rank": 958,
@@ -16261,12 +16382,13 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "L1100 x 560 x H200, L6",
     "material": "aluminum + resin + glass",
-    "light": "To confirm from supplier",
+    "light": "48Wfull-spectrumRa≥97",
     "finish": "black",
     "image": "./products/catalog-0958-chandelier-00019-9.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "120 x 39 x 28 cm"
   },
   {
     "rank": 959,
@@ -16278,12 +16400,13 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "D160H190",
     "material": "aluminum + resin + glass",
-    "light": "To confirm from supplier",
+    "light": "8Wfull-spectrumRa≥97",
     "finish": "black",
     "image": "./products/catalog-0959-chandelier-00019-11.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "36 x 31 x 28 cm"
   },
   {
     "rank": 960,
@@ -16295,12 +16418,13 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "D680H245L6",
     "material": "stainless steel + aluminum + acrylic + glass",
-    "light": "To confirm from supplier",
+    "light": "60Wfull-spectrumRa≥97",
     "finish": "nickel / black",
     "image": "./products/catalog-0960-chandelier-00028-12.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "63 x 58 x 20 cm"
   },
   {
     "rank": 961,
@@ -16312,12 +16436,13 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "D880H245L9",
     "material": "stainless steel + aluminum + acrylic + glass",
-    "light": "To confirm from supplier",
+    "light": "90Wfull-spectrumRa≥97",
     "finish": "nickel / black",
     "image": "./products/catalog-0961-chandelier-00028-13.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "83 x 83 x 20 cm"
   },
   {
     "rank": 962,
@@ -16329,12 +16454,13 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "L1200 x 326 x H245, L8",
     "material": "stainless steel + aluminum + acrylic + glass",
-    "light": "To confirm from supplier",
+    "light": "80Wfull-spectrumRa≥97",
     "finish": "nickel / black",
     "image": "./products/catalog-0962-chandelier-00028-15.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "129 x 44 x 20 cm"
   },
   {
     "rank": 963,
@@ -16346,12 +16472,13 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "L1620 x 326 x H245, L10",
     "material": "stainless steel + aluminum + acrylic + glass",
-    "light": "To confirm from supplier",
+    "light": "100Wfull-spectrumRa≥97",
     "finish": "nickel / black",
     "image": "./products/catalog-0963-chandelier-00028-16.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "171 x 44 x 20 cm"
   },
   {
     "rank": 964,
@@ -16363,12 +16490,13 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "D680H260L6",
     "material": "stainless steel + aluminum + acrylic + glass",
-    "light": "To confirm from supplier",
+    "light": "30Wfull-spectrumRa≥97",
     "finish": "nickel / black",
     "image": "./products/catalog-0964-chandelier-x00028-17.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "66 x 66 x 23 cm"
   },
   {
     "rank": 965,
@@ -16380,12 +16508,13 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "L1200 x 97",
     "material": "stainless steel + aluminum + acrylic",
-    "light": "To confirm from supplier",
+    "light": "30Wfull-spectrumRa≥97",
     "finish": "nickel / black",
     "image": "./products/catalog-0965-chandelier-00029-18.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "12 x 31 x 17 cm"
   },
   {
     "rank": 966,
@@ -16397,12 +16526,13 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "L1500 x 97",
     "material": "stainless steel + aluminum + acrylic",
-    "light": "To confirm from supplier",
+    "light": "38Wfull-spectrumRa≥97",
     "finish": "nickel / black",
     "image": "./products/catalog-0966-chandelier-00029-19.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "159 x 31 x 17 cm"
   },
   {
     "rank": 967,
@@ -16414,12 +16544,13 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "L1200 x 170 x H105",
     "material": "stainless steel + aluminum + glasssmoke gray",
-    "light": "To confirm from supplier",
+    "light": "35Wfull-spectrumRa≥97",
     "finish": "nickel / black",
     "image": "./products/catalog-0967-chandelier-00030-20.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "129 x 36 x 21 cm"
   },
   {
     "rank": 968,
@@ -16431,12 +16562,13 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "L1500 x 170 x H105",
     "material": "stainless steel + aluminum + glasssmoke gray",
-    "light": "To confirm from supplier",
+    "light": "45Wfull-spectrumRa≥97",
     "finish": "nickel / black",
     "image": "./products/catalog-0968-chandelier-00030-21.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "159 x 36 x 21 cm"
   },
   {
     "rank": 969,
@@ -16448,12 +16580,13 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "L1200 x 166 x H160",
     "material": "stainless steel + aluminum + stripedacrylictransparent",
-    "light": "To confirm from supplier",
+    "light": "35Wfull-spectrumRa≥97",
     "finish": "nickel",
     "image": "./products/catalog-0969-chandelier-00032-22.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "129 x 36 x 23 cm"
   },
   {
     "rank": 970,
@@ -16465,12 +16598,13 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "L1500 x 166 x H160",
     "material": "stainless steel + aluminum + stripedacrylictransparent",
-    "light": "To confirm from supplier",
+    "light": "45Wfull-spectrumRa≥97",
     "finish": "nickel",
     "image": "./products/catalog-0970-chandelier-00032-23.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "159 x 36 x 23 cm"
   },
   {
     "rank": 971,
@@ -16480,8 +16614,8 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0125",
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "To confirm from supplier",
-    "material": "To confirm from supplier",
+    "size": "L1000 mm",
+    "material": "electroplatednatural copper + aluminum40mm",
     "light": "To confirm from supplier",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-0971-chandelier-chandelier-298.jpg",
@@ -16497,9 +16631,9 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0126",
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "To confirm from supplier",
-    "material": "To confirm from supplier",
-    "light": "To confirm from supplier",
+    "size": "WKL5150-600 mm",
+    "material": "antique brass + stainless steel + glass",
+    "light": "G9",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-0972-chandelier-chandelier-266.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
@@ -16514,10 +16648,10 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0127",
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "To confirm from supplier",
-    "material": "To confirm from supplier",
+    "size": "WKL5246 mm",
+    "material": "stainless steel + aluminum + silicone, LED*55W upgraded version",
     "light": "To confirm from supplier",
-    "finish": "To confirm from supplier",
+    "finish": "mirror titanium gold + matte black",
     "image": "./products/catalog-0973-chandelier-chandelier-269.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
@@ -16531,10 +16665,10 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0128",
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "To confirm from supplier",
-    "material": "To confirm from supplier",
+    "size": "WKL5246 mm",
+    "material": "stainless steel + aluminum + silicone, LED*40W upgraded version",
     "light": "To confirm from supplier",
-    "finish": "To confirm from supplier",
+    "finish": "mirror titanium gold + matte black",
     "image": "./products/catalog-0974-chandelier-chandelier-271.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
@@ -16548,10 +16682,10 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0129",
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "To confirm from supplier",
-    "material": "To confirm from supplier",
-    "light": "To confirm from supplier",
-    "finish": "To confirm from supplier",
+    "size": "D500 x H100 (single tier) mm",
+    "material": "electroplated stainless steel + glass",
+    "light": "tri-color switchable 24W",
+    "finish": "paintedgold",
     "image": "./products/catalog-0975-chandelier-chandelier-282.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
@@ -16565,9 +16699,9 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0130",
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "To confirm from supplier",
-    "material": "To confirm from supplier",
-    "light": "To confirm from supplier",
+    "size": "D096-7 mm",
+    "material": "copper + marble globe",
+    "light": "G9",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-0976-chandelier-chandelier-295.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
@@ -16582,9 +16716,9 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0131",
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "To confirm from supplier",
-    "material": "To confirm from supplier",
-    "light": "To confirm from supplier",
+    "size": "D900 x H100 (single tier) mm",
+    "material": "electroplated stainless steel + glass",
+    "light": "tri-color switchable 48W",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-0977-chandelier-chandelier-287.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
@@ -16599,10 +16733,10 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0132",
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "To confirm from supplier",
-    "material": "To confirm from supplier",
-    "light": "To confirm from supplier",
-    "finish": "To confirm from supplier",
+    "size": "D500 x H100 (single tier) mm",
+    "material": "electroplated stainless steel + glass",
+    "light": "tri-color switchable 24W",
+    "finish": "paintedgold",
     "image": "./products/catalog-0978-chandelier-chandelier-291.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
@@ -16616,10 +16750,10 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0133",
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "To confirm from supplier",
-    "material": "To confirm from supplier",
+    "size": "D260 x 500 mm",
+    "material": "metal + glass",
     "light": "To confirm from supplier",
-    "finish": "To confirm from supplier",
+    "finish": "gold + black",
     "image": "./products/catalog-0979-chandelier-chandelier-301.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
@@ -16633,9 +16767,9 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0134",
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "To confirm from supplier",
-    "material": "To confirm from supplier",
-    "light": "To confirm from supplier",
+    "size": "WKL 1226 mm",
+    "material": "copper + acrylic fitting",
+    "light": "20W",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-0980-chandelier-chandelier-275.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
@@ -16650,9 +16784,9 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0135",
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "To confirm from supplier",
-    "material": "To confirm from supplier",
-    "light": "To confirm from supplier",
+    "size": "WKL 1228 mm",
+    "material": "copper + acrylic fitting",
+    "light": "40W",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-0981-chandelier-chandelier-279.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
@@ -16667,9 +16801,9 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0136",
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "To confirm from supplier",
-    "material": "To confirm from supplier",
-    "light": "To confirm from supplier",
+    "size": "WKL 1212 mm",
+    "material": "copper + acrylic strip",
+    "light": "48W",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-0982-chandelier-chandelier-272.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
@@ -16686,7 +16820,7 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "1000 x 200",
     "material": "metal + glass",
-    "light": "To confirm from supplier",
+    "light": "E14 x 12",
     "finish": "natural copper",
     "image": "./products/catalog-0983-chandelier-8702-21.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
@@ -16703,7 +16837,7 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "D400",
     "material": "copper + glass",
-    "light": "To confirm from supplier",
+    "light": "LED 40W tri-color",
     "finish": "natural copper",
     "image": "./products/catalog-0984-chandelier-8700-13.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
@@ -16720,7 +16854,7 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "D600",
     "material": "stainless steel + glass",
-    "light": "To confirm from supplier",
+    "light": "dual-color LED 5W x 10",
     "finish": "chrome + clear glass",
     "image": "./products/catalog-0985-chandelier-3887-6.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
@@ -16737,7 +16871,7 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "D800",
     "material": "copper + glass",
-    "light": "To confirm from supplier",
+    "light": "LED 85W tri-color",
     "finish": "natural copper",
     "image": "./products/catalog-0986-chandelier-8700-15.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
@@ -16754,7 +16888,7 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "500 x 200",
     "material": "metal + glass",
-    "light": "To confirm from supplier",
+    "light": "E14 x 6",
     "finish": "natural copper",
     "image": "./products/catalog-0987-chandelier-8702-18.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
@@ -16771,7 +16905,7 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "700 x 100, L6",
     "material": "copper + marble stone",
-    "light": "To confirm from supplier",
+    "light": "G9",
     "finish": "natural copper",
     "image": "./products/catalog-0988-chandelier-8017-10.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
@@ -16990,14 +17124,16 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0156",
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "1 m x 560 / 9.8kg",
-    "material": "zinc alloy＋solid wood + glass shade + solid wood ＋glass",
+    "size": "1000 x 560 mm",
+    "material": "zinc alloy + solid wood + glass shade + solid wood + glass",
     "light": "To confirm from supplier",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-1002-chandelier-8-4-12head-212.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "weight": "9.8 kg",
+    "packageSize": "68 x 55 x 40 cm"
   },
   {
     "rank": 1003,
@@ -17008,13 +17144,15 @@ window.PRODUCTS = [
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "1.2kg",
-    "material": "zinc alloy＋solid wood + glass shade + solid wood ＋glass",
+    "material": "zinc alloy + solid wood + glass shade + solid wood + glass",
     "light": "To confirm from supplier",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-1003-chandelier-1head-207.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "weight": "1.2 kg",
+    "packageSize": "45 x 34 x 21 cm"
   },
   {
     "rank": 1004,
@@ -17042,13 +17180,14 @@ window.PRODUCTS = [
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "1.2 m x 1.35 m / 80 x 77 x 40-1 / 58 x 51 x 40-1",
-    "material": "zinc alloy＋solid wood + glass shade + solid wood ＋glass",
+    "material": "zinc alloy + solid wood + glass shade + solid wood + glass",
     "light": "To confirm from supplier",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-1005-chandelier-12-8-4-24head-218.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "weight": "23 kg"
   },
   {
     "rank": 1006,
@@ -17195,7 +17334,7 @@ window.PRODUCTS = [
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "66 x 44",
-    "material": "To confirm from supplier",
+    "material": "walnut wood + antique brass gold",
     "light": "E27",
     "finish": "walnut color + goldantique brass color",
     "image": "./products/catalog-1014-chandelier-88718-4-341.jpg",
@@ -17473,7 +17612,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-1031-chandelier-a0463-6-198.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "weight": "20 kg"
   },
   {
     "rank": 1032,
@@ -17507,7 +17647,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-1033-chandelier-a0463-8-195.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "weight": "20 kg"
   },
   {
     "rank": 1034,
@@ -17517,14 +17658,15 @@ window.PRODUCTS = [
     "title": "Chandelier HR-CH-0188",
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "Diameter 360 x H150 / 50 x 45 x 34",
+    "size": "∅360 x H150 mm",
     "material": "copper + natural marble stone",
     "light": "G9 x 7",
     "finish": "natural copper",
     "image": "./products/catalog-1034-chandelier-6691-7-120-16.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "packageSize": "50 x 45 x 34 cm"
   },
   {
     "rank": 1035,
@@ -17592,7 +17734,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-1038-chandelier-a0498-1100-142.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "weight": "17 kg"
   },
   {
     "rank": 1039,
@@ -17620,7 +17763,7 @@ window.PRODUCTS = [
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "950 x 550",
-    "material": "zinc alloy + glass shade + (jade stone＋enamel color) + glass",
+    "material": "zinc alloy + glass shade + (jade stone + enamel color) + glass",
     "light": "To confirm from supplier",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-1040-chandelier-8-4-12head-232.jpg",
@@ -17637,7 +17780,7 @@ window.PRODUCTS = [
     "category": "Chandelier",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "1.1 m x 1.15 m",
-    "material": "zinc alloy + glass shade + (jade stone＋enamel color) + glass",
+    "material": "zinc alloy + glass shade + (jade stone + enamel color) + glass",
     "light": "To confirm from supplier",
     "finish": "To confirm from supplier",
     "image": "./products/catalog-1041-chandelier-12-8-4-24head-236.jpg",
@@ -17711,7 +17854,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-1045-chandelier-a0465-15-221.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "weight": "30 kg"
   },
   {
     "rank": 1053,
@@ -17745,7 +17889,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-1054-chandelier-a0490-1000-150.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "weight": "4 kg"
   },
   {
     "rank": 1056,
@@ -17762,7 +17907,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-1056-chandelier-a0465-9-218.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
+    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
+    "weight": "17 kg"
   },
   {
     "rank": 1057,
@@ -18078,14 +18224,15 @@ window.PRODUCTS = [
     "title": "Dining Light HR-DL-0077",
     "category": "Dining Light",
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "2c: L81 x W15 cm / 4c: L110 x W15 cm / H35 / 45 / 55 / 65 / 75 / 85 / (Height adjustable 6) / canopy size L50 x W5 x thickness 3 cm / 55 x 44 x 20",
+    "size": "2c: L81 x W15 cm 4c: L110 x W15 cm H35 / 45 / 55 / 65 / 75 / 85 (overall height adjustable in 6 positions) canopy size L50 x W5 x thickness 3 cm",
     "material": "material:iron art metal / shadematerial:glass :zinc alloy",
     "light": "E27",
     "finish": "black / gold",
     "image": "./products/catalog-1075-dining-light-88308-2c-20.jpg",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Dining light for restaurant tables, kitchen islands, cafe counters and villa dining rooms, selected for linear or grouped focal lighting."
+    "description": "Dining light for restaurant tables, kitchen islands, cafe counters and villa dining rooms, selected for linear or grouped focal lighting.",
+    "packageSize": "55 x 44 x 20 cm"
   },
   {
     "rank": 1076,

@@ -640,6 +640,8 @@ function renderModal() {
     ["Category", product.category],
     ["Model", product.model || product.code],
     ["Size", product.size],
+    ["Net weight", product.weight],
+    ["Package size", product.packageSize],
     ["Material", product.material],
     ["Light source", product.light],
     ["Finish / Color", finish],
