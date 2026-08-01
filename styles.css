@@ -72,6 +72,7 @@ img {
 .section,
 .mini-section,
 .inquiry-section,
+.trust-section,
 .site-footer {
   margin-left: auto;
   margin-right: auto;
@@ -522,7 +523,8 @@ h1 {
 
 .section,
 .mini-section,
-.inquiry-section {
+.inquiry-section,
+.trust-section {
   padding-bottom: clamp(44px, 7vw, 92px);
   padding-left: 0;
   padding-right: 0;
@@ -1010,6 +1012,56 @@ dd {
 
 .inquiry {
   margin-top: 22px;
+}
+
+.trust-section {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: clamp(28px, 5vw, 64px);
+  grid-template-columns: minmax(280px, 470px) 1fr;
+}
+
+.trust-intro h2 {
+  font-size: clamp(28px, 3vw, 40px);
+  max-width: 720px;
+}
+
+.trust-points {
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.trust-points article {
+  border-right: 1px solid var(--line);
+  display: grid;
+  gap: 12px;
+  min-height: 230px;
+  padding: 22px clamp(18px, 2.6vw, 34px) 8px;
+}
+
+.trust-points article:last-child {
+  border-right: 0;
+}
+
+.trust-points span {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.trust-points h3 {
+  color: var(--green);
+  font-size: clamp(20px, 2vw, 26px);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.trust-points p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+  margin: 0;
 }
 
 .site-footer {
@@ -1567,10 +1619,27 @@ dd {
   .mini-section,
   .detail,
   .inquiry-section,
+  .trust-section,
   .site-footer,
   .directory-layout,
   .modal-card {
     grid-template-columns: 1fr;
+  }
+
+  .trust-points {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-points article {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    min-height: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .trust-points article:last-child {
+    border-bottom: 0;
   }
 
   .site-footer {
