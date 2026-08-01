@@ -14790,23 +14790,6 @@ window.PRODUCTS = [
     "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
   },
   {
-    "rank": 871,
-    "slug": "catalog-0871-ceiling-light-519-diameter-360",
-    "code": "HR-CL-0146",
-    "model": "HR-CL-0146",
-    "title": "Ceiling Light HR-CL-0146",
-    "category": "Ceiling Light",
-    "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "L360*D360*H90",
-    "material": "iron + glass",
-    "light": "Tri-color LED 24W",
-    "finish": "painted coffee brushed",
-    "image": "./products/catalog-0871-ceiling-light-519-diameter-360-424.jpg",
-    "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
-    "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
-  },
-  {
     "rank": 872,
     "slug": "catalog-0872-ceiling-light-7912single-layer-ceiling-with-pearl-ornament",
     "code": "HR-CH-0220",
