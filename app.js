@@ -127,6 +127,47 @@ function productSearchText(product) {
     .toLowerCase();
 }
 
+function normalizedSpec(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "");
+}
+
+function displayFinish(product) {
+  const rawFinish = String(product.finish || "").trim();
+  const normalizedFinish = normalizedSpec(rawFinish);
+  if (!rawFinish || rawFinish === "To confirm from supplier") return "";
+  if (normalizedFinish === normalizedSpec(product.material)) return "";
+  if (normalizedFinish === normalizedSpec(product.light)) return "";
+
+  const lower = rawFinish.toLowerCase();
+  const weakValues = new Set([
+    "black",
+    "gold",
+    "white",
+    "nickel",
+    "brushed",
+    "color",
+    "shade",
+    "square",
+    "single head",
+    "matchingfloor lamp",
+    "iron art metal",
+  ]);
+  if (weakValues.has(lower)) return "";
+
+  const lightSourcePattern = /\b(e14|e27|g4|g9|gu10|led)\b|light source|socket|tri-?color|full-?spectrum|dimming|rechargeable|\b\d+\s*w\b|\b\d+k\b|lux|lumen|lm\b|ra\s*>/i;
+  if (lightSourcePattern.test(rawFinish)) return "";
+
+  return rawFinish
+    .replace(/brassbrushed/gi, "brass brushed")
+    .replace(/goldantique/gi, "gold antique")
+    .replace(/walnutwood/gi, "walnut wood")
+    .replace(/\+/g, " + ")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
 function currentFilter() {
   return filterGroups.flatMap((group) => group.items).find((item) => item.id === state.filterId);
 }
@@ -285,7 +326,7 @@ function submitQuoteList() {
       size: product.size,
       material: product.material,
       light: product.light,
-      finish: product.finish,
+      finish: displayFinish(product),
     })),
   };
   try {
@@ -399,6 +440,7 @@ function renderMini() {
 
 function renderModal() {
   const product = state.selected;
+  const finish = displayFinish(product);
   document.querySelector("#modalImage").src = product.image;
   document.querySelector("#modalImage").alt = product.title;
   document.querySelector("#modalCode").textContent = product.code;
@@ -409,7 +451,7 @@ function renderModal() {
     ["Size", product.size],
     ["Material", product.material],
     ["Light source", product.light],
-    ["Finish", product.finish],
+    ["Finish / Color", finish],
     ["Application", product.scene],
     ["Description", product.description],
   ]
