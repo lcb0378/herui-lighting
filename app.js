@@ -13,15 +13,15 @@ const filterGroups = [
     title: "Product Type",
     items: [
       { id: "all", label: "All Products", match: () => true },
-      { id: "pendant", label: "Pendant / Small Pendant", match: hasAny("pendant", "small") },
-      { id: "chandelier", label: "Chandeliers", match: hasAny("chandelier") },
-      { id: "wall", label: "Wall Sconces", match: hasAny("wall sconce") },
-      { id: "ceiling", label: "Ceiling Lights", match: hasAny("ceiling") },
-      { id: "table", label: "Table Lamps", match: hasAny("table lamp") },
-      { id: "floor", label: "Floor Lamps", match: hasAny("floor lamp") },
-      { id: "fan", label: "Fan Lights", match: hasAny("fan light") },
-      { id: "stair", label: "Stair / Lobby Lights", match: hasAny("stair", "lobby") },
-      { id: "dining", label: "Dining Lights", match: hasAny("dining", "restaurant") },
+      { id: "pendant", label: "Pendant / Small Pendant", match: categoryIs("Pendant / Small Pendant") },
+      { id: "chandelier", label: "Chandeliers", match: categoryIs("Chandelier") },
+      { id: "wall", label: "Wall Sconces", match: categoryIs("Wall Sconce") },
+      { id: "ceiling", label: "Ceiling Lights", match: categoryIs("Ceiling Light") },
+      { id: "table", label: "Table Lamps", match: categoryIs("Table Lamp") },
+      { id: "floor", label: "Floor Lamps", match: categoryIs("Floor Lamp") },
+      { id: "fan", label: "Fan Lights", match: categoryIs("Fan Light") },
+      { id: "stair", label: "Stair / Lobby Lights", match: categoryIs("Stair / Lobby Light") },
+      { id: "dining", label: "Dining Lights", match: categoryIs("Dining Light") },
     ],
   },
   {
@@ -103,6 +103,10 @@ function hasAny(...terms) {
     const text = productSearchText(product);
     return terms.some((term) => text.includes(term.toLowerCase()));
   };
+}
+
+function categoryIs(category) {
+  return (product) => product.category === category;
 }
 
 function productSearchText(product) {
