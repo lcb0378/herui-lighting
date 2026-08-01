@@ -4,6 +4,11 @@ const state = {
   query: "",
   selected: window.PRODUCTS[0],
   cart: [],
+  quoteDetails: {
+    contact: "",
+    destination: "",
+    notes: "",
+  },
   lastSubmission: null,
   cartOpen: false,
 };
@@ -68,6 +73,7 @@ const copyCart = document.querySelector("#copyCart");
 const downloadCart = document.querySelector("#downloadCart");
 const drawerCopyCart = document.querySelector("#drawerCopyCart");
 const drawerDownloadCart = document.querySelector("#drawerDownloadCart");
+const quoteFields = document.querySelectorAll("[data-quote-field]");
 
 searchInput.addEventListener("input", (event) => {
   state.query = event.target.value;
@@ -106,6 +112,16 @@ drawerCopyCart.addEventListener("click", copyQuoteList);
 downloadCart.addEventListener("click", downloadQuoteList);
 drawerDownloadCart.addEventListener("click", downloadQuoteList);
 contactForm.addEventListener("submit", submitContactForm);
+
+quoteFields.forEach((field) => {
+  field.addEventListener("input", () => {
+    state.quoteDetails[field.dataset.quoteField] = field.value.trim();
+    syncQuoteFields(field);
+    state.lastSubmission = null;
+    renderSubmitStatus(document.querySelector("#submitStatus"));
+    renderSubmitStatus(document.querySelector("#drawerSubmitStatus"));
+  });
+});
 
 function hasAny(...terms) {
   return (product) => {
@@ -358,6 +374,7 @@ function removeFromCart(slug) {
 function buildQuoteSubmission() {
   return {
     submittedAt: new Date().toISOString(),
+    buyer: { ...state.quoteDetails },
     items: state.cart.map(({ product, quantity }) => ({
       model: product.code,
       category: product.category,
@@ -377,6 +394,11 @@ function quoteListText(submission = buildQuoteSubmission()) {
     `Submitted at: ${submission.submittedAt}`,
     `Models: ${submission.items.length}`,
     `Total quantity: ${submission.items.reduce((total, item) => total + item.quantity, 0)}`,
+    "",
+    "Buyer details:",
+    `Contact: ${submission.buyer.contact || "To confirm"}`,
+    `Destination: ${submission.buyer.destination || "To confirm"}`,
+    `Project notes: ${submission.buyer.notes || "To confirm"}`,
     "",
     "Selected products:",
   ];
@@ -495,6 +517,14 @@ function downloadQuoteList() {
 function setCartStatus(title, message = "") {
   document.querySelectorAll("#submitStatus, #drawerSubmitStatus").forEach((status) => {
     status.innerHTML = message ? `<strong>${title}</strong><span>${message}</span>` : title;
+  });
+}
+
+function syncQuoteFields(source) {
+  quoteFields.forEach((field) => {
+    if (field === source) return;
+    const value = state.quoteDetails[field.dataset.quoteField] || "";
+    if (field.value !== value) field.value = value;
   });
 }
 

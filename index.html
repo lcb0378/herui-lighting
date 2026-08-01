@@ -8,7 +8,7 @@
       name="description"
       content="Herui Lighting wholesale decorative lighting catalog prototype for Africa, Middle East and Asia buyers."
     />
-    <link rel="stylesheet" href="./styles.css?v=20260801-inquiry-tools" />
+    <link rel="stylesheet" href="./styles.css?v=20260801-quote-details" />
   </head>
   <body>
     <header class="topbar">
@@ -152,6 +152,21 @@
           <h2>Build a quote cart while browsing.</h2>
         </div>
         <div class="inquiry">
+          <div class="quote-details" aria-label="Buyer quote details">
+            <h3>Buyer details</h3>
+            <label>
+              <span>Your contact</span>
+              <input data-quote-field="contact" placeholder="Email, WhatsApp or phone" />
+            </label>
+            <label>
+              <span>Destination</span>
+              <input data-quote-field="destination" placeholder="Country / city" />
+            </label>
+            <label class="quote-notes">
+              <span>Project notes</span>
+              <textarea data-quote-field="notes" placeholder="Project type, quantity notes, delivery timing or special requirements"></textarea>
+            </label>
+          </div>
           <h3>Cart list</h3>
           <div id="inquiryList">No products added yet.</div>
           <div class="cart-actions">
@@ -253,6 +268,21 @@
           </div>
           <button class="cart-close" type="button" data-close-cart aria-label="Close cart">×</button>
         </div>
+        <div class="quote-details drawer-quote-details" aria-label="Buyer quote details">
+          <h3>Buyer details</h3>
+          <label>
+            <span>Your contact</span>
+            <input data-quote-field="contact" placeholder="Email, WhatsApp or phone" />
+          </label>
+          <label>
+            <span>Destination</span>
+            <input data-quote-field="destination" placeholder="Country / city" />
+          </label>
+          <label class="quote-notes">
+            <span>Project notes</span>
+            <textarea data-quote-field="notes" placeholder="Project type, quantity notes, delivery timing or special requirements"></textarea>
+          </label>
+        </div>
         <div id="cartDrawerList" class="drawer-cart-list">No products added yet.</div>
         <div class="cart-actions drawer-actions">
           <button id="drawerCopyCart" class="secondary-cart-action" type="button">Copy list</button>
@@ -293,6 +323,6 @@
     </div>
 
     <script src="./data.js?v=20260801-ceiling-cleanup"></script>
-    <script src="./app.js?v=20260801-inquiry-tools"></script>
+    <script src="./app.js?v=20260801-quote-details"></script>
   </body>
 </html>

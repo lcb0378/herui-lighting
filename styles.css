@@ -1014,6 +1014,54 @@ dd {
   margin-top: 22px;
 }
 
+.quote-details {
+  background: #eee9de;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 18px;
+  padding: 14px;
+}
+
+.quote-details h3 {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.quote-details label {
+  display: grid;
+  gap: 6px;
+}
+
+.quote-details span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.quote-details input,
+.quote-details textarea {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  min-height: 42px;
+  padding: 0 12px;
+  width: 100%;
+}
+
+.quote-details textarea {
+  line-height: 1.45;
+  min-height: 88px;
+  padding: 11px 12px;
+  resize: vertical;
+}
+
+.quote-notes {
+  grid-column: 1 / -1;
+}
+
 .trust-section {
   border-top: 1px solid var(--line);
   display: grid;
@@ -1243,7 +1291,7 @@ dd {
   border-left: 1px solid var(--line);
   box-shadow: -24px 0 80px rgba(16, 16, 16, 0.18);
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  grid-template-rows: auto auto minmax(0, 1fr) auto auto;
   gap: 16px;
   height: 100%;
   margin-left: auto;
@@ -1296,6 +1344,15 @@ dd {
   gap: 10px;
   overflow-y: auto;
   padding-right: 4px;
+}
+
+.drawer-quote-details {
+  grid-template-columns: 1fr;
+  margin-bottom: 0;
+}
+
+.drawer-quote-details .quote-notes {
+  grid-column: auto;
 }
 
 .drawer-cart-list .cart-item {
@@ -1721,8 +1778,13 @@ dd {
   .catalog-grid,
   #detailSpecs,
   #modalSpecs,
-  .cart-item {
+  .cart-item,
+  .quote-details {
     grid-template-columns: 1fr;
+  }
+
+  .quote-notes {
+    grid-column: auto;
   }
 
   .cart-actions {
