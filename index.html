@@ -8,7 +8,7 @@
       name="description"
       content="Herui Lighting wholesale decorative lighting catalog prototype for Africa, Middle East and Asia buyers."
     />
-    <link rel="stylesheet" href="./styles.css?v=20260801-trust-section" />
+    <link rel="stylesheet" href="./styles.css?v=20260801-inquiry-tools" />
   </head>
   <body>
     <header class="topbar">
@@ -155,7 +155,9 @@
           <h3>Cart list</h3>
           <div id="inquiryList">No products added yet.</div>
           <div class="cart-actions">
-            <button id="submitCart">Submit quote list</button>
+            <button id="copyCart" class="secondary-cart-action" type="button">Copy list</button>
+            <button id="downloadCart" class="secondary-cart-action" type="button">Download list</button>
+            <button id="submitCart" type="button">Submit quote list</button>
           </div>
           <div id="submitStatus" class="submit-status" aria-live="polite"></div>
         </div>
@@ -253,6 +255,8 @@
         </div>
         <div id="cartDrawerList" class="drawer-cart-list">No products added yet.</div>
         <div class="cart-actions drawer-actions">
+          <button id="drawerCopyCart" class="secondary-cart-action" type="button">Copy list</button>
+          <button id="drawerDownloadCart" class="secondary-cart-action" type="button">Download list</button>
           <button id="drawerSubmitCart" type="button">Submit quote list</button>
         </div>
         <div id="drawerSubmitStatus" class="submit-status" aria-live="polite"></div>
@@ -289,6 +293,6 @@
     </div>
 
     <script src="./data.js?v=20260801-ceiling-cleanup"></script>
-    <script src="./app.js?v=20260801-finish-display-cleanup"></script>
+    <script src="./app.js?v=20260801-inquiry-tools"></script>
   </body>
 </html>

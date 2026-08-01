@@ -63,6 +63,11 @@ const cartDrawer = document.querySelector("#cartDrawer");
 const contactModal = document.querySelector("#contactModal");
 const contactForm = document.querySelector("#contactForm");
 const contactEmail = "sales@heruilighting.com";
+const inquiryEndpoint = window.HERUI_INQUIRY_ENDPOINT || "";
+const copyCart = document.querySelector("#copyCart");
+const downloadCart = document.querySelector("#downloadCart");
+const drawerCopyCart = document.querySelector("#drawerCopyCart");
+const drawerDownloadCart = document.querySelector("#drawerDownloadCart");
 
 searchInput.addEventListener("input", (event) => {
   state.query = event.target.value;
@@ -96,6 +101,10 @@ cartToggle.addEventListener("click", openCartDrawer);
 addSelected.addEventListener("click", () => addToCart(state.selected, addSelected));
 submitCart.addEventListener("click", submitQuoteList);
 drawerSubmitCart.addEventListener("click", submitQuoteList);
+copyCart.addEventListener("click", copyQuoteList);
+drawerCopyCart.addEventListener("click", copyQuoteList);
+downloadCart.addEventListener("click", downloadQuoteList);
+drawerDownloadCart.addEventListener("click", downloadQuoteList);
 contactForm.addEventListener("submit", submitContactForm);
 
 function hasAny(...terms) {
@@ -235,10 +244,11 @@ function closeContactModal() {
   contactModal.setAttribute("aria-hidden", "true");
 }
 
-function submitContactForm(event) {
+async function submitContactForm(event) {
   event.preventDefault();
   const formData = new FormData(contactForm);
   const inquiry = {
+    type: "contact-inquiry",
     subject: formData.get("subject")?.toString().trim(),
     contact: formData.get("contact")?.toString().trim(),
     message: formData.get("message")?.toString().trim(),
@@ -256,6 +266,29 @@ function submitContactForm(event) {
     console.warn("Contact inquiry could not be saved locally.", error);
   }
 
+  try {
+    const sentToEndpoint = await sendContactToEndpoint(inquiry);
+    if (!sentToEndpoint) openContactEmail(inquiry);
+    status.innerHTML = sentToEndpoint
+      ? `
+        <strong>Inquiry sent.</strong>
+        <span>Your message was sent through the connected inquiry receiver.</span>
+      `
+      : `
+        <strong>Inquiry prepared.</strong>
+        <span>Your email app will open with the message. A direct form receiver can be connected before final launch.</span>
+      `;
+  } catch (error) {
+    console.warn("Contact endpoint failed; falling back to email draft.", error);
+    openContactEmail(inquiry);
+    status.innerHTML = `
+      <strong>Inquiry prepared.</strong>
+      <span>The direct receiver was unavailable, so your email app will open with the message.</span>
+    `;
+  }
+}
+
+function openContactEmail(inquiry) {
   const body = [
     `Contact: ${inquiry.contact}`,
     "",
@@ -264,10 +297,23 @@ function submitContactForm(event) {
   ].join("\n");
   const mailto = `mailto:${contactEmail}?subject=${encodeURIComponent(inquiry.subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = mailto;
-  status.innerHTML = `
-    <strong>Inquiry prepared.</strong>
-    <span>Your email app will open with the message. A direct form receiver can be connected before final launch.</span>
-  `;
+}
+
+async function sendContactToEndpoint(inquiry) {
+  if (!inquiryEndpoint) return false;
+
+  const response = await fetch(inquiryEndpoint, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      type: "contact-inquiry",
+      brand: "Herui Lighting",
+      inquiry,
+    }),
+  });
+
+  if (!response.ok) throw new Error(`Contact endpoint returned ${response.status}`);
+  return true;
 }
 
 function pulseCartButton() {
@@ -309,14 +355,8 @@ function removeFromCart(slug) {
   renderCart();
 }
 
-function submitQuoteList() {
-  const status = document.querySelector("#submitStatus");
-  if (state.cart.length === 0) {
-    status.textContent = "Please add products to the cart before submitting.";
-    return;
-  }
-
-  state.lastSubmission = {
+function buildQuoteSubmission() {
+  return {
     submittedAt: new Date().toISOString(),
     items: state.cart.map(({ product, quantity }) => ({
       model: product.code,
@@ -329,12 +369,133 @@ function submitQuoteList() {
       finish: displayFinish(product),
     })),
   };
+}
+
+function quoteListText(submission = buildQuoteSubmission()) {
+  const lines = [
+    "Herui Lighting wholesale quote request",
+    `Submitted at: ${submission.submittedAt}`,
+    `Models: ${submission.items.length}`,
+    `Total quantity: ${submission.items.reduce((total, item) => total + item.quantity, 0)}`,
+    "",
+    "Selected products:",
+  ];
+
+  submission.items.forEach((item, index) => {
+    lines.push(
+      "",
+      `${index + 1}. ${item.model}`,
+      `Category: ${item.category}`,
+      `Quantity: ${item.quantity}`,
+      `Size: ${item.size || "To confirm"}`,
+      `Material: ${item.material || "To confirm"}`,
+      `Light source: ${item.light || "To confirm"}`,
+    );
+    if (item.finish) lines.push(`Finish / Color: ${item.finish}`);
+    lines.push(`Image: ${item.image}`);
+  });
+
+  lines.push("", "Please quote MOQ, wholesale price, packing details and estimated lead time.");
+  return lines.join("\n");
+}
+
+function saveQuoteSubmission(submission) {
+  state.lastSubmission = submission;
   try {
-    window.localStorage.setItem("heruiQuoteCart", JSON.stringify(state.lastSubmission));
+    window.localStorage.setItem("heruiQuoteCart", JSON.stringify(submission));
   } catch (error) {
     console.warn("Quote cart could not be saved locally.", error);
   }
+}
+
+function openQuoteEmail(submission) {
+  const subject = `Herui Lighting quote request - ${submission.items.length} models`;
+  const mailto = `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(quoteListText(submission))}`;
+  window.location.href = mailto;
+}
+
+async function sendQuoteToEndpoint(submission) {
+  if (!inquiryEndpoint) return false;
+
+  const response = await fetch(inquiryEndpoint, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      type: "quote-cart",
+      brand: "Herui Lighting",
+      submission,
+    }),
+  });
+
+  if (!response.ok) throw new Error(`Quote endpoint returned ${response.status}`);
+  return true;
+}
+
+async function submitQuoteList() {
+  if (state.cart.length === 0) {
+    setCartStatus("Please add products to the cart before submitting.");
+    return;
+  }
+
+  const submission = buildQuoteSubmission();
+  saveQuoteSubmission(submission);
+
+  try {
+    const sentToEndpoint = await sendQuoteToEndpoint(submission);
+    if (!sentToEndpoint) openQuoteEmail(submission);
+    state.lastSubmission.delivery = sentToEndpoint ? "endpoint" : "email";
+  } catch (error) {
+    console.warn("Quote endpoint failed; falling back to email draft.", error);
+    openQuoteEmail(submission);
+    state.lastSubmission.delivery = "email-fallback";
+  }
+
   renderCart();
+}
+
+async function copyQuoteList() {
+  if (state.cart.length === 0) {
+    setCartStatus("Please add products to the cart before copying.");
+    return;
+  }
+
+  const submission = state.lastSubmission || buildQuoteSubmission();
+  submission.delivery = "copied";
+  saveQuoteSubmission(submission);
+
+  try {
+    await navigator.clipboard.writeText(quoteListText(submission));
+    setCartStatus("Quote list copied.", `${submission.items.length} models are ready to paste into email or chat.`);
+  } catch (error) {
+    console.warn("Quote list could not be copied.", error);
+    setCartStatus("Copy is not available in this browser.", "Use Download list instead.");
+  }
+}
+
+function downloadQuoteList() {
+  if (state.cart.length === 0) {
+    setCartStatus("Please add products to the cart before downloading.");
+    return;
+  }
+
+  const submission = state.lastSubmission || buildQuoteSubmission();
+  submission.delivery = "download";
+  saveQuoteSubmission(submission);
+  const file = new Blob([quoteListText(submission)], { type: "text/plain;charset=utf-8" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(file);
+  link.download = `herui-lighting-quote-list-${submission.submittedAt.slice(0, 10)}.txt`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(link.href);
+  setCartStatus("Quote list downloaded.", `${submission.items.length} models saved as a text file.`);
+}
+
+function setCartStatus(title, message = "") {
+  document.querySelectorAll("#submitStatus, #drawerSubmitStatus").forEach((status) => {
+    status.innerHTML = message ? `<strong>${title}</strong><span>${message}</span>` : title;
+  });
 }
 
 function selectProduct(product) {
@@ -473,6 +634,10 @@ function renderCart() {
     state.cart.length === 0 ? "0 products" : `${state.cart.length} models / ${total} pcs`;
   submitCart.disabled = state.cart.length === 0;
   drawerSubmitCart.disabled = state.cart.length === 0;
+  copyCart.disabled = state.cart.length === 0;
+  drawerCopyCart.disabled = state.cart.length === 0;
+  downloadCart.disabled = state.cart.length === 0;
+  drawerDownloadCart.disabled = state.cart.length === 0;
   renderCartList(document.querySelector("#inquiryList"));
   renderCartList(document.querySelector("#cartDrawerList"));
   renderSubmitStatus(document.querySelector("#submitStatus"));
@@ -528,10 +693,24 @@ function renderCartList(list) {
 }
 
 function renderSubmitStatus(status) {
+  if (!state.lastSubmission) {
+    status.innerHTML = "";
+    return;
+  }
+
+  const deliveryMessages = {
+    endpoint: "Your quote list was sent through the connected inquiry receiver.",
+    email: "Your email app will open with the complete quote list. You can also copy or download the list.",
+    "email-fallback": "The direct receiver was unavailable, so your email app will open with the complete quote list.",
+    copied: "The quote list is ready to paste into email, WhatsApp or chat.",
+    download: "The quote list was saved as a text file for follow-up.",
+  };
+  const deliveryText = deliveryMessages[state.lastSubmission.delivery] || "Your quote list is prepared for follow-up.";
+
   status.innerHTML = state.lastSubmission
     ? `
       <strong>Quote list submitted.</strong>
-      <span>${state.lastSubmission.items.length} models / ${cartCount()} pcs ready for wholesale quotation.</span>
+      <span>${state.lastSubmission.items.length} models / ${cartCount()} pcs ready for wholesale quotation. ${deliveryText}</span>
     `
     : "";
 }
