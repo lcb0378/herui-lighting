@@ -16179,22 +16179,6 @@ window.PRODUCTS = [
     "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
   },
   {
-    "rank": 971,
-    "slug": "catalog-0971-chandelier-model-to-confirm",
-    "code": "HR-CH-0125",
-    "model": "HR-CH-0125",
-    "title": "Chandelier HR-CH-0125",
-    "category": "Chandelier",
-    "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
-    "size": "Length 1000",
-    "material": "aluminum40mm",
-    "finish": "electroplated natural brass",
-    "image": "./products/catalog-0971-chandelier-chandelier-298.jpg",
-    "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
-    "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
-    "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
-  },
-  {
     "rank": 972,
     "slug": "catalog-0972-chandelier-model-to-confirm",
     "code": "HR-CH-0126",
