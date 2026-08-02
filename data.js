@@ -1511,7 +1511,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
     "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
-    "packageSize": "67 x 67 x 22 cm"
+    "packageSize": "67 x 67 x 22 cm",
+    "weight": "5.1 kg"
   },
   {
     "rank": 88,
@@ -1529,7 +1530,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
     "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
-    "packageSize": "54 x 46 x 40 cm"
+    "packageSize": "54 x 46 x 40 cm",
+    "weight": "5.9 kg"
   },
   {
     "rank": 89,
@@ -6313,7 +6315,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
     "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
-    "packageSize": "60 x 60 x 35 cm"
+    "packageSize": "60 x 60 x 35 cm",
+    "weight": "11 kg"
   },
   {
     "rank": 368,
@@ -6331,7 +6334,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
     "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
-    "packageSize": "61 x 45 x 41 cm"
+    "packageSize": "61 x 45 x 41 cm",
+    "weight": "11 kg"
   },
   {
     "rank": 369,
@@ -6487,7 +6491,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Stairwell, duplex void, hotel lobby and project atrium.",
     "description": "Stair and lobby light for duplex voids, hotel atriums and entrance spaces, suited to vertical installations and statement project areas.",
-    "weight": "3 kg"
+    "weight": "3 kg",
+    "packageSize": "34 x 34 x 23 cm"
   },
   {
     "rank": 378,
@@ -7818,7 +7823,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0455-t2201-bamboo-shadow.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "weight": "1.4 kg"
   },
   {
     "rank": 456,
@@ -7835,7 +7841,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0456-t2203.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "weight": "1.4 kg"
   },
   {
     "rank": 457,
@@ -7852,7 +7859,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0457-t2202-best-wishes.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "weight": "1.4 kg"
   },
   {
     "rank": 458,
@@ -7869,7 +7877,8 @@ window.PRODUCTS = [
     "image": "./products/catalog-0458-t2204-double.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
-    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
+    "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
+    "weight": "1.4 kg"
   },
   {
     "rank": 459,
@@ -7904,7 +7913,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
     "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
-    "packageSize": "43 x 36 x 36 cm"
+    "packageSize": "43 x 36 x 36 cm",
+    "weight": "1.6 kg"
   },
   {
     "rank": 461,
@@ -7922,7 +7932,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
     "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
-    "packageSize": "37 x 24 x 22 cm"
+    "packageSize": "37 x 24 x 22 cm",
+    "weight": "1.6 kg"
   },
   {
     "rank": 462,
@@ -7940,7 +7951,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
     "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
-    "packageSize": "36 x 27 x 27 cm"
+    "packageSize": "36 x 27 x 27 cm",
+    "weight": "1.4 kg"
   },
   {
     "rank": 463,
@@ -7958,7 +7970,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
     "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
-    "packageSize": "36 x 27 x 27 cm"
+    "packageSize": "36 x 27 x 27 cm",
+    "weight": "1.3 kg"
   },
   {
     "rank": 464,
@@ -7976,7 +7989,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
     "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
-    "packageSize": "36 x 27 x 27 cm"
+    "packageSize": "36 x 27 x 27 cm",
+    "weight": "1.2 kg"
   },
   {
     "rank": 465,
@@ -7994,7 +8008,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
     "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
-    "packageSize": "36 x 27 x 27 cm"
+    "packageSize": "36 x 27 x 27 cm",
+    "weight": "1.4 kg"
   },
   {
     "rank": 466,
@@ -8012,7 +8027,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
     "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
-    "packageSize": "40 x 25 x 24 cm"
+    "packageSize": "40 x 25 x 24 cm",
+    "weight": "1.7 kg"
   },
   {
     "rank": 467,
@@ -8030,7 +8046,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
     "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
-    "packageSize": "36 x 27 x 27 cm"
+    "packageSize": "36 x 27 x 27 cm",
+    "weight": "1.4 kg"
   },
   {
     "rank": 468,
@@ -8048,7 +8065,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
     "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
-    "packageSize": "36 x 27 x 27 cm"
+    "packageSize": "36 x 27 x 27 cm",
+    "weight": "1.4 kg"
   },
   {
     "rank": 469,
@@ -8066,7 +8084,8 @@ window.PRODUCTS = [
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel bedside table, villa bedroom, apartment reading corner.",
     "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes.",
-    "packageSize": "40 x 25 x 24 cm"
+    "packageSize": "40 x 25 x 24 cm",
+    "weight": "1.8 kg"
   },
   {
     "rank": 470,
@@ -17187,7 +17206,8 @@ window.PRODUCTS = [
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
     "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
-    "weight": "23 kg"
+    "weight": "23 kg",
+    "packageSize": "80 x 77 x 40 cm - 1 ctn / 58 x 51 x 40 cm - 1 ctn"
   },
   {
     "rank": 1006,
@@ -17613,7 +17633,8 @@ window.PRODUCTS = [
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
     "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
-    "weight": "20 kg"
+    "weight": "20 kg",
+    "packageSize": "88 x 88 x 30 cm"
   },
   {
     "rank": 1032,
@@ -17648,7 +17669,8 @@ window.PRODUCTS = [
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
     "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
-    "weight": "20 kg"
+    "weight": "20 kg",
+    "packageSize": "88 x 88 x 30 cm"
   },
   {
     "rank": 1034,
@@ -17735,7 +17757,8 @@ window.PRODUCTS = [
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
     "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
-    "weight": "17 kg"
+    "weight": "17 kg",
+    "packageSize": "123 x 84 x 19 cm"
   },
   {
     "rank": 1039,
@@ -17855,7 +17878,8 @@ window.PRODUCTS = [
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
     "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
-    "weight": "30 kg"
+    "weight": "30 kg",
+    "packageSize": "107 x 107 x 28 cm"
   },
   {
     "rank": 1053,
@@ -17890,7 +17914,8 @@ window.PRODUCTS = [
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
     "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
-    "weight": "4 kg"
+    "weight": "4 kg",
+    "packageSize": "110 x 25 x 17 cm"
   },
   {
     "rank": 1056,
@@ -17908,7 +17933,8 @@ window.PRODUCTS = [
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
     "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point.",
-    "weight": "17 kg"
+    "weight": "17 kg",
+    "packageSize": "80 x 80 x 28 cm"
   },
   {
     "rank": 1057,
