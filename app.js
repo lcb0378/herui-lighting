@@ -48,8 +48,6 @@ const filterGroups = [
       { id: "hotel", label: "Hotel / Project", match: hasAny("hotel", "project", "lobby") },
       { id: "villa", label: "Villa / Residential", match: hasAny("villa", "residential", "bedroom") },
       { id: "restaurant", label: "Restaurant / Dining", match: hasAny("restaurant", "dining") },
-      { id: "africa", label: "Africa Wholesale", match: hasAny("africa") },
-      { id: "middle-east", label: "Middle East", match: hasAny("middle east") },
     ],
   },
 ];

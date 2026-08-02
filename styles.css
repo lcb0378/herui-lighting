@@ -425,23 +425,17 @@ h1 {
 }
 
 .hero-market {
-  display: grid;
+  display: block;
   font-size: 15px;
-  grid-template-columns: 1fr 1fr 1fr;
+  letter-spacing: 0.08em;
   margin-bottom: 18px;
+  text-transform: uppercase;
   width: min(420px, 78vw);
 }
 
-.hero-market span:nth-child(1) {
+.hero-market span {
+  display: block;
   text-align: left;
-}
-
-.hero-market span:nth-child(2) {
-  text-align: center;
-}
-
-.hero-market span:nth-child(3) {
-  text-align: right;
 }
 
 .hero-text p:not(.eyebrow) {
