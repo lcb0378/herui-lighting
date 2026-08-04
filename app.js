@@ -71,8 +71,12 @@ const cartToggle = document.querySelector("#cartToggle");
 const cartDrawer = document.querySelector("#cartDrawer");
 const contactModal = document.querySelector("#contactModal");
 const contactForm = document.querySelector("#contactForm");
-const contactEmail = "sales@heruilighting.com";
-const inquiryEndpoint = window.HERUI_INQUIRY_ENDPOINT || "";
+const inquiryConfig = window.HERUI_INQUIRY_CONFIG || {};
+const inquiryBrand = inquiryConfig.brand || "Herui Lighting";
+const inquirySchemaVersion = inquiryConfig.schemaVersion || "herui-inquiry-v1";
+const inquirySource = inquiryConfig.source || "github-pages-catalog";
+const contactEmail = inquiryConfig.receiverEmail || inquiryConfig.fallbackEmail || "sales@heruilighting.com";
+const inquiryEndpoint = inquiryConfig.endpoint || window.HERUI_INQUIRY_ENDPOINT || "";
 const copyCart = document.querySelector("#copyCart");
 const downloadCart = document.querySelector("#downloadCart");
 const drawerCopyCart = document.querySelector("#drawerCopyCart");
@@ -273,6 +277,7 @@ async function submitContactForm(event) {
   event.preventDefault();
   const formData = new FormData(contactForm);
   const inquiry = {
+    inquiryId: createInquiryId("contact"),
     type: "contact-inquiry",
     subject: formData.get("subject")?.toString().trim(),
     contact: formData.get("contact")?.toString().trim(),
@@ -314,12 +319,7 @@ async function submitContactForm(event) {
 }
 
 function openContactEmail(inquiry) {
-  const body = [
-    `Contact: ${inquiry.contact}`,
-    "",
-    "Message:",
-    inquiry.message,
-  ].join("\n");
+  const body = contactInquiryText(inquiry);
   const mailto = `mailto:${contactEmail}?subject=${encodeURIComponent(inquiry.subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = mailto;
 }
@@ -330,15 +330,49 @@ async function sendContactToEndpoint(inquiry) {
   const response = await fetch(inquiryEndpoint, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      type: "contact-inquiry",
-      brand: "Herui Lighting",
+    body: JSON.stringify(buildInquiryPayload("contact-inquiry", {
       inquiry,
-    }),
+      messageText: contactInquiryText(inquiry),
+    })),
   });
 
   if (!response.ok) throw new Error(`Contact endpoint returned ${response.status}`);
   return true;
+}
+
+function createInquiryId(type) {
+  const date = new Date().toISOString().slice(0, 10).replace(/-/g, "");
+  const random = window.crypto?.randomUUID
+    ? window.crypto.randomUUID().slice(0, 8)
+    : Math.random().toString(36).slice(2, 10);
+  return `HERUI-${type.toUpperCase()}-${date}-${random}`;
+}
+
+function buildInquiryPayload(type, payload) {
+  return {
+    schemaVersion: inquirySchemaVersion,
+    brand: inquiryBrand,
+    source: inquirySource,
+    type,
+    receiverEmail: inquiryConfig.receiverEmail || "",
+    fallbackEmail: inquiryConfig.fallbackEmail || "",
+    pageUrl: window.location.href,
+    submittedAt: new Date().toISOString(),
+    ...payload,
+  };
+}
+
+function contactInquiryText(inquiry) {
+  return [
+    "Herui Lighting contact inquiry",
+    `Inquiry ID: ${inquiry.inquiryId}`,
+    `Submitted at: ${inquiry.submittedAt}`,
+    `Subject: ${inquiry.subject}`,
+    `Contact: ${inquiry.contact}`,
+    "",
+    "Message:",
+    inquiry.message,
+  ].join("\n");
 }
 
 function pulseCartButton() {
@@ -382,6 +416,7 @@ function removeFromCart(slug) {
 
 function buildQuoteSubmission() {
   return {
+    inquiryId: createInquiryId("quote"),
     submittedAt: new Date().toISOString(),
     buyer: { ...state.quoteDetails },
     items: state.cart.map(({ product, quantity }) => ({
@@ -400,6 +435,7 @@ function buildQuoteSubmission() {
 function quoteListText(submission = buildQuoteSubmission()) {
   const lines = [
     "Herui Lighting wholesale quote request",
+    `Inquiry ID: ${submission.inquiryId}`,
     `Submitted at: ${submission.submittedAt}`,
     `Models: ${submission.items.length}`,
     `Total quantity: ${submission.items.reduce((total, item) => total + item.quantity, 0)}`,
@@ -451,11 +487,10 @@ async function sendQuoteToEndpoint(submission) {
   const response = await fetch(inquiryEndpoint, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      type: "quote-cart",
-      brand: "Herui Lighting",
+    body: JSON.stringify(buildInquiryPayload("quote-cart", {
       submission,
-    }),
+      messageText: quoteListText(submission),
+    })),
   });
 
   if (!response.ok) throw new Error(`Quote endpoint returned ${response.status}`);
