@@ -596,7 +596,7 @@ function renderCatalog() {
           <div class="product-body">
             <div class="product-tags">
               <p>${product.category}</p>
-              ${isHotPick(product) ? '<span class="hot-pick-label">Hot Pick</span>' : ""}
+              ${isHotPick(product) ? '<span class="hot-pick-label">Hot Pick<span class="hot-sparks" aria-hidden="true"><i></i><i></i><i></i></span></span>' : ""}
             </div>
             <h3>${product.code}</h3>
             <span class="open-detail">View specifications</span>
