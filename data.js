@@ -17918,9 +17918,9 @@ window.PRODUCTS = [
     "light": "88W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1084-chandelier-siyuan-1043.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1085,
@@ -17938,9 +17938,9 @@ window.PRODUCTS = [
     "light": "146W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1085-chandelier-siyuan-1045.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1086,
@@ -17958,9 +17958,9 @@ window.PRODUCTS = [
     "light": "120W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1086-chandelier-siyuan-1052.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1087,
@@ -17978,9 +17978,9 @@ window.PRODUCTS = [
     "light": "168W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1087-chandelier-siyuan-1056.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1088,
@@ -17998,9 +17998,9 @@ window.PRODUCTS = [
     "light": "210W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1088-chandelier-siyuan-1057.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1089,
@@ -18018,9 +18018,9 @@ window.PRODUCTS = [
     "light": "116W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1089-chandelier-siyuan-1065.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1090,
@@ -18038,9 +18038,9 @@ window.PRODUCTS = [
     "light": "78W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1090-chandelier-siyuan-1166.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1091,
@@ -18058,9 +18058,9 @@ window.PRODUCTS = [
     "light": "50W tri-color LED",
     "finish": "white",
     "image": "./products/catalog-1091-chandelier-siyuan-1172.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1092,
@@ -18078,9 +18078,9 @@ window.PRODUCTS = [
     "light": "126W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1092-chandelier-siyuan-1177.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1093,
@@ -18098,9 +18098,9 @@ window.PRODUCTS = [
     "light": "138W tri-color LED",
     "finish": "white",
     "image": "./products/catalog-1093-chandelier-siyuan-1194.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1094,
@@ -18118,9 +18118,9 @@ window.PRODUCTS = [
     "light": "178W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1094-chandelier-siyuan-1197.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1095,
@@ -18138,9 +18138,9 @@ window.PRODUCTS = [
     "light": "146W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1095-chandelier-siyuan-1259.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1096,
@@ -18158,9 +18158,9 @@ window.PRODUCTS = [
     "light": "96W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1096-chandelier-siyuan-1290.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1097,
@@ -18178,9 +18178,9 @@ window.PRODUCTS = [
     "light": "120W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1097-chandelier-siyuan-2251.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1098,
@@ -18198,9 +18198,9 @@ window.PRODUCTS = [
     "light": "186W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1098-chandelier-siyuan-2258.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1099,
@@ -18218,9 +18218,9 @@ window.PRODUCTS = [
     "light": "76W tri-color LED",
     "finish": "black",
     "image": "./products/catalog-1099-chandelier-siyuan-2259.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1100,
@@ -18238,9 +18238,9 @@ window.PRODUCTS = [
     "light": "72W tri-color LED",
     "finish": "white",
     "image": "./products/catalog-1100-chandelier-siyuan-2260.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1101,
@@ -18258,9 +18258,9 @@ window.PRODUCTS = [
     "light": "146W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1101-chandelier-siyuan-2261.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1102,
@@ -18278,9 +18278,9 @@ window.PRODUCTS = [
     "light": "90W tri-color LED",
     "finish": "cream coffee",
     "image": "./products/catalog-1102-chandelier-siyuan-2262.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1103,
@@ -18298,9 +18298,9 @@ window.PRODUCTS = [
     "light": "72W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1103-chandelier-siyuan-mar-o6.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1104,
@@ -18318,9 +18318,9 @@ window.PRODUCTS = [
     "light": "186W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1104-chandelier-siyuan-2267-4-plus-6.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1105,
@@ -18338,9 +18338,9 @@ window.PRODUCTS = [
     "light": "268W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1105-chandelier-siyuan-2267-4-plus-6-plus-8.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1106,
@@ -18358,9 +18358,9 @@ window.PRODUCTS = [
     "light": "72W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1106-chandelier-siyuan-may-68.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1107,
@@ -18378,9 +18378,9 @@ window.PRODUCTS = [
     "light": "160W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1107-chandelier-siyuan-2268-4-plus-6.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1108,
@@ -18398,9 +18398,9 @@ window.PRODUCTS = [
     "light": "136W tri-color LED",
     "finish": "white",
     "image": "./products/catalog-1108-chandelier-siyuan-2269.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1109,
@@ -18418,9 +18418,9 @@ window.PRODUCTS = [
     "light": "38W tri-color LED",
     "finish": "black",
     "image": "./products/catalog-1109-chandelier-siyuan-2271.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1110,
@@ -18438,9 +18438,9 @@ window.PRODUCTS = [
     "light": "96W tri-color LED",
     "finish": "white",
     "image": "./products/catalog-1110-chandelier-siyuan-2272.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1111,
@@ -18458,9 +18458,9 @@ window.PRODUCTS = [
     "light": "78W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1111-chandelier-siyuan-2273.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1112,
@@ -18478,9 +18478,9 @@ window.PRODUCTS = [
     "light": "86W tri-color LED",
     "finish": "black + chrome",
     "image": "./products/catalog-1112-chandelier-siyuan-2275.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1113,
@@ -18498,9 +18498,9 @@ window.PRODUCTS = [
     "light": "86W tri-color LED",
     "finish": "black + chrome",
     "image": "./products/catalog-1113-chandelier-siyuan-2276.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1114,
@@ -18518,9 +18518,9 @@ window.PRODUCTS = [
     "light": "86W tri-color LED",
     "finish": "white + gold",
     "image": "./products/catalog-1114-chandelier-siyuan-2278.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1115,
@@ -18538,9 +18538,9 @@ window.PRODUCTS = [
     "light": "72W tri-color LED",
     "finish": "black",
     "image": "./products/catalog-1115-chandelier-siyuan-2279.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1116,
@@ -18558,9 +18558,9 @@ window.PRODUCTS = [
     "light": "72W tri-color LED",
     "finish": "black",
     "image": "./products/catalog-1116-chandelier-siyuan-2280.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1117,
@@ -18578,9 +18578,9 @@ window.PRODUCTS = [
     "light": "116W tri-color LED",
     "finish": "coffee color",
     "image": "./products/catalog-1117-chandelier-siyuan-3911.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1118,
@@ -18598,9 +18598,9 @@ window.PRODUCTS = [
     "light": "138W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1118-chandelier-siyuan-3912.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1119,
@@ -18618,9 +18618,9 @@ window.PRODUCTS = [
     "light": "160W tri-color LED",
     "finish": "cream coffee",
     "image": "./products/catalog-1119-chandelier-siyuan-3913.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   },
   {
     "rank": 1120,
@@ -18638,8 +18638,8 @@ window.PRODUCTS = [
     "light": "120W tri-color LED",
     "finish": "gold",
     "image": "./products/catalog-1120-chandelier-siyuan-3914.jpg",
-    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "reason": "Added from the Siyuan chandelier quotation sheet for Herui Lighting wholesale catalog expansion.",
     "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
-    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+    "description": "Modern LED chandelier selected for fast wholesale browsing, residential projects and showroom quotations."
   }
 ];

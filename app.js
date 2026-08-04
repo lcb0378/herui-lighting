@@ -17,7 +17,7 @@ const filterGroups = [
   {
     title: "Featured",
     items: [
-      { id: "hot-picks", label: "Hot Picks", match: isHotPick },
+      { id: "hot-picks", label: "Hot Picks 🔥🔥🔥", match: isHotPick },
     ],
   },
   {
@@ -596,7 +596,7 @@ function renderCatalog() {
           <div class="product-body">
             <div class="product-tags">
               <p>${product.category}</p>
-              ${isHotPick(product) ? '<span class="hot-pick-label">Hot Pick<span class="hot-sparks" aria-hidden="true"><i></i><i></i><i></i></span></span>' : ""}
+              ${isHotPick(product) ? '<span class="hot-pick-label" aria-label="Hot pick">🔥🔥🔥</span>' : ""}
             </div>
             <h3>${product.code}</h3>
             <span class="open-detail">View specifications</span>
@@ -649,7 +649,6 @@ function renderModal() {
   document.querySelector("#modalCode").textContent = product.code;
   document.querySelector("#modalMarket").textContent = product.market;
   document.querySelector("#modalSpecs").innerHTML = [
-    ["Collection", product.collections?.join(", ")],
     ["Category", product.category],
     ["Model", product.model || product.code],
     ["Size", product.size],
