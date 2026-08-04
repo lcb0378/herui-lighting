@@ -15,6 +15,12 @@ const state = {
 
 const filterGroups = [
   {
+    title: "Featured",
+    items: [
+      { id: "hot-picks", label: "Hot Picks", match: isHotPick },
+    ],
+  },
+  {
     title: "Product Type",
     items: [
       { id: "all", label: "All Products", match: () => true },
@@ -132,11 +138,16 @@ function categoryIs(category) {
   return (product) => product.category === category;
 }
 
+function isHotPick(product) {
+  return product.hotPick === true || product.collections?.includes("Hot Picks");
+}
+
 function productSearchText(product) {
   return [
     product.code,
     product.title,
     product.category,
+    ...(product.collections || []),
     product.market,
     product.material,
     product.size,
@@ -583,7 +594,10 @@ function renderCatalog() {
         <article class="product" data-select="${product.slug}">
           <img src="${product.image}" alt="${product.title}" loading="lazy">
           <div class="product-body">
-            <p>${product.category}</p>
+            <div class="product-tags">
+              <p>${product.category}</p>
+              ${isHotPick(product) ? '<span class="hot-pick-label">Hot Pick</span>' : ""}
+            </div>
             <h3>${product.code}</h3>
             <span class="open-detail">View specifications</span>
             <button class="quote" data-add="${product.slug}">Add to cart</button>
@@ -635,6 +649,7 @@ function renderModal() {
   document.querySelector("#modalCode").textContent = product.code;
   document.querySelector("#modalMarket").textContent = product.market;
   document.querySelector("#modalSpecs").innerHTML = [
+    ["Collection", product.collections?.join(", ")],
     ["Category", product.category],
     ["Model", product.model || product.code],
     ["Size", product.size],

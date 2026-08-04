@@ -17901,5 +17901,745 @@ window.PRODUCTS = [
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
     "description": "Outdoor wall light for villa entrances, exterior corridors and hotel facade areas, selected for exterior decorative and guidance lighting."
+  },
+  {
+    "rank": 1084,
+    "slug": "catalog-1084-chandelier-siyuan-1043",
+    "code": "HR-CH-0236",
+    "model": "HR-CH-0236",
+    "title": "Chandelier HR-CH-0236",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "41 x 41 x 30 cm",
+    "material": "aluminum + acrylic",
+    "light": "88W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1084-chandelier-siyuan-1043.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1085,
+    "slug": "catalog-1085-chandelier-siyuan-1045",
+    "code": "HR-CH-0237",
+    "model": "HR-CH-0237",
+    "title": "Chandelier HR-CH-0237",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "64 x 64 x 8 cm",
+    "material": "aluminum + acrylic",
+    "light": "146W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1085-chandelier-siyuan-1045.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1086,
+    "slug": "catalog-1086-chandelier-siyuan-1052",
+    "code": "HR-CH-0238",
+    "model": "HR-CH-0238",
+    "title": "Chandelier HR-CH-0238",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "51 x 51 x 12 cm",
+    "material": "aluminum + acrylic",
+    "light": "120W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1086-chandelier-siyuan-1052.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1087,
+    "slug": "catalog-1087-chandelier-siyuan-1056",
+    "code": "HR-CH-0239",
+    "model": "HR-CH-0239",
+    "title": "Chandelier HR-CH-0239",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "42 x 42 x 25 cm",
+    "material": "aluminum + acrylic",
+    "light": "168W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1087-chandelier-siyuan-1056.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1088,
+    "slug": "catalog-1088-chandelier-siyuan-1057",
+    "code": "HR-CH-0240",
+    "model": "HR-CH-0240",
+    "title": "Chandelier HR-CH-0240",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "56 x 56 x 28 cm",
+    "material": "aluminum + acrylic",
+    "light": "210W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1088-chandelier-siyuan-1057.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1089,
+    "slug": "catalog-1089-chandelier-siyuan-1065",
+    "code": "HR-CH-0241",
+    "model": "HR-CH-0241",
+    "title": "Chandelier HR-CH-0241",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "50 x 50 x 17 cm",
+    "material": "aluminum + acrylic",
+    "light": "116W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1089-chandelier-siyuan-1065.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1090,
+    "slug": "catalog-1090-chandelier-siyuan-1166",
+    "code": "HR-CH-0242",
+    "model": "HR-CH-0242",
+    "title": "Chandelier HR-CH-0242",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "101 x 18 x 18 cm",
+    "material": "aluminum + acrylic",
+    "light": "78W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1090-chandelier-siyuan-1166.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1091,
+    "slug": "catalog-1091-chandelier-siyuan-1172",
+    "code": "HR-CH-0243",
+    "model": "HR-CH-0243",
+    "title": "Chandelier HR-CH-0243",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "121 x 9 x 10 cm",
+    "material": "aluminum + acrylic",
+    "light": "50W tri-color LED",
+    "finish": "white",
+    "image": "./products/catalog-1091-chandelier-siyuan-1172.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1092,
+    "slug": "catalog-1092-chandelier-siyuan-1177",
+    "code": "HR-CH-0244",
+    "model": "HR-CH-0244",
+    "title": "Chandelier HR-CH-0244",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "106 x 24 x 10 cm",
+    "material": "aluminum + acrylic",
+    "light": "126W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1092-chandelier-siyuan-1177.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1093,
+    "slug": "catalog-1093-chandelier-siyuan-1194",
+    "code": "HR-CH-0245",
+    "model": "HR-CH-0245",
+    "title": "Chandelier HR-CH-0245",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "47 x 47 x 12 cm",
+    "material": "aluminum + acrylic",
+    "light": "138W tri-color LED",
+    "finish": "white",
+    "image": "./products/catalog-1093-chandelier-siyuan-1194.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1094,
+    "slug": "catalog-1094-chandelier-siyuan-1197",
+    "code": "HR-CH-0246",
+    "model": "HR-CH-0246",
+    "title": "Chandelier HR-CH-0246",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "88 x 31 x 12 cm",
+    "material": "aluminum + acrylic",
+    "light": "178W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1094-chandelier-siyuan-1197.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1095,
+    "slug": "catalog-1095-chandelier-siyuan-1259",
+    "code": "HR-CH-0247",
+    "model": "HR-CH-0247",
+    "title": "Chandelier HR-CH-0247",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "56 x 50 x 14 cm",
+    "material": "aluminum + acrylic",
+    "light": "146W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1095-chandelier-siyuan-1259.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1096,
+    "slug": "catalog-1096-chandelier-siyuan-1290",
+    "code": "HR-CH-0248",
+    "model": "HR-CH-0248",
+    "title": "Chandelier HR-CH-0248",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "42 x 42 x 12 cm",
+    "material": "aluminum + acrylic",
+    "light": "96W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1096-chandelier-siyuan-1290.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1097,
+    "slug": "catalog-1097-chandelier-siyuan-2251",
+    "code": "HR-CH-0249",
+    "model": "HR-CH-0249",
+    "title": "Chandelier HR-CH-0249",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "75 x 26 x 23 cm",
+    "material": "aluminum + acrylic",
+    "light": "120W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1097-chandelier-siyuan-2251.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1098,
+    "slug": "catalog-1098-chandelier-siyuan-2258",
+    "code": "HR-CH-0250",
+    "model": "HR-CH-0250",
+    "title": "Chandelier HR-CH-0250",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "60 x 60 x 10 cm",
+    "material": "aluminum + acrylic",
+    "light": "186W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1098-chandelier-siyuan-2258.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1099,
+    "slug": "catalog-1099-chandelier-siyuan-2259",
+    "code": "HR-CH-0251",
+    "model": "HR-CH-0251",
+    "title": "Chandelier HR-CH-0251",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "41 x 41 x 12 cm",
+    "material": "iron + acrylic",
+    "light": "76W tri-color LED",
+    "finish": "black",
+    "image": "./products/catalog-1099-chandelier-siyuan-2259.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1100,
+    "slug": "catalog-1100-chandelier-siyuan-2260",
+    "code": "HR-CH-0252",
+    "model": "HR-CH-0252",
+    "title": "Chandelier HR-CH-0252",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "61 x 61 x 10 cm",
+    "material": "iron + acrylic",
+    "light": "72W tri-color LED",
+    "finish": "white",
+    "image": "./products/catalog-1100-chandelier-siyuan-2260.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1101,
+    "slug": "catalog-1101-chandelier-siyuan-2261",
+    "code": "HR-CH-0253",
+    "model": "HR-CH-0253",
+    "title": "Chandelier HR-CH-0253",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "50 x 50 x 18 cm",
+    "material": "aluminum + silicone",
+    "light": "146W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1101-chandelier-siyuan-2261.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1102,
+    "slug": "catalog-1102-chandelier-siyuan-2262",
+    "code": "HR-CH-0254",
+    "model": "HR-CH-0254",
+    "title": "Chandelier HR-CH-0254",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "51 x 51 x 12 cm",
+    "material": "aluminum + acrylic",
+    "light": "90W tri-color LED",
+    "finish": "cream coffee",
+    "image": "./products/catalog-1102-chandelier-siyuan-2262.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1103,
+    "slug": "catalog-1103-chandelier-siyuan-mar-o6",
+    "code": "HR-CH-0255",
+    "model": "HR-CH-0255",
+    "title": "Chandelier HR-CH-0255",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "51 x 51 x 10 cm",
+    "material": "aluminum + acrylic",
+    "light": "72W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1103-chandelier-siyuan-mar-o6.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1104,
+    "slug": "catalog-1104-chandelier-siyuan-2267-4-plus-6",
+    "code": "HR-CH-0256",
+    "model": "HR-CH-0256",
+    "title": "Chandelier HR-CH-0256",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "61 x 61 x 10 cm",
+    "material": "aluminum + acrylic",
+    "light": "186W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1104-chandelier-siyuan-2267-4-plus-6.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1105,
+    "slug": "catalog-1105-chandelier-siyuan-2267-4-plus-6-plus-8",
+    "code": "HR-CH-0257",
+    "model": "HR-CH-0257",
+    "title": "Chandelier HR-CH-0257",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "81 x 81 x 10 cm",
+    "material": "aluminum + acrylic",
+    "light": "268W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1105-chandelier-siyuan-2267-4-plus-6-plus-8.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1106,
+    "slug": "catalog-1106-chandelier-siyuan-may-68",
+    "code": "HR-CH-0258",
+    "model": "HR-CH-0258",
+    "title": "Chandelier HR-CH-0258",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "51 x 51 x 10 cm",
+    "material": "aluminum + acrylic",
+    "light": "72W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1106-chandelier-siyuan-may-68.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1107,
+    "slug": "catalog-1107-chandelier-siyuan-2268-4-plus-6",
+    "code": "HR-CH-0259",
+    "model": "HR-CH-0259",
+    "title": "Chandelier HR-CH-0259",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "61 x 61 x 10 cm",
+    "material": "aluminum + acrylic",
+    "light": "160W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1107-chandelier-siyuan-2268-4-plus-6.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1108,
+    "slug": "catalog-1108-chandelier-siyuan-2269",
+    "code": "HR-CH-0260",
+    "model": "HR-CH-0260",
+    "title": "Chandelier HR-CH-0260",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "42 x 42 x 16 cm",
+    "material": "iron + acrylic",
+    "light": "136W tri-color LED",
+    "finish": "white",
+    "image": "./products/catalog-1108-chandelier-siyuan-2269.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1109,
+    "slug": "catalog-1109-chandelier-siyuan-2271",
+    "code": "HR-CH-0261",
+    "model": "HR-CH-0261",
+    "title": "Chandelier HR-CH-0261",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "46 x 46 x 15 cm",
+    "material": "iron + silicone",
+    "light": "38W tri-color LED",
+    "finish": "black",
+    "image": "./products/catalog-1109-chandelier-siyuan-2271.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1110,
+    "slug": "catalog-1110-chandelier-siyuan-2272",
+    "code": "HR-CH-0262",
+    "model": "HR-CH-0262",
+    "title": "Chandelier HR-CH-0262",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "51 x 51 x 10 cm",
+    "material": "iron + acrylic",
+    "light": "96W tri-color LED",
+    "finish": "white",
+    "image": "./products/catalog-1110-chandelier-siyuan-2272.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1111,
+    "slug": "catalog-1111-chandelier-siyuan-2273",
+    "code": "HR-CH-0263",
+    "model": "HR-CH-0263",
+    "title": "Chandelier HR-CH-0263",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "35 x 35 x 19 cm",
+    "material": "iron + acrylic",
+    "light": "78W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1111-chandelier-siyuan-2273.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1112,
+    "slug": "catalog-1112-chandelier-siyuan-2275",
+    "code": "HR-CH-0264",
+    "model": "HR-CH-0264",
+    "title": "Chandelier HR-CH-0264",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "61 x 61 x 10 cm",
+    "material": "iron + acrylic",
+    "light": "86W tri-color LED",
+    "finish": "black + chrome",
+    "image": "./products/catalog-1112-chandelier-siyuan-2275.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1113,
+    "slug": "catalog-1113-chandelier-siyuan-2276",
+    "code": "HR-CH-0265",
+    "model": "HR-CH-0265",
+    "title": "Chandelier HR-CH-0265",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "61 x 61 x 10 cm",
+    "material": "iron + acrylic",
+    "light": "86W tri-color LED",
+    "finish": "black + chrome",
+    "image": "./products/catalog-1113-chandelier-siyuan-2276.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1114,
+    "slug": "catalog-1114-chandelier-siyuan-2278",
+    "code": "HR-CH-0266",
+    "model": "HR-CH-0266",
+    "title": "Chandelier HR-CH-0266",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "51 x 51 x 15 cm",
+    "material": "iron + acrylic",
+    "light": "86W tri-color LED",
+    "finish": "white + gold",
+    "image": "./products/catalog-1114-chandelier-siyuan-2278.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1115,
+    "slug": "catalog-1115-chandelier-siyuan-2279",
+    "code": "HR-CH-0267",
+    "model": "HR-CH-0267",
+    "title": "Chandelier HR-CH-0267",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "41 x 41 x 10 cm",
+    "material": "iron + acrylic",
+    "light": "72W tri-color LED",
+    "finish": "black",
+    "image": "./products/catalog-1115-chandelier-siyuan-2279.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1116,
+    "slug": "catalog-1116-chandelier-siyuan-2280",
+    "code": "HR-CH-0268",
+    "model": "HR-CH-0268",
+    "title": "Chandelier HR-CH-0268",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "41 x 41 x 10 cm",
+    "material": "iron + acrylic",
+    "light": "72W tri-color LED",
+    "finish": "black",
+    "image": "./products/catalog-1116-chandelier-siyuan-2280.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1117,
+    "slug": "catalog-1117-chandelier-siyuan-3911",
+    "code": "HR-CH-0269",
+    "model": "HR-CH-0269",
+    "title": "Chandelier HR-CH-0269",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "51 x 51 x 10 cm",
+    "material": "aluminum + acrylic",
+    "light": "116W tri-color LED",
+    "finish": "coffee color",
+    "image": "./products/catalog-1117-chandelier-siyuan-3911.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1118,
+    "slug": "catalog-1118-chandelier-siyuan-3912",
+    "code": "HR-CH-0270",
+    "model": "HR-CH-0270",
+    "title": "Chandelier HR-CH-0270",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "47 x 47 x 12 cm",
+    "material": "aluminum + acrylic",
+    "light": "138W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1118-chandelier-siyuan-3912.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1119,
+    "slug": "catalog-1119-chandelier-siyuan-3913",
+    "code": "HR-CH-0271",
+    "model": "HR-CH-0271",
+    "title": "Chandelier HR-CH-0271",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "51 x 51 x 10 cm",
+    "material": "aluminum + acrylic",
+    "light": "160W tri-color LED",
+    "finish": "cream coffee",
+    "image": "./products/catalog-1119-chandelier-siyuan-3913.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
+  },
+  {
+    "rank": 1120,
+    "slug": "catalog-1120-chandelier-siyuan-3914",
+    "code": "HR-CH-0272",
+    "model": "HR-CH-0272",
+    "title": "Chandelier HR-CH-0272",
+    "category": "Chandelier",
+    "collections": [
+      "Hot Picks"
+    ],
+    "market": "Global export buyers, showroom selections, apartment and villa projects",
+    "size": "55 x 55 x 10 cm",
+    "material": "aluminum + acrylic",
+    "light": "120W tri-color LED",
+    "finish": "gold",
+    "image": "./products/catalog-1120-chandelier-siyuan-3914.jpg",
+    "reason": "Added from the Siyuan chandelier hot-picks quotation sheet for Herui Lighting wholesale catalog expansion.",
+    "scene": "Apartment living room, villa lounge, dining area, retail showroom.",
+    "description": "Modern LED chandelier selected as a Hot Picks model for fast wholesale browsing, residential projects and showroom quotations."
   }
 ];
