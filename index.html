@@ -86,7 +86,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="./styles.css?v=20260807-mobile-jump-nav" />
+    <link rel="stylesheet" href="./styles.css?v=20260807-cart-product-first" />
   </head>
   <body>
     <header class="topbar">
@@ -223,6 +223,8 @@
           <h2>Build a quote cart while browsing.</h2>
         </div>
         <div class="inquiry">
+          <h3>Selected products</h3>
+          <div id="inquiryList">No products added yet.</div>
           <div class="quote-details" aria-label="Buyer quote details">
             <h3>Buyer details</h3>
             <label>
@@ -238,8 +240,6 @@
               <textarea data-quote-field="notes" placeholder="Project type, quantity notes, delivery timing or special requirements"></textarea>
             </label>
           </div>
-          <h3>Cart list</h3>
-          <div id="inquiryList">No products added yet.</div>
           <div class="cart-actions">
             <button id="copyCart" class="secondary-cart-action" type="button">Copy list</button>
             <button id="downloadCart" class="secondary-cart-action" type="button">Download list</button>
@@ -351,6 +351,10 @@
           </div>
           <button class="cart-close" type="button" data-close-cart aria-label="Close cart">×</button>
         </div>
+        <div class="drawer-cart-section" aria-label="Selected products">
+          <h3>Selected products</h3>
+          <div id="cartDrawerList" class="drawer-cart-list">No products added yet.</div>
+        </div>
         <div class="quote-details drawer-quote-details" aria-label="Buyer quote details">
           <h3>Buyer details</h3>
           <label>
@@ -366,7 +370,6 @@
             <textarea data-quote-field="notes" placeholder="Project type, quantity notes, delivery timing or special requirements"></textarea>
           </label>
         </div>
-        <div id="cartDrawerList" class="drawer-cart-list">No products added yet.</div>
         <div class="cart-actions drawer-actions">
           <button id="drawerCopyCart" class="secondary-cart-action" type="button">Copy list</button>
           <button id="drawerDownloadCart" class="secondary-cart-action" type="button">Download list</button>
