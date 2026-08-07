@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Herui Lighting">
+  <rect width="64" height="64" rx="14" fill="#24524a"/>
+  <rect x="8" y="8" width="48" height="48" rx="10" fill="#f5f1e8" stroke="#be974b" stroke-width="2"/>
+  <text x="32" y="34" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#24524a">HR</text>
+  <rect x="18" y="40" width="28" height="2.5" fill="#be974b"/>
+  <text x="32" y="50" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="5.8" font-weight="700" fill="#24524a">LIGHTING</text>
+</svg>

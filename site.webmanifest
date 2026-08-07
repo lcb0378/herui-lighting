@@ -1,0 +1,22 @@
+{
+  "name": "Herui Lighting Wholesale Catalog",
+  "short_name": "Herui Lighting",
+  "description": "Wholesale decorative lighting catalog for global project buyers.",
+  "start_url": "https://lcb0378.github.io/herui-lighting/",
+  "scope": "https://lcb0378.github.io/herui-lighting/",
+  "display": "standalone",
+  "background_color": "#f6f4ee",
+  "theme_color": "#24524a",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
