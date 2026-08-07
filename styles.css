@@ -1162,6 +1162,10 @@ dd {
   padding: 14px;
 }
 
+.mobile-jump-nav {
+  display: none;
+}
+
 .footer-contact a {
   align-items: center;
   background: white;
@@ -1931,6 +1935,11 @@ dd {
     z-index: 8;
   }
 
+  #catalog-menu,
+  #page-bottom {
+    scroll-margin-top: 118px;
+  }
+
   .menu-heading {
     align-items: center;
     border-bottom: 0;
@@ -2159,6 +2168,41 @@ dd {
 
   .cart-flyer {
     max-width: calc(100vw - 28px);
+  }
+
+  .mobile-jump-nav {
+    align-items: center;
+    background: rgba(246, 244, 238, 0.92);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    bottom: max(18px, env(safe-area-inset-bottom));
+    box-shadow: 0 14px 34px rgba(24, 24, 24, 0.18);
+    display: grid;
+    gap: 5px;
+    padding: 5px;
+    position: fixed;
+    right: 12px;
+    z-index: 30;
+  }
+
+  .mobile-jump-nav a {
+    align-items: center;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    color: var(--green);
+    display: inline-flex;
+    font-size: 22px;
+    font-weight: 900;
+    height: 42px;
+    justify-content: center;
+    line-height: 1;
+    width: 42px;
+  }
+
+  .mobile-jump-nav a:nth-child(2) {
+    background: var(--green);
+    color: white;
   }
 
   .quote-notes {

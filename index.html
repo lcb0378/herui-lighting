@@ -86,7 +86,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="./styles.css?v=20260807-mobile-buyer-flow" />
+    <link rel="stylesheet" href="./styles.css?v=20260807-mobile-jump-nav" />
   </head>
   <body>
     <header class="topbar">
@@ -162,7 +162,7 @@
         </div>
 
         <div class="directory-layout">
-          <aside class="category-menu" aria-label="Product category menu">
+          <aside class="category-menu" id="catalog-menu" aria-label="Product category menu">
             <div class="menu-heading">
               <strong>Catalog Menu</strong>
               <span>Based on supplier source categories</span>
@@ -298,6 +298,18 @@
         </a>
       </div>
     </footer>
+
+    <div class="mobile-jump-nav" aria-label="Mobile page shortcuts">
+      <a href="#top" aria-label="Back to top" title="Back to top">
+        <span aria-hidden="true">↑</span>
+      </a>
+      <a href="#catalog-menu" aria-label="Back to catalog menu" title="Catalog menu">
+        <span aria-hidden="true">≡</span>
+      </a>
+      <a href="#page-bottom" aria-label="Jump to bottom" title="Jump to bottom">
+        <span aria-hidden="true">↓</span>
+      </a>
+    </div>
 
     <div class="modal" id="productModal" aria-hidden="true">
       <div class="modal-backdrop" data-close-modal></div>
