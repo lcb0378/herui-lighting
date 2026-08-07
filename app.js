@@ -82,6 +82,7 @@ const downloadCart = document.querySelector("#downloadCart");
 const drawerCopyCart = document.querySelector("#drawerCopyCart");
 const drawerDownloadCart = document.querySelector("#drawerDownloadCart");
 const quoteFields = document.querySelectorAll("[data-quote-field]");
+const mobileCartBadge = document.querySelector("#mobileCartBadge");
 
 searchInput.addEventListener("input", (event) => {
   state.query = event.target.value;
@@ -100,6 +101,7 @@ modeButtons.forEach((button) => {
 
 document.querySelectorAll("[data-close-modal]").forEach((node) => node.addEventListener("click", closeModal));
 document.querySelectorAll("[data-close-cart]").forEach((node) => node.addEventListener("click", closeCartDrawer));
+document.querySelectorAll("[data-open-cart]").forEach((node) => node.addEventListener("click", openCartDrawer));
 document.querySelectorAll("[data-open-contact]").forEach((node) => node.addEventListener("click", openContactModal));
 document.querySelectorAll("[data-close-contact]").forEach((node) => node.addEventListener("click", closeContactModal));
 
@@ -709,6 +711,7 @@ function renderCart() {
   const total = cartCount();
   document.querySelector("#miniCount").textContent = total;
   document.querySelector("#cartBadge").textContent = total;
+  if (mobileCartBadge) mobileCartBadge.textContent = total;
   document.querySelector("#drawerCartCount").textContent =
     state.cart.length === 0 ? "0 products" : `${state.cart.length} models / ${total} pcs`;
   submitCart.disabled = state.cart.length === 0;
