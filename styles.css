@@ -2204,15 +2204,16 @@ dd {
     align-items: center;
     background: rgba(246, 244, 238, 0.92);
     border: 1px solid var(--line);
-    border-radius: 26px;
-    bottom: max(18px, env(safe-area-inset-bottom));
+    border-radius: 999px;
     box-shadow: 0 14px 34px rgba(24, 24, 24, 0.18);
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 4px;
-    grid-template-columns: repeat(2, 38px);
-    padding: 5px;
+    padding: 5px 4px;
     position: fixed;
-    right: 12px;
+    right: env(safe-area-inset-right);
+    top: 56%;
+    transform: translateY(-50%);
     z-index: 30;
   }
 
@@ -2227,10 +2228,10 @@ dd {
     display: inline-flex;
     font-size: 22px;
     font-weight: 900;
-    height: 38px;
+    height: 36px;
     justify-content: center;
     line-height: 1;
-    width: 38px;
+    width: 36px;
   }
 
   .mobile-jump-nav a:nth-child(2) {
@@ -2276,8 +2277,8 @@ dd {
     min-width: 20px;
     padding: 0 5px;
     position: absolute;
-    right: -7px;
-    top: -8px;
+    right: -4px;
+    top: -7px;
   }
 
   .quote-notes {
