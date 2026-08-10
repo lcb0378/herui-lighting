@@ -102,6 +102,7 @@ const mobileProductTypeCategoryIds = [
 ];
 const mobileVisualCategoryIds = ["hot-picks", ...mobileProductTypeCategoryIds];
 const mobileQuickCategoryIds = mobileVisualCategoryIds;
+const initialMobileCatalogLimit = 48;
 
 searchInput.addEventListener("input", (event) => {
   state.query = event.target.value;
@@ -746,26 +747,42 @@ function menuLabelHtml(label) {
 function updateMobileCategoryMenu() {
   if (!categoryMenu) return;
 
-  const catalog = document.querySelector("#catalog");
   const isMobileCategoryLayout = window.matchMedia("(max-width: 620px)").matches;
   if (!isMobileCategoryLayout) {
     state.mobileCategoryMenuForcedCompact = false;
   }
 
-  const shouldCompact =
-    isMobileCategoryLayout && (state.mobileCategoryMenuForcedCompact || window.scrollY > catalog.offsetTop + 520);
+  const shouldCompact = isMobileCategoryLayout && state.mobileCategoryMenuForcedCompact;
 
   categoryMenu.classList.toggle("is-compact", shouldCompact);
   document.body.classList.toggle("mobile-category-menu-compact", shouldCompact);
 }
 
+function shouldLimitInitialMobileCatalog() {
+  return (
+    window.matchMedia("(max-width: 620px)").matches &&
+    state.mode === "website" &&
+    state.filterId === "all" &&
+    !state.mobileCategoryMenuForcedCompact &&
+    !state.query.trim()
+  );
+}
+
 function renderCatalog() {
   const filtered = filteredProducts();
-  const items = state.mode === "mini" ? filtered.slice(0, 36) : filtered;
+  const limitInitialMobileCatalog = shouldLimitInitialMobileCatalog();
+  const items =
+    state.mode === "mini"
+      ? filtered.slice(0, 36)
+      : limitInitialMobileCatalog
+        ? filtered.slice(0, initialMobileCatalogLimit)
+        : filtered;
   const filter = currentFilter();
   document.querySelector("#categoryTitle").textContent = filter.label;
   document.querySelector("#catalogCount").textContent =
-    state.mode === "mini" ? `${items.length} previewed / ${filtered.length} total` : `${items.length} shown`;
+    state.mode === "mini" || limitInitialMobileCatalog
+      ? `${items.length} previewed / ${filtered.length} total`
+      : `${items.length} shown`;
 
   catalogView.innerHTML = items
     .map(

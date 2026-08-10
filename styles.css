@@ -1952,16 +1952,20 @@ dd {
     border-radius: 12px;
     box-shadow: 0 16px 34px rgba(24, 24, 24, 0.14);
     max-height: none;
-    overflow: hidden;
+    overflow: visible;
     padding: 14px 12px 12px;
-    position: sticky;
-    top: 90px;
+    position: relative;
+    top: auto;
     z-index: 10;
   }
 
   .category-menu.is-compact {
     border-radius: 10px;
+    overflow: hidden;
     padding: 10px 10px 8px;
+    position: sticky;
+    top: 90px;
+    z-index: 20;
   }
 
   #catalog-menu,
