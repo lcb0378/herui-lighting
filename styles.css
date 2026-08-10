@@ -1170,6 +1170,10 @@ dd {
   display: none;
 }
 
+.mobile-category-landing {
+  display: none;
+}
+
 .footer-contact a {
   align-items: center;
   background: white;
@@ -2008,9 +2012,7 @@ dd {
   }
 
   #categoryPanel {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: block;
     overflow: visible;
     padding: 0;
   }
@@ -2029,12 +2031,109 @@ dd {
     display: none;
   }
 
-  .menu-group {
-    display: contents;
+  .mobile-category-landing {
+    display: block;
   }
 
-  .category-menu:not(.is-compact) .menu-group:nth-child(n + 3) {
+  .category-menu:not(.is-compact) #categoryPanel > .menu-group {
     display: none;
+  }
+
+  .mobile-category-chips {
+    display: flex;
+    gap: 10px;
+    margin: 0 -2px 14px;
+    overflow-x: auto;
+    padding: 0 2px 2px;
+    scrollbar-width: none;
+  }
+
+  .mobile-category-chips::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-category-chips button {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--text);
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-size: 15px;
+    font-weight: 800;
+    min-height: 44px;
+    padding: 10px 16px;
+  }
+
+  .mobile-category-chips button.active {
+    background: var(--green);
+    border-color: var(--green);
+    color: white;
+  }
+
+  .mobile-category-cards {
+    display: grid;
+    gap: 12px;
+  }
+
+  .mobile-category-card {
+    align-items: center;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    color: var(--text);
+    cursor: pointer;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 96px minmax(0, 1fr);
+    min-height: 112px;
+    padding: 16px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .mobile-category-card.active {
+    border-color: rgba(36, 82, 74, 0.55);
+    box-shadow: 0 12px 28px rgba(36, 82, 74, 0.16);
+  }
+
+  .mobile-category-image {
+    align-items: center;
+    background: #f6f3ec;
+    border-radius: 8px;
+    display: flex;
+    height: 78px;
+    justify-content: center;
+    overflow: hidden;
+    width: 96px;
+  }
+
+  .mobile-category-image img {
+    height: 100%;
+    object-fit: contain;
+    padding: 4px;
+    width: 100%;
+  }
+
+  .mobile-category-copy {
+    display: grid;
+    gap: 5px;
+    min-width: 0;
+  }
+
+  .mobile-category-copy strong {
+    font-size: 22px;
+    line-height: 1.05;
+  }
+
+  .mobile-category-copy small {
+    color: var(--terra);
+    font-size: 15px;
+    font-weight: 900;
+  }
+
+  .menu-group {
+    display: contents;
   }
 
   .menu-group h4 {
@@ -2305,8 +2404,8 @@ dd {
     gap: 4px;
     padding: 5px 4px;
     position: fixed;
-    right: env(safe-area-inset-right);
-    top: 73%;
+    left: calc(env(safe-area-inset-left) - 10px);
+    top: 52%;
     transform: translateY(-50%);
     opacity: 0;
     pointer-events: none;

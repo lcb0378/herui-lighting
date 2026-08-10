@@ -34,6 +34,7 @@ const filterGroups = [
       { id: "fan", label: "Fan Lights", match: categoryIs("Fan Light") },
       { id: "stair", label: "Stair / Lobby Lights", match: categoryIs("Stair / Lobby Light") },
       { id: "dining", label: "Dining Lights", match: categoryIs("Dining Light") },
+      { id: "outdoor", label: "Outdoor Wall Lights", match: categoryIs("Outdoor Wall Light") },
     ],
   },
   {
@@ -87,6 +88,20 @@ const drawerCopyCart = document.querySelector("#drawerCopyCart");
 const drawerDownloadCart = document.querySelector("#drawerDownloadCart");
 const quoteFields = document.querySelectorAll("[data-quote-field]");
 const mobileCartBadge = document.querySelector("#mobileCartBadge");
+const mobileVisualCategoryIds = [
+  "hot-picks",
+  "chandelier",
+  "wall",
+  "ceiling",
+  "floor",
+  "pendant",
+  "table",
+  "dining",
+  "fan",
+  "stair",
+  "outdoor",
+];
+const mobileQuickCategoryIds = ["chandelier", "wall", "ceiling", "floor", "pendant"];
 
 searchInput.addEventListener("input", (event) => {
   state.query = event.target.value;
@@ -629,8 +644,9 @@ function renderCategoryMenu() {
       `,
     )
     .join("");
+  const mobileCategoryLandingHtml = renderMobileCategoryLanding();
 
-  categoryPanel.innerHTML = menuHtml;
+  categoryPanel.innerHTML = `${menuHtml}${mobileCategoryLandingHtml}`;
   if (mobileCategoryPanel) mobileCategoryPanel.innerHTML = menuHtml;
 
   document.querySelectorAll("[data-filter]").forEach((button) => {
@@ -638,6 +654,69 @@ function renderCategoryMenu() {
   });
 
   updateMobileCategoryMenu();
+}
+
+function renderMobileCategoryLanding() {
+  const visualItems = mobileVisualCategoryIds.map(filterById).filter(Boolean).filter((item) => countFor(item) > 0);
+  const quickItems = mobileQuickCategoryIds.map(filterById).filter(Boolean).filter((item) => countFor(item) > 0);
+
+  return `
+    <div class="mobile-category-landing" aria-label="Mobile visual category menu">
+      <div class="mobile-category-chips">
+        ${quickItems
+          .map(
+            (item) => `
+              <button class="${state.filterId === item.id ? "active" : ""}" data-filter="${item.id}">
+                ${mobileCategoryShortLabel(item.label)}
+              </button>
+            `,
+          )
+          .join("")}
+      </div>
+      <div class="mobile-category-cards">
+        ${visualItems
+          .map((item) => {
+            const product = representativeProduct(item);
+            return `
+              <button class="mobile-category-card ${state.filterId === item.id ? "active" : ""}" data-filter="${item.id}">
+                <span class="mobile-category-image">
+                  ${product ? `<img src="${product.image}" alt="">` : ""}
+                </span>
+                <span class="mobile-category-copy">
+                  <strong>${mobileCategoryDisplayLabel(item.label)}</strong>
+                  <small>${countFor(item)} products</small>
+                </span>
+              </button>
+            `;
+          })
+          .join("")}
+      </div>
+    </div>
+  `;
+}
+
+function filterById(id) {
+  return filterGroups.flatMap((group) => group.items).find((item) => item.id === id);
+}
+
+function representativeProduct(item) {
+  return window.PRODUCTS.find((product) => item.match(product));
+}
+
+function mobileCategoryDisplayLabel(label) {
+  return label.replace(/\s*🔥/g, "").trim();
+}
+
+function mobileCategoryShortLabel(label) {
+  const display = mobileCategoryDisplayLabel(label);
+  const shortLabels = {
+    "Chandeliers": "Chandelier",
+    "Wall Sconces": "Sconce",
+    "Ceiling Lights": "Ceiling",
+    "Floor Lamps": "Floor Lamp",
+    "Pendant / Small Pendant": "Pendant",
+  };
+  return shortLabels[display] || display;
 }
 
 function selectCategoryFilter(filterId) {
