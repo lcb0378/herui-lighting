@@ -88,8 +88,7 @@ const drawerCopyCart = document.querySelector("#drawerCopyCart");
 const drawerDownloadCart = document.querySelector("#drawerDownloadCart");
 const quoteFields = document.querySelectorAll("[data-quote-field]");
 const mobileCartBadge = document.querySelector("#mobileCartBadge");
-const mobileVisualCategoryIds = [
-  "hot-picks",
+const mobileProductTypeCategoryIds = [
   "chandelier",
   "wall",
   "ceiling",
@@ -101,6 +100,7 @@ const mobileVisualCategoryIds = [
   "stair",
   "outdoor",
 ];
+const mobileVisualCategoryIds = ["hot-picks", ...mobileProductTypeCategoryIds];
 const mobileQuickCategoryIds = mobileVisualCategoryIds;
 
 searchInput.addEventListener("input", (event) => {
