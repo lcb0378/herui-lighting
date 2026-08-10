@@ -101,7 +101,7 @@ const mobileProductTypeCategoryIds = [
   "outdoor",
 ];
 const mobileVisualCategoryIds = ["hot-picks", "all", ...mobileProductTypeCategoryIds];
-const mobileQuickCategoryIds = mobileVisualCategoryIds;
+const mobileQuickCategoryIds = ["home", ...mobileVisualCategoryIds];
 
 searchInput.addEventListener("input", (event) => {
   state.query = event.target.value;
@@ -652,13 +652,20 @@ function renderCategoryMenu() {
   document.querySelectorAll("[data-filter]").forEach((button) => {
     button.addEventListener("click", () => selectCategoryFilter(button.dataset.filter));
   });
+  document.querySelectorAll("[data-mobile-home]").forEach((button) => {
+    button.addEventListener("click", returnToMobileDirectoryHome);
+  });
 
   updateMobileCategoryMenu();
 }
 
 function renderMobileCategoryLanding() {
   const visualItems = mobileVisualCategoryIds.map(filterById).filter(Boolean).filter((item) => countFor(item) > 0);
-  const quickItems = mobileQuickCategoryIds.map(filterById).filter(Boolean).filter((item) => countFor(item) > 0);
+  const quickItems = mobileQuickCategoryIds
+    .map((id) => (id === "home" ? { id: "home", label: "Home" } : filterById(id)))
+    .filter(Boolean)
+    .filter((item) => item.id === "home" || countFor(item) > 0);
+  const directoryLanding = isMobileDirectoryLanding();
 
   return `
     <div class="mobile-category-landing" aria-label="Mobile visual category menu">
@@ -666,8 +673,11 @@ function renderMobileCategoryLanding() {
         ${quickItems
           .map(
             (item) => `
-              <button class="${state.filterId === item.id ? "active" : ""}" data-filter="${item.id}">
-                ${mobileCategoryShortLabel(item.label)}
+              <button
+                class="${item.id === "home" ? (directoryLanding ? "active" : "") : state.filterId === item.id && !directoryLanding ? "active" : ""}"
+                ${item.id === "home" ? "data-mobile-home" : `data-filter="${item.id}"`}
+              >
+                ${item.id === "home" ? "Home" : mobileCategoryShortLabel(item.label)}
               </button>
             `,
           )
@@ -678,7 +688,7 @@ function renderMobileCategoryLanding() {
           .map((item) => {
             const product = representativeProduct(item);
             return `
-              <button class="mobile-category-card ${state.filterId === item.id ? "active" : ""}" data-filter="${item.id}">
+              <button class="mobile-category-card ${state.filterId === item.id && !directoryLanding ? "active" : ""}" data-filter="${item.id}">
                 <span class="mobile-category-image">
                   ${product ? `<img src="${product.image}" alt="">` : ""}
                 </span>
@@ -710,6 +720,7 @@ function mobileCategoryDisplayLabel(label) {
 function mobileCategoryShortLabel(label) {
   const display = mobileCategoryDisplayLabel(label);
   const shortLabels = {
+    "All Products": "All Products",
     "Chandeliers": "Chandelier",
     "Wall Sconces": "Sconce",
     "Ceiling Lights": "Ceiling",
@@ -719,8 +730,18 @@ function mobileCategoryShortLabel(label) {
   return shortLabels[display] || display;
 }
 
+function returnToMobileDirectoryHome() {
+  state.filterId = "all";
+  state.query = "";
+  state.mobileCategoryMenuForcedCompact = false;
+  if (searchInput) searchInput.value = "";
+  closeMobileCategoryDrawer();
+  render();
+  requestAnimationFrame(() => document.querySelector("#catalog").scrollIntoView({ block: "start" }));
+}
+
 function selectCategoryFilter(filterId) {
-  const isMobileCategoryLayout = window.matchMedia("(max-width: 620px)").matches;
+  const isMobileCategoryLayout = isMobileCatalogLayout();
   state.filterId = filterId;
   state.mobileCategoryMenuForcedCompact = isMobileCategoryLayout;
   closeMobileCategoryDrawer();

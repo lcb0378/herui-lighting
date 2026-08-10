@@ -2594,9 +2594,7 @@ dd {
     color: rgba(255, 255, 255, 0.78);
   }
 
-  .mobile-menu-shortcut,
-  .mobile-jump-nav a,
-  .mobile-cart-shortcut {
+  .mobile-jump-nav a {
     align-items: center;
     background: white;
     border: 1px solid var(--line);
@@ -2610,54 +2608,6 @@ dd {
     justify-content: center;
     line-height: 1;
     width: 36px;
-  }
-
-  .mobile-menu-shortcut {
-    background: var(--green);
-    color: white;
-    font-size: 24px;
-  }
-
-  .mobile-cart-shortcut {
-    background: var(--text);
-    color: white;
-    position: relative;
-  }
-
-  .mobile-shortcut-cart-icon {
-    height: 16px;
-    width: 20px;
-  }
-
-  .mobile-shortcut-cart-icon::before {
-    height: 7px;
-    left: 3px;
-    top: -7px;
-    width: 10px;
-  }
-
-  .mobile-shortcut-cart-icon span::before,
-  .mobile-shortcut-cart-icon span::after {
-    bottom: -5px;
-    height: 4px;
-    width: 4px;
-  }
-
-  #mobileCartBadge {
-    align-items: center;
-    background: var(--gold);
-    border: 2px solid var(--bg);
-    border-radius: 999px;
-    color: white;
-    display: inline-flex;
-    font-size: 10px;
-    height: 20px;
-    justify-content: center;
-    min-width: 20px;
-    padding: 0 5px;
-    position: absolute;
-    right: -4px;
-    top: -7px;
   }
 
   .quote-notes {
