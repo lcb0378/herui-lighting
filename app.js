@@ -66,7 +66,9 @@ const modeButtons = document.querySelectorAll(".mode-switch button");
 const addSelected = document.querySelector("#addSelected");
 const modal = document.querySelector("#productModal");
 const categoryPanel = document.querySelector("#categoryPanel");
+const mobileCategoryPanel = document.querySelector("#mobileCategoryPanel");
 const categoryMenu = document.querySelector("#catalog-menu");
+const mobileCategoryDrawer = document.querySelector("#mobileCategoryDrawer");
 const submitCart = document.querySelector("#submitCart");
 const drawerSubmitCart = document.querySelector("#drawerSubmitCart");
 const cartToggle = document.querySelector("#cartToggle");
@@ -104,6 +106,8 @@ modeButtons.forEach((button) => {
 document.querySelectorAll("[data-close-modal]").forEach((node) => node.addEventListener("click", closeModal));
 document.querySelectorAll("[data-close-cart]").forEach((node) => node.addEventListener("click", closeCartDrawer));
 document.querySelectorAll("[data-open-cart]").forEach((node) => node.addEventListener("click", openCartDrawer));
+document.querySelectorAll("[data-open-mobile-menu]").forEach((node) => node.addEventListener("click", openMobileCategoryDrawer));
+document.querySelectorAll("[data-close-mobile-menu]").forEach((node) => node.addEventListener("click", closeMobileCategoryDrawer));
 document.querySelectorAll("[data-open-contact]").forEach((node) => node.addEventListener("click", openContactModal));
 document.querySelectorAll("[data-close-contact]").forEach((node) => node.addEventListener("click", closeContactModal));
 
@@ -111,6 +115,7 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeModal();
     closeCartDrawer();
+    closeMobileCategoryDrawer();
     closeContactModal();
   }
 });
@@ -267,6 +272,18 @@ function closeCartDrawer() {
   cartDrawer.classList.remove("open");
   cartDrawer.setAttribute("aria-hidden", "true");
   cartToggle.setAttribute("aria-expanded", "false");
+}
+
+function openMobileCategoryDrawer() {
+  if (!mobileCategoryDrawer) return;
+  mobileCategoryDrawer.classList.add("open");
+  mobileCategoryDrawer.setAttribute("aria-hidden", "false");
+}
+
+function closeMobileCategoryDrawer() {
+  if (!mobileCategoryDrawer) return;
+  mobileCategoryDrawer.classList.remove("open");
+  mobileCategoryDrawer.setAttribute("aria-hidden", "true");
 }
 
 function openContactModal() {
@@ -592,7 +609,7 @@ function closeModal() {
 }
 
 function renderCategoryMenu() {
-  categoryPanel.innerHTML = filterGroups
+  const menuHtml = filterGroups
     .map(
       (group) => `
         <div class="menu-group">
@@ -613,24 +630,30 @@ function renderCategoryMenu() {
     )
     .join("");
 
-  categoryPanel.querySelectorAll("[data-filter]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const isMobileCategoryLayout = window.matchMedia("(max-width: 620px)").matches;
-      state.filterId = button.dataset.filter;
-      state.mobileCategoryMenuForcedCompact = isMobileCategoryLayout;
-      render();
+  categoryPanel.innerHTML = menuHtml;
+  if (mobileCategoryPanel) mobileCategoryPanel.innerHTML = menuHtml;
 
-      const target = isMobileCategoryLayout ? document.querySelector(".catalog-results") : document.querySelector("#catalog");
-      if (isMobileCategoryLayout) {
-        state.mobileCategoryMenuForcedCompact = true;
-        categoryMenu.classList.add("is-compact");
-        document.body.classList.add("mobile-category-menu-compact");
-      }
-      requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
-    });
+  document.querySelectorAll("[data-filter]").forEach((button) => {
+    button.addEventListener("click", () => selectCategoryFilter(button.dataset.filter));
   });
 
   updateMobileCategoryMenu();
+}
+
+function selectCategoryFilter(filterId) {
+  const isMobileCategoryLayout = window.matchMedia("(max-width: 620px)").matches;
+  state.filterId = filterId;
+  state.mobileCategoryMenuForcedCompact = isMobileCategoryLayout;
+  closeMobileCategoryDrawer();
+  render();
+
+  const target = isMobileCategoryLayout ? document.querySelector(".catalog-results") : document.querySelector("#catalog");
+  if (isMobileCategoryLayout) {
+    state.mobileCategoryMenuForcedCompact = true;
+    categoryMenu.classList.add("is-compact");
+    document.body.classList.add("mobile-category-menu-compact");
+  }
+  requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
 }
 
 function menuLabelHtml(label) {

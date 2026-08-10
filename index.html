@@ -86,7 +86,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="./styles.css?v=20260810-mobile-category-jump" />
+    <link rel="stylesheet" href="./styles.css?v=20260810-mobile-category-drawer" />
   </head>
   <body>
     <header class="topbar">
@@ -300,9 +300,6 @@
       <a href="#top" aria-label="Back to top" title="Back to top">
         <span aria-hidden="true">↑</span>
       </a>
-      <a href="#catalog-menu" aria-label="Back to catalog menu" title="Catalog menu">
-        <span aria-hidden="true">≡</span>
-      </a>
       <button class="mobile-cart-shortcut" type="button" data-open-cart aria-label="Open cart" title="Open cart">
         <span class="cart-icon mobile-shortcut-cart-icon" aria-hidden="true"><span></span></span>
         <strong id="mobileCartBadge">0</strong>
@@ -310,6 +307,24 @@
       <a href="#page-bottom" aria-label="Jump to bottom" title="Jump to bottom">
         <span aria-hidden="true">↓</span>
       </a>
+    </div>
+
+    <button class="mobile-menu-float" type="button" data-open-mobile-menu aria-label="Open catalog menu" title="Catalog menu">
+      <span aria-hidden="true">≡</span>
+    </button>
+
+    <div class="mobile-category-drawer" id="mobileCategoryDrawer" aria-hidden="true">
+      <div class="mobile-category-backdrop" data-close-mobile-menu></div>
+      <aside class="mobile-category-panel" aria-label="Mobile catalog menu">
+        <div class="mobile-category-head">
+          <div>
+            <strong>Catalog Menu</strong>
+            <span>Browse by category</span>
+          </div>
+          <button type="button" data-close-mobile-menu aria-label="Close catalog menu">×</button>
+        </div>
+        <div id="mobileCategoryPanel"></div>
+      </aside>
     </div>
 
     <div class="modal" id="productModal" aria-hidden="true">
@@ -411,6 +426,6 @@
 
     <script src="./inquiry-config.js?v=20260804-inquiry-receiver-ready"></script>
     <script src="./data.js?v=20260804-hot-pick-fire-emoji"></script>
-    <script src="./app.js?v=20260810-mobile-category-jump"></script>
+    <script src="./app.js?v=20260810-mobile-category-drawer"></script>
   </body>
 </html>

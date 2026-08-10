@@ -1166,6 +1166,11 @@ dd {
   display: none;
 }
 
+.mobile-menu-float,
+.mobile-category-drawer {
+  display: none;
+}
+
 .footer-contact a {
   align-items: center;
   background: white;
@@ -1964,6 +1969,7 @@ dd {
 
   .category-menu.is-compact {
     border-radius: 10px;
+    display: none;
     padding: 10px;
   }
 
@@ -2311,6 +2317,195 @@ dd {
   body.mobile-category-menu-compact .mobile-jump-nav {
     opacity: 1;
     pointer-events: auto;
+  }
+
+  .mobile-menu-float {
+    align-items: center;
+    background: var(--green);
+    border: 1px solid rgba(255, 255, 255, 0.66);
+    border-radius: 50%;
+    box-shadow: 0 14px 34px rgba(24, 24, 24, 0.18);
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 28px;
+    font-weight: 900;
+    height: 46px;
+    justify-content: center;
+    left: env(safe-area-inset-left);
+    line-height: 1;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 62%;
+    transform: translateY(-50%);
+    width: 46px;
+    z-index: 30;
+  }
+
+  body.mobile-category-menu-compact .mobile-menu-float {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mobile-category-drawer {
+    display: block;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    transition: opacity 180ms ease;
+    visibility: hidden;
+    z-index: 70;
+  }
+
+  .mobile-category-drawer.open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .mobile-category-backdrop {
+    background: rgba(24, 24, 24, 0.28);
+    inset: 0;
+    position: absolute;
+  }
+
+  .mobile-category-panel {
+    background: #fbfaf6;
+    border-right: 2px solid rgba(195, 137, 56, 0.48);
+    box-shadow: 18px 0 46px rgba(24, 24, 24, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    left: 0;
+    max-width: 320px;
+    overflow: hidden;
+    padding: max(18px, env(safe-area-inset-top)) 14px max(18px, env(safe-area-inset-bottom));
+    position: absolute;
+    top: 0;
+    transform: translateX(-102%);
+    transition: transform 220ms ease;
+    width: min(74vw, 320px);
+  }
+
+  .mobile-category-drawer.open .mobile-category-panel {
+    transform: translateX(0);
+  }
+
+  .mobile-category-head {
+    align-items: flex-start;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding-bottom: 12px;
+  }
+
+  .mobile-category-head strong,
+  .mobile-category-head span {
+    display: block;
+  }
+
+  .mobile-category-head strong {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  .mobile-category-head span {
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 800;
+    margin-top: 4px;
+  }
+
+  .mobile-category-head button {
+    align-items: center;
+    background: var(--text);
+    border: 0;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 0 0 auto;
+    font-size: 24px;
+    height: 38px;
+    justify-content: center;
+    line-height: 1;
+    width: 38px;
+  }
+
+  #mobileCategoryPanel {
+    display: block;
+    flex: 1 1 auto;
+    margin-top: 12px;
+    overflow-y: auto;
+    padding-right: 3px;
+  }
+
+  #mobileCategoryPanel .menu-group {
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  #mobileCategoryPanel .menu-group h4 {
+    color: var(--green);
+    display: block;
+    font-size: 11px;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+  }
+
+  #mobileCategoryPanel .menu-item {
+    align-items: center;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    min-height: 48px;
+    padding: 10px 10px;
+    width: 100%;
+  }
+
+  #mobileCategoryPanel .menu-item span {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.16;
+    min-width: 0;
+  }
+
+  #mobileCategoryPanel .menu-fire-row {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0;
+    margin-left: 3px;
+    margin-top: 0;
+  }
+
+  #mobileCategoryPanel .menu-item small {
+    background: #eee9de;
+    border-radius: 999px;
+    color: var(--muted);
+    display: inline-flex;
+    flex: 0 0 auto;
+    font-size: 11px;
+    justify-content: center;
+    margin-left: 8px;
+    min-width: 28px;
+    padding: 3px 7px;
+    position: static;
+  }
+
+  #mobileCategoryPanel .menu-item.active {
+    background: var(--green);
+    color: white;
+  }
+
+  #mobileCategoryPanel .menu-item.active small {
+    background: rgba(255, 255, 255, 0.16);
+    color: rgba(255, 255, 255, 0.78);
   }
 
   .mobile-jump-nav a,
