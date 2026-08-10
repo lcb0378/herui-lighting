@@ -65,6 +65,7 @@ const modeButtons = document.querySelectorAll(".mode-switch button");
 const addSelected = document.querySelector("#addSelected");
 const modal = document.querySelector("#productModal");
 const categoryPanel = document.querySelector("#categoryPanel");
+const categoryMenu = document.querySelector("#catalog-menu");
 const submitCart = document.querySelector("#submitCart");
 const drawerSubmitCart = document.querySelector("#drawerSubmitCart");
 const cartToggle = document.querySelector("#cartToggle");
@@ -132,6 +133,9 @@ quoteFields.forEach((field) => {
     renderSubmitStatus(document.querySelector("#drawerSubmitStatus"));
   });
 });
+
+window.addEventListener("scroll", updateMobileCategoryMenu, { passive: true });
+window.addEventListener("resize", updateMobileCategoryMenu);
 
 function hasAny(...terms) {
   return (product) => {
@@ -597,7 +601,7 @@ function renderCategoryMenu() {
             .map(
               (item) => `
                 <button class="menu-item ${state.filterId === item.id ? "active" : ""}" data-filter="${item.id}">
-                  <span>${item.label}</span>
+                  ${menuLabelHtml(item.label)}
                   <small>${countFor(item)}</small>
                 </button>
               `,
@@ -615,6 +619,27 @@ function renderCategoryMenu() {
       document.querySelector("#catalog").scrollIntoView({ block: "start" });
     });
   });
+
+  updateMobileCategoryMenu();
+}
+
+function menuLabelHtml(label) {
+  if (!label.includes("🔥")) return `<span>${label}</span>`;
+
+  const fire = label.match(/🔥/g)?.join("") || "";
+  const text = label.replace(/\s*🔥/g, "").trim();
+  return `<span>${text}<span class="menu-fire-row">${fire}</span></span>`;
+}
+
+function updateMobileCategoryMenu() {
+  if (!categoryMenu) return;
+
+  const catalog = document.querySelector("#catalog");
+  const shouldCompact =
+    window.matchMedia("(max-width: 620px)").matches && window.scrollY > catalog.offsetTop + 520;
+
+  categoryMenu.classList.toggle("is-compact", shouldCompact);
+  document.body.classList.toggle("mobile-category-menu-compact", shouldCompact);
 }
 
 function renderCatalog() {
