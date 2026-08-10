@@ -100,9 +100,8 @@ const mobileProductTypeCategoryIds = [
   "stair",
   "outdoor",
 ];
-const mobileVisualCategoryIds = ["hot-picks", ...mobileProductTypeCategoryIds];
+const mobileVisualCategoryIds = ["hot-picks", "all", ...mobileProductTypeCategoryIds];
 const mobileQuickCategoryIds = mobileVisualCategoryIds;
-const initialMobileCatalogLimit = 48;
 
 searchInput.addEventListener("input", (event) => {
   state.query = event.target.value;
@@ -747,7 +746,7 @@ function menuLabelHtml(label) {
 function updateMobileCategoryMenu() {
   if (!categoryMenu) return;
 
-  const isMobileCategoryLayout = window.matchMedia("(max-width: 620px)").matches;
+  const isMobileCategoryLayout = isMobileCatalogLayout();
   if (!isMobileCategoryLayout) {
     state.mobileCategoryMenuForcedCompact = false;
   }
@@ -756,11 +755,16 @@ function updateMobileCategoryMenu() {
 
   categoryMenu.classList.toggle("is-compact", shouldCompact);
   document.body.classList.toggle("mobile-category-menu-compact", shouldCompact);
+  document.body.classList.toggle("mobile-directory-only", isMobileDirectoryLanding());
 }
 
-function shouldLimitInitialMobileCatalog() {
+function isMobileCatalogLayout() {
+  return window.matchMedia("(max-width: 620px)").matches;
+}
+
+function isMobileDirectoryLanding() {
   return (
-    window.matchMedia("(max-width: 620px)").matches &&
+    isMobileCatalogLayout() &&
     state.mode === "website" &&
     state.filterId === "all" &&
     !state.mobileCategoryMenuForcedCompact &&
@@ -770,19 +774,13 @@ function shouldLimitInitialMobileCatalog() {
 
 function renderCatalog() {
   const filtered = filteredProducts();
-  const limitInitialMobileCatalog = shouldLimitInitialMobileCatalog();
-  const items =
-    state.mode === "mini"
-      ? filtered.slice(0, 36)
-      : limitInitialMobileCatalog
-        ? filtered.slice(0, initialMobileCatalogLimit)
-        : filtered;
+  const directoryLanding = isMobileDirectoryLanding();
+  const items = directoryLanding ? [] : state.mode === "mini" ? filtered.slice(0, 36) : filtered;
   const filter = currentFilter();
   document.querySelector("#categoryTitle").textContent = filter.label;
   document.querySelector("#catalogCount").textContent =
-    state.mode === "mini" || limitInitialMobileCatalog
-      ? `${items.length} previewed / ${filtered.length} total`
-      : `${items.length} shown`;
+    directoryLanding ? "" : state.mode === "mini" ? `${items.length} previewed / ${filtered.length} total` : `${items.length} shown`;
+  document.body.classList.toggle("mobile-directory-only", directoryLanding);
 
   catalogView.innerHTML = items
     .map(
@@ -820,6 +818,11 @@ function renderCatalog() {
 }
 
 function renderMini() {
+  if (isMobileDirectoryLanding()) {
+    miniList.innerHTML = "";
+    return;
+  }
+
   const items = filteredProducts().slice(0, 12);
   miniList.innerHTML = items
     .map(

@@ -1946,6 +1946,17 @@ dd {
     scroll-margin-top: 210px;
   }
 
+  body.mobile-directory-only .catalog-results {
+    display: none;
+  }
+
+  body.mobile-directory-only .mini-section,
+  body.mobile-directory-only .inquiry-section,
+  body.mobile-directory-only .trust-section,
+  body.mobile-directory-only .site-footer {
+    display: none;
+  }
+
   .category-menu {
     background: #fbfaf6;
     border: 2px solid rgba(195, 137, 56, 0.42);
