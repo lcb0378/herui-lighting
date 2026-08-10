@@ -1916,19 +1916,7 @@ dd {
   }
 
   .catalog-section .section-head {
-    background: var(--bg);
-    border-bottom: 1px solid var(--line);
-    margin: 0 -16px 12px;
-    padding: 0 16px 12px;
-  }
-
-  .catalog-section .section-head .eyebrow {
-    margin-bottom: 5px;
-  }
-
-  .catalog-section .section-head h2 {
-    font-size: 28px;
-    line-height: 1;
+    display: none;
   }
 
   .mode-switch {
@@ -1941,7 +1929,8 @@ dd {
   }
 
   .directory-search {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
+    margin-top: 14px;
   }
 
   .directory-search input {
@@ -1972,8 +1961,7 @@ dd {
 
   .category-menu.is-compact {
     border-radius: 10px;
-    display: none;
-    padding: 10px;
+    padding: 10px 10px 8px;
   }
 
   #catalog-menu,
@@ -2018,13 +2006,9 @@ dd {
   }
 
   .category-menu.is-compact #categoryPanel {
-    display: flex;
-    gap: 8px;
-    margin-left: -2px;
-    margin-right: -2px;
-    overflow-x: auto;
-    padding: 0 2px 2px;
-    scrollbar-width: none;
+    display: block;
+    overflow: hidden;
+    padding: 0;
   }
 
   .category-menu.is-compact #categoryPanel::-webkit-scrollbar {
@@ -2039,6 +2023,15 @@ dd {
     display: none;
   }
 
+  .category-menu.is-compact .menu-heading {
+    display: none;
+  }
+
+  .category-menu.is-compact #categoryPanel > .menu-group,
+  .category-menu.is-compact .mobile-category-cards {
+    display: none;
+  }
+
   .mobile-category-chips {
     display: flex;
     gap: 10px;
@@ -2046,6 +2039,10 @@ dd {
     overflow-x: auto;
     padding: 0 2px 2px;
     scrollbar-width: none;
+  }
+
+  .category-menu.is-compact .mobile-category-chips {
+    margin-bottom: 0;
   }
 
   .mobile-category-chips::-webkit-scrollbar {
@@ -2063,6 +2060,11 @@ dd {
     font-weight: 800;
     min-height: 44px;
     padding: 10px 16px;
+  }
+
+  .category-menu.is-compact .mobile-category-chips button {
+    min-height: 40px;
+    padding: 9px 14px;
   }
 
   .mobile-category-chips button.active {

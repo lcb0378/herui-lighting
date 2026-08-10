@@ -86,7 +86,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="./styles.css?v=20260810-mobile-visual-categories" />
+    <link rel="stylesheet" href="./styles.css?v=20260810-mobile-persistent-category-menu" />
   </head>
   <body>
     <header class="topbar">
@@ -151,13 +151,6 @@
           </div>
         </div>
 
-        <div class="filters directory-search">
-          <label>
-            <span>Search</span>
-            <input id="search" placeholder="Try 9031, wall sconce, hotel..." />
-          </label>
-        </div>
-
         <div class="directory-layout">
           <aside class="category-menu" id="catalog-menu" aria-label="Product category menu">
             <div class="menu-heading">
@@ -168,6 +161,12 @@
           </aside>
 
           <section class="catalog-results">
+            <div class="filters directory-search">
+              <label>
+                <span>Search</span>
+                <input id="search" placeholder="Try 9031, wall sconce, hotel..." />
+              </label>
+            </div>
             <div class="result-head">
               <div>
                 <p class="eyebrow">Current selection</p>
@@ -425,6 +424,6 @@
 
     <script src="./inquiry-config.js?v=20260804-inquiry-receiver-ready"></script>
     <script src="./data.js?v=20260804-hot-pick-fire-emoji"></script>
-    <script src="./app.js?v=20260810-mobile-visual-categories"></script>
+    <script src="./app.js?v=20260810-mobile-persistent-category-menu"></script>
   </body>
 </html>

@@ -101,7 +101,7 @@ const mobileVisualCategoryIds = [
   "stair",
   "outdoor",
 ];
-const mobileQuickCategoryIds = ["chandelier", "wall", "ceiling", "floor", "pendant"];
+const mobileQuickCategoryIds = mobileVisualCategoryIds;
 
 searchInput.addEventListener("input", (event) => {
   state.query = event.target.value;
