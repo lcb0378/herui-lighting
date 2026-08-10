@@ -11,6 +11,7 @@ const state = {
   },
   lastSubmission: null,
   cartOpen: false,
+  mobileCategoryMenuForcedCompact: false,
 };
 
 const filterGroups = [
@@ -614,9 +615,18 @@ function renderCategoryMenu() {
 
   categoryPanel.querySelectorAll("[data-filter]").forEach((button) => {
     button.addEventListener("click", () => {
+      const isMobileCategoryLayout = window.matchMedia("(max-width: 620px)").matches;
       state.filterId = button.dataset.filter;
+      state.mobileCategoryMenuForcedCompact = isMobileCategoryLayout;
       render();
-      document.querySelector("#catalog").scrollIntoView({ block: "start" });
+
+      const target = isMobileCategoryLayout ? document.querySelector(".catalog-results") : document.querySelector("#catalog");
+      if (isMobileCategoryLayout) {
+        state.mobileCategoryMenuForcedCompact = true;
+        categoryMenu.classList.add("is-compact");
+        document.body.classList.add("mobile-category-menu-compact");
+      }
+      requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
     });
   });
 
@@ -635,8 +645,13 @@ function updateMobileCategoryMenu() {
   if (!categoryMenu) return;
 
   const catalog = document.querySelector("#catalog");
+  const isMobileCategoryLayout = window.matchMedia("(max-width: 620px)").matches;
+  if (!isMobileCategoryLayout) {
+    state.mobileCategoryMenuForcedCompact = false;
+  }
+
   const shouldCompact =
-    window.matchMedia("(max-width: 620px)").matches && window.scrollY > catalog.offsetTop + 520;
+    isMobileCategoryLayout && (state.mobileCategoryMenuForcedCompact || window.scrollY > catalog.offsetTop + 520);
 
   categoryMenu.classList.toggle("is-compact", shouldCompact);
   document.body.classList.toggle("mobile-category-menu-compact", shouldCompact);

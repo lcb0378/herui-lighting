@@ -1945,6 +1945,10 @@ dd {
     gap: 16px;
   }
 
+  .catalog-results {
+    scroll-margin-top: 210px;
+  }
+
   .category-menu {
     background: #fbfaf6;
     border: 2px solid rgba(195, 137, 56, 0.42);
