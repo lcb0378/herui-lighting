@@ -1840,6 +1840,10 @@ dd {
     width: 100%;
   }
 
+  .topbar .jump-link {
+    display: none;
+  }
+
   .contact-trigger,
   .cart-toggle {
     background: #f6f4ee;
