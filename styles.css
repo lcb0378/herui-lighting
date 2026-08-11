@@ -459,6 +459,10 @@ h1 {
   max-width: 760px;
 }
 
+.hero-line-break {
+  display: inline;
+}
+
 .hero-copy {
   margin: clamp(28px, 6vh, 70px) 0;
 }
@@ -1831,12 +1835,11 @@ dd {
   .topbar nav {
     align-items: stretch;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
     width: 100%;
   }
 
-  .jump-link,
   .contact-trigger,
   .cart-toggle {
     background: #f6f4ee;
@@ -1897,6 +1900,10 @@ dd {
     font-size: 14px;
     line-height: 1.42;
     max-width: 330px;
+  }
+
+  .hero-line-break {
+    display: none;
   }
 
   .hero-desktop-detail {
