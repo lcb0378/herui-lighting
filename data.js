@@ -1152,7 +1152,7 @@ window.PRODUCTS = [
     "material": "brass + imported ash wood + glass shade",
     "light": "E27 x 8",
     "finish": "natural brass",
-    "image": "./products/catalog-0068-9017-8light.jpg",
+    "image": "./products/catalog-0068-9017-8light-clean.jpg",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa living room, hotel lobby, showroom ceiling.",
     "description": "Statement chandelier for villa living rooms, hotel suites and project showrooms, suited to wholesale selections that need a strong decorative focal point."
