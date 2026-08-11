@@ -463,6 +463,23 @@ h1 {
   margin: clamp(28px, 6vh, 70px) 0;
 }
 
+.hero-desktop-detail {
+  border-left: 3px solid var(--gold);
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  margin: 22px 0 0;
+  max-width: 620px;
+  padding: 0 0 0 18px;
+}
+
+.hero-desktop-detail li {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(14px, 1.25vw, 17px);
+  font-weight: 800;
+  line-height: 1.35;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
@@ -1811,17 +1828,24 @@ dd {
     width: 5px;
   }
 
-  nav {
+  .topbar nav {
     align-items: stretch;
     display: grid;
-    grid-template-columns: 44px 1fr 58px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 8px;
+    width: 100%;
   }
 
   .jump-link,
   .contact-trigger,
   .cart-toggle {
-    min-height: 40px;
+    background: #f6f4ee;
+    border: 1px solid var(--line);
+    color: var(--green);
+    justify-content: center;
+    min-height: 42px;
+    min-width: 0;
+    padding: 0 8px;
     width: 100%;
   }
 
@@ -1830,13 +1854,11 @@ dd {
   }
 
   .cart-toggle {
-    min-width: 58px;
-    padding-left: 10px;
-    padding-right: 10px;
+    grid-template-columns: 24px auto;
   }
 
   .cart-toggle > span:last-of-type {
-    display: none;
+    display: inline;
   }
 
   .brand-logo {
@@ -1875,6 +1897,10 @@ dd {
     font-size: 14px;
     line-height: 1.42;
     max-width: 330px;
+  }
+
+  .hero-desktop-detail {
+    display: none;
   }
 
   .hero-copy {
