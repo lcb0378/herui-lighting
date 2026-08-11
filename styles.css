@@ -2286,30 +2286,30 @@ dd {
   }
 
   .catalog-grid {
-    gap: 12px;
+    gap: 10px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .product img {
-    aspect-ratio: 1 / 1;
-    padding: 8px;
+    aspect-ratio: 4 / 3;
+    padding: 6px;
   }
 
   .product-body {
-    gap: 9px;
-    padding: 10px;
+    gap: 7px;
+    padding: 8px;
   }
 
   .product-tags {
     align-items: flex-start;
     flex-direction: column;
-    gap: 4px;
+    gap: 3px;
     justify-content: flex-start;
-    min-height: 44px;
+    min-height: 32px;
   }
 
   .product-body p {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.25;
   }
 
@@ -2319,20 +2319,20 @@ dd {
   }
 
   .product h3 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.2;
-    min-height: 38px;
+    min-height: 34px;
     overflow-wrap: anywhere;
   }
 
   .open-detail {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .quote {
-    min-height: 42px;
-    padding-left: 8px;
-    padding-right: 8px;
+    font-size: 12px;
+    min-height: 36px;
+    padding: 9px 6px;
   }
 
   .modal,
@@ -2662,7 +2662,8 @@ dd {
 
 @media (max-width: 360px) {
   .catalog-grid {
-    grid-template-columns: 1fr;
+    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .product-tags {
