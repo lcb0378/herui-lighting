@@ -1764,6 +1764,10 @@ dd {
     grid-template-columns: 1fr;
   }
 
+  .mini-section .phone {
+    display: none;
+  }
+
   .trust-points {
     grid-template-columns: 1fr;
   }
