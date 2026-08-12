@@ -2703,7 +2703,7 @@ window.PRODUCTS = [
     "material": "iron + glass",
     "light": "E27 x 1",
     "finish": "natural brass + walnut wood color",
-    "image": "./products/catalog-0158-3330-1.jpg",
+    "image": "./products/catalog-0158-3330-1.jpg?v=20260812-clean-overlays",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel corridor, villa stair wall, bedroom bedside wall.",
     "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
@@ -2720,7 +2720,7 @@ window.PRODUCTS = [
     "material": "iron + glass",
     "light": "E27 x 1",
     "finish": "natural brass + walnut wood color",
-    "image": "./products/catalog-0159-3331-1.jpg",
+    "image": "./products/catalog-0159-3331-1.jpg?v=20260812-clean-overlays",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel corridor, villa stair wall, bedroom bedside wall.",
     "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
@@ -2737,7 +2737,7 @@ window.PRODUCTS = [
     "material": "iron + glass",
     "light": "E27 x 1",
     "finish": "natural brass + walnut wood color",
-    "image": "./products/catalog-0160-3332-1.jpg",
+    "image": "./products/catalog-0160-3332-1.jpg?v=20260812-clean-overlays",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel corridor, villa stair wall, bedroom bedside wall.",
     "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
@@ -2754,7 +2754,7 @@ window.PRODUCTS = [
     "material": "iron + glass",
     "light": "E27 x 1",
     "finish": "natural brass + walnut wood color",
-    "image": "./products/catalog-0161-3333-1.jpg",
+    "image": "./products/catalog-0161-3333-1.jpg?v=20260812-clean-overlays",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel corridor, villa stair wall, bedroom bedside wall.",
     "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
@@ -2771,7 +2771,7 @@ window.PRODUCTS = [
     "material": "iron + glass",
     "light": "E27 x 1",
     "finish": "natural brass + walnut wood color",
-    "image": "./products/catalog-0162-3338-1.jpg",
+    "image": "./products/catalog-0162-3338-1.jpg?v=20260812-clean-overlays",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Hotel corridor, villa stair wall, bedroom bedside wall.",
     "description": "Clean ceiling light for apartments, hotel rooms and residential projects, selected for repeatable project use and easy catalog matching."
@@ -8056,7 +8056,7 @@ window.PRODUCTS = [
     "material": "imitation marble + die-cast aluminum",
     "light": "E27 x 1",
     "finish": "sand black",
-    "image": "./products/catalog-0471-808small.jpg",
+    "image": "./products/catalog-0471-808small.jpg?v=20260812-clean-overlays",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa entrance, outdoor wall, hotel exterior corridor.",
     "description": "Outdoor wall light for villa entrances, exterior corridors and hotel facade areas, selected for exterior decorative and guidance lighting."
@@ -8073,7 +8073,7 @@ window.PRODUCTS = [
     "material": "imitation marble + die-cast aluminum",
     "light": "E27 x 1",
     "finish": "sand black",
-    "image": "./products/catalog-0472-808large.jpg",
+    "image": "./products/catalog-0472-808large.jpg?v=20260812-clean-overlays",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Villa entrance, outdoor wall, hotel exterior corridor.",
     "description": "Outdoor wall light for villa entrances, exterior corridors and hotel facade areas, selected for exterior decorative and guidance lighting."
@@ -10616,7 +10616,7 @@ window.PRODUCTS = [
     "market": "Wholesale decorative lighting buyers for Africa, Middle East and Asia projects",
     "size": "230 x 530",
     "material": "metal + glass",
-    "image": "./products/catalog-0636-table-lamp-3633-b-62.jpg",
+    "image": "./products/catalog-0636-table-lamp-3633-b-62.jpg?v=20260812-clean-overlays",
     "reason": "Added in the 1,000+catalog expansion from source Excel products with matched images and specifications.",
     "scene": "Hotel, villa, apartment, retail showroom and project lighting selection.",
     "description": "Table lamp for bedside, desk, console and hospitality use, suitable for room packages and soft decorative lighting schemes."
