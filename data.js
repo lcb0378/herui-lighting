@@ -5669,7 +5669,7 @@ window.PRODUCTS = [
     "material": "iron art metal + high-transparency acrylic + K9 crystal",
     "light": "108W / offline voice control + remote control",
     "finish": "dark coffee color",
-    "image": "./products/catalog-0332-8106-500crystal-fan-light.jpg",
+    "image": "./products/catalog-0332-8106-500crystal-fan-light.jpg?v=20260812-fan-overlays",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
     "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders.",
@@ -5931,7 +5931,7 @@ window.PRODUCTS = [
     "material": "iron + acrylic",
     "light": "dual-color LED full output：50W",
     "finish": "walnut wood + chrome",
-    "image": "./products/catalog-0347-3327-500fan-light.jpg",
+    "image": "./products/catalog-0347-3327-500fan-light.jpg?v=20260812-fan-overlays",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
     "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
@@ -5948,7 +5948,7 @@ window.PRODUCTS = [
     "material": "iron + acrylic",
     "light": "dual-color LED full output：50W / 6 step3 colorcolor changing remote control",
     "finish": "walnut wood + chrome",
-    "image": "./products/catalog-0348-3317-500fan-light.jpg",
+    "image": "./products/catalog-0348-3317-500fan-light.jpg?v=20260812-fan-overlays",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
     "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
@@ -6185,7 +6185,7 @@ window.PRODUCTS = [
     "material": "ABS",
     "light": "E27 x 5(bulb not included） / remote control6 speed",
     "finish": "matte black + walnut wood",
-    "image": "./products/catalog-0362-abs-2.jpg",
+    "image": "./products/catalog-0362-abs-2.jpg?v=20260812-fan-overlays",
     "reason": "Selected from 2026 best seller supplier catalogs for Africa, Middle East and Asia wholesale coverage.",
     "scene": "Bedroom, apartment living room, warm-market villa ceiling.",
     "description": "Fan light for warm-climate residential and hotel rooms, combining air circulation with decorative ceiling lighting for project orders."
