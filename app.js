@@ -35,6 +35,7 @@ const filterGroups = [
       { id: "stair", label: "Stair / Lobby Lights", match: categoryIs("Stair / Lobby Light") },
       { id: "dining", label: "Dining Lights", match: categoryIs("Dining Light") },
       { id: "outdoor", label: "Outdoor Wall Lights", match: categoryIs("Outdoor Wall Light") },
+      { id: "accessory", label: "Accessories", match: categoryIs("Accessory") },
     ],
   },
   {
@@ -99,6 +100,7 @@ const mobileProductTypeCategoryIds = [
   "fan",
   "stair",
   "outdoor",
+  "accessory",
 ];
 const mobileVisualCategoryIds = ["hot-picks", "all", ...mobileProductTypeCategoryIds];
 const mobileQuickCategoryIds = ["home", ...mobileVisualCategoryIds];
@@ -182,6 +184,7 @@ function productSearchText(product) {
     product.market,
     product.material,
     product.size,
+    product.variants,
     product.light,
     product.finish,
     product.description,
@@ -467,6 +470,7 @@ function buildQuoteSubmission() {
       material: product.material,
       light: product.light,
       finish: displayFinish(product),
+      variants: product.variants,
     })),
   };
 }
@@ -498,6 +502,7 @@ function quoteListText(submission = buildQuoteSubmission()) {
       `Light source: ${item.light || "To confirm"}`,
     );
     if (item.finish) lines.push(`Finish / Color: ${item.finish}`);
+    if (item.variants) lines.push(`Available variants: ${item.variants}`);
     lines.push(`Image: ${item.image}`);
   });
 
@@ -872,6 +877,7 @@ function renderModal() {
     ["Category", product.category],
     ["Model", product.model || product.code],
     ["Size", product.size],
+    ["Available variants", product.variants],
     ["Net weight", product.weight],
     ["Package size", product.packageSize],
     ["Material", product.material],
@@ -882,7 +888,7 @@ function renderModal() {
   ]
     .filter(([, value]) => value && value !== "To confirm from supplier")
     .map(([label, value]) => `
-      <div class="${label === "Description" ? "spec-wide" : ""}">
+      <div class="${["Available variants", "Description"].includes(label) ? "spec-wide" : ""}">
         <dt>${label}</dt>
         <dd>${value}</dd>
       </div>
