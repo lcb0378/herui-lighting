@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /docs/
 
-Sitemap: https://lcb0378.github.io/herui-lighting/sitemap.xml
+Sitemap: https://heruilighting.com/sitemap.xml

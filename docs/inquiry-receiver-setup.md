@@ -1,6 +1,6 @@
 # Herui Lighting Inquiry Receiver Setup
 
-This website is hosted on GitHub Pages, so the public site itself cannot run a private mail server or backend database. The catalog is now receiver-ready: quote cart submissions and Contact Us submissions can post complete JSON to a future receiver endpoint, while still falling back to email draft/copy/download when no endpoint is configured.
+This website is hosted on Cloudflare Pages from the connected GitHub repository. The public static site does not currently run a private mail server or inquiry database. The catalog is receiver-ready: quote cart submissions and Contact Us submissions can post complete JSON to a future receiver endpoint, while still falling back to email draft/copy/download when no endpoint is configured.
 
 ## Current Status
 
@@ -20,7 +20,7 @@ When the official receiving method is ready, update `inquiry-config.js`:
 window.HERUI_INQUIRY_CONFIG = {
   brand: "Herui Lighting",
   schemaVersion: "herui-inquiry-v1",
-  source: "github-pages-catalog",
+  source: "cloudflare-pages-catalog",
   receiverEmail: "official-receiving-email@example.com",
   fallbackEmail: "official-receiving-email@example.com",
   endpoint: "https://example.com/herui-inquiry-receiver"
@@ -43,11 +43,11 @@ Every request includes:
 {
   "schemaVersion": "herui-inquiry-v1",
   "brand": "Herui Lighting",
-  "source": "github-pages-catalog",
+  "source": "cloudflare-pages-catalog",
   "type": "quote-cart",
   "receiverEmail": "",
   "fallbackEmail": "sales@heruilighting.com",
-  "pageUrl": "https://lcb0378.github.io/herui-lighting/",
+  "pageUrl": "https://heruilighting.com/",
   "submittedAt": "2026-08-04T00:00:00.000Z",
   "messageText": "Human-readable inquiry text..."
 }
@@ -103,13 +103,13 @@ The future receiver should:
 - Forward `messageText` to the chosen receiving email.
 - Preserve the full JSON payload for audit or troubleshooting.
 - Include `inquiryId` in the email subject or first line.
-- Support CORS for `https://lcb0378.github.io` and the future official domain.
+- Support CORS for `https://heruilighting.com`, `https://www.heruilighting.com`, and the GitHub Pages fallback URL.
 - Return a `2xx` status only after the message is accepted.
 
 ## Testing Checklist
 
 1. Set a test `receiverEmail` and `endpoint` in `inquiry-config.js`.
-2. Open the GitHub Pages site with a fresh cache query string.
+2. Open the Cloudflare Pages site at `https://heruilighting.com/` with a fresh cache query string.
 3. Add at least one product to the cart.
 4. Fill buyer contact, destination, and project notes.
 5. Click `Submit quote list`.
