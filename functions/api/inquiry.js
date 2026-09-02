@@ -1,5 +1,3 @@
-const ACCOUNT_ID = "503a4931daf9c02a88b00ad8f5d7951d";
-const SENDER_EMAIL = "website@heruilighting.com";
 const MAX_REQUEST_BYTES = 128 * 1024;
 const MAX_MESSAGE_LENGTH = 100000;
 const ALLOWED_ORIGINS = new Set([
@@ -100,23 +98,18 @@ export async function onRequestPost({ request, env }) {
   const message = validatePayload(payload);
   if (!message) return jsonResponse({ ok: false, error: "Invalid inquiry." }, 400);
 
-  const apiToken = env.CLOUDFLARE_EMAIL_API_TOKEN;
-  const recipient = env.INQUIRY_RECIPIENT;
-  if (!apiToken || !recipient) {
+  if (!env.INQUIRY_MAILER) {
     return jsonResponse({ ok: false, error: "Inquiry receiver is not configured." }, 503);
   }
 
   let emailResponse;
   try {
-    emailResponse = await fetch(`https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/email/sending/send`, {
+    emailResponse = await env.INQUIRY_MAILER.fetch("https://herui-internal/send", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${apiToken}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        to: recipient,
-        from: SENDER_EMAIL,
         subject: message.subject,
         text: message.text,
       }),
@@ -125,14 +118,7 @@ export async function onRequestPost({ request, env }) {
     return jsonResponse({ ok: false, error: "Email service is temporarily unavailable." }, 502);
   }
 
-  let emailResult = null;
-  try {
-    emailResult = await emailResponse.json();
-  } catch {
-    // Keep the customer-facing response generic and never expose provider details.
-  }
-
-  if (!emailResponse.ok || emailResult?.success !== true) {
+  if (!emailResponse.ok) {
     return jsonResponse({ ok: false, error: "Email service did not accept the inquiry." }, 502);
   }
 
