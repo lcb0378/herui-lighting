@@ -12,12 +12,12 @@ This website is hosted on Cloudflare Pages from the connected GitHub repository.
 - Mail Worker source copy: `cloudflare-worker/inquiry-mailer.js`
 - Cloudflare Pages production service binding: `INQUIRY_MAILER` -> `herui-inquiry-mailer`
 - Mail Worker binding: `SEND_EMAIL`, restricted to the verified destination
-- Mail Worker secret: `INQUIRY_RECIPIENT`
+- Mail Worker private variable: `INQUIRY_RECIPIENT`
 - Frontend cache version for this setup: `20260902-automatic-inquiries`
 
 No product data, category data, or internal quote catalog pricing changed in this setup.
 
-The private destination address must never be committed to GitHub. Cloudflare stores it encrypted in the dedicated Worker. The Pages Function cannot choose or see a destination address; the Send Email binding is also restricted to the same verified inbox.
+The private destination address must never be committed to GitHub. Cloudflare stores it only in the dedicated Worker's configuration. The Pages Function cannot choose or see a destination address; the Send Email binding is also restricted to the same verified inbox.
 
 ## Public Configuration
 
