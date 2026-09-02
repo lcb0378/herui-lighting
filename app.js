@@ -35,6 +35,7 @@ const filterGroups = [
       { id: "stair", label: "Stair / Lobby Lights", match: categoryIs("Stair / Lobby Light") },
       { id: "dining", label: "Dining Lights", match: categoryIs("Dining Light") },
       { id: "outdoor", label: "Outdoor Wall Lights", match: categoryIs("Outdoor Wall Light") },
+      { id: "led-strip", label: "LED Strip Lights", match: categoryIs("LED Strip Light") },
       { id: "accessory", label: "Accessories", match: categoryIs("Accessory") },
     ],
   },
@@ -100,6 +101,7 @@ const mobileProductTypeCategoryIds = [
   "fan",
   "stair",
   "outdoor",
+  "led-strip",
   "accessory",
 ];
 const mobileVisualCategoryIds = ["hot-picks", "all", ...mobileProductTypeCategoryIds];
@@ -234,6 +236,11 @@ function displayFinish(product) {
     .replace(/\+/g, " + ")
     .replace(/\s{2,}/g, " ")
     .trim();
+}
+
+function hasSpecificProductName(product) {
+  const title = String(product.title || "").trim();
+  return Boolean(title) && !title.includes(product.code);
 }
 
 function currentFilter() {
@@ -463,6 +470,7 @@ function buildQuoteSubmission() {
     buyer: { ...state.quoteDetails },
     items: state.cart.map(({ product, quantity }) => ({
       model: product.code,
+      name: product.title,
       category: product.category,
       quantity,
       image: product.image,
@@ -495,6 +503,7 @@ function quoteListText(submission = buildQuoteSubmission()) {
     lines.push(
       "",
       `${index + 1}. ${item.model}`,
+      `Product: ${item.name || item.model}`,
       `Category: ${item.category}`,
       `Quantity: ${item.quantity}`,
       `Size: ${item.size || "To confirm"}`,
@@ -818,7 +827,8 @@ function renderCatalog() {
               <p>${product.category}</p>
               ${isHotPick(product) ? '<span class="hot-pick-label" aria-label="Hot pick">🔥🔥🔥</span>' : ""}
             </div>
-            <h3>${product.code}</h3>
+            <h3>${hasSpecificProductName(product) ? product.title : product.code}</h3>
+            ${hasSpecificProductName(product) ? `<span class="product-code">${product.code}</span>` : ""}
             <span class="open-detail">View specifications</span>
             <button class="quote" data-add="${product.slug}">Add to cart</button>
           </div>
@@ -856,8 +866,8 @@ function renderMini() {
         <article class="mini-item">
           <img src="${product.image}" alt="${product.title}">
           <span>
-            <strong>${product.code}</strong>
-            <small>${product.category}</small>
+            <strong>${hasSpecificProductName(product) ? product.title : product.code}</strong>
+            <small>${hasSpecificProductName(product) ? `${product.code} · ${product.category}` : product.category}</small>
             <em>Mobile preview</em>
           </span>
         </article>
@@ -871,7 +881,8 @@ function renderModal() {
   const finish = displayFinish(product);
   document.querySelector("#modalImage").src = product.image;
   document.querySelector("#modalImage").alt = product.title;
-  document.querySelector("#modalCode").textContent = product.code;
+  document.querySelector("#modalCode").textContent = hasSpecificProductName(product) ? product.title : product.code;
+  document.querySelector("#modalModel").textContent = hasSpecificProductName(product) ? product.code : "";
   document.querySelector("#modalMarket").textContent = product.market;
   document.querySelector("#modalSpecs").innerHTML = [
     ["Category", product.category],
@@ -929,8 +940,8 @@ function renderCartList(list) {
         <article class="cart-item">
           <img src="${product.image}" alt="${product.title}">
           <div class="cart-copy">
-            <strong>${product.code}</strong>
-            <span>${product.category}</span>
+            <strong>${hasSpecificProductName(product) ? product.title : product.code}</strong>
+            <span>${hasSpecificProductName(product) ? `${product.code} · ${product.category}` : product.category}</span>
           </div>
           <div class="quantity-control" aria-label="Quantity for ${product.code}">
             <button data-qty-minus="${product.slug}" aria-label="Decrease quantity">-</button>

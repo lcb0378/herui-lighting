@@ -809,6 +809,13 @@ h2 {
   min-height: 50px;
 }
 
+.product-code {
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
 .quote {
   width: 100%;
 }
@@ -1701,6 +1708,14 @@ dd {
   line-height: 1.5;
 }
 
+.modal-info > p.modal-model {
+  color: var(--green);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  margin: 6px 0 0;
+}
+
 #modalSpecs {
   background: white;
   border: 1px solid var(--line);
@@ -2325,8 +2340,12 @@ dd {
   .product h3 {
     font-size: 14px;
     line-height: 1.2;
-    min-height: 34px;
+    min-height: 50px;
     overflow-wrap: anywhere;
+  }
+
+  .product-code {
+    font-size: 10px;
   }
 
   .open-detail {
