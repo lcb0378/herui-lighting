@@ -5,24 +5,24 @@ This website is hosted on Cloudflare Pages from the connected GitHub repository.
 ## Current Status
 
 - Config file: `inquiry-config.js`
-- Current receiver email: not set
+- Current public receiver email: `sales@heruilighting.com`
+- Cloudflare Email Routing: active; destination is kept private outside the public repository
 - Current endpoint: not set
-- Fallback email shown on the static site: `sales@heruilighting.com`
-- Frontend cache version for this setup: `20260804-inquiry-receiver-ready`
+- Frontend cache version for this setup: `20260902-contact-routing`
 
 No product data, category data, or internal quote catalog pricing changed in this setup.
 
 ## What To Fill Later
 
-When the official receiving method is ready, update `inquiry-config.js`:
+If an automatic form receiver endpoint is added later, update `inquiry-config.js` while keeping the public sales address:
 
 ```js
 window.HERUI_INQUIRY_CONFIG = {
   brand: "Herui Lighting",
   schemaVersion: "herui-inquiry-v1",
   source: "cloudflare-pages-catalog",
-  receiverEmail: "official-receiving-email@example.com",
-  fallbackEmail: "official-receiving-email@example.com",
+  receiverEmail: "sales@heruilighting.com",
+  fallbackEmail: "sales@heruilighting.com",
   endpoint: "https://example.com/herui-inquiry-receiver"
 };
 ```
@@ -45,7 +45,7 @@ Every request includes:
   "brand": "Herui Lighting",
   "source": "cloudflare-pages-catalog",
   "type": "quote-cart",
-  "receiverEmail": "",
+  "receiverEmail": "sales@heruilighting.com",
   "fallbackEmail": "sales@heruilighting.com",
   "pageUrl": "https://heruilighting.com/",
   "submittedAt": "2026-08-04T00:00:00.000Z",
@@ -108,7 +108,7 @@ The future receiver should:
 
 ## Testing Checklist
 
-1. Set a test `receiverEmail` and `endpoint` in `inquiry-config.js`.
+1. Set a test `endpoint` in `inquiry-config.js`; keep `receiverEmail` as `sales@heruilighting.com`.
 2. Open the Cloudflare Pages site at `https://heruilighting.com/` with a fresh cache query string.
 3. Add at least one product to the cart.
 4. Fill buyer contact, destination, and project notes.
