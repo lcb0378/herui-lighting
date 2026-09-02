@@ -4,5 +4,5 @@ window.HERUI_INQUIRY_CONFIG = {
   source: "cloudflare-pages-catalog",
   receiverEmail: "sales@heruilighting.com",
   fallbackEmail: "sales@heruilighting.com",
-  endpoint: "",
+  endpoint: "/api/inquiry",
 };

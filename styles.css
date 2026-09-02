@@ -638,6 +638,14 @@ h2 {
   padding: 0 14px;
 }
 
+.form-honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
+
 .contact-form textarea {
   line-height: 1.45;
   min-height: 140px;

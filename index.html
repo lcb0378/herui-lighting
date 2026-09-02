@@ -406,6 +406,10 @@
           the details to prepare follow-up quotation support.
         </p>
         <form id="contactForm" class="contact-form">
+          <label class="form-honeypot" aria-hidden="true">
+            <span>Leave this field blank</span>
+            <input name="website" tabindex="-1" autocomplete="off" />
+          </label>
           <label>
             <span>Subject</span>
             <input name="subject" required placeholder="Hotel project lighting inquiry" />
@@ -424,8 +428,8 @@
       </section>
     </div>
 
-    <script src="./inquiry-config.js?v=20260902-contact-routing"></script>
+    <script src="./inquiry-config.js?v=20260902-automatic-inquiries"></script>
     <script src="./data.js?v=20260902-led-strip-reclass"></script>
-    <script src="./app.js?v=20260902-official-domain"></script>
+    <script src="./app.js?v=20260902-automatic-inquiries"></script>
   </body>
 </html>

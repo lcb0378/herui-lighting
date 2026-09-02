@@ -10,6 +10,7 @@ const state = {
     notes: "",
   },
   lastSubmission: null,
+  quoteSubmitting: false,
   cartOpen: false,
   mobileCategoryMenuForcedCompact: false,
 };
@@ -325,6 +326,7 @@ function closeContactModal() {
 async function submitContactForm(event) {
   event.preventDefault();
   const formData = new FormData(contactForm);
+  const submitButton = contactForm.querySelector('button[type="submit"]');
   const inquiry = {
     inquiryId: createInquiryId("contact"),
     type: "contact-inquiry",
@@ -339,6 +341,11 @@ async function submitContactForm(event) {
     return;
   }
 
+  if (submitButton.disabled) return;
+  submitButton.disabled = true;
+  submitButton.textContent = "Sending...";
+  status.innerHTML = "<span>Sending your inquiry securely...</span>";
+
   try {
     window.localStorage.setItem("heruiContactInquiry", JSON.stringify(inquiry));
   } catch (error) {
@@ -346,24 +353,23 @@ async function submitContactForm(event) {
   }
 
   try {
-    const sentToEndpoint = await sendContactToEndpoint(inquiry);
-    if (!sentToEndpoint) openContactEmail(inquiry);
-    status.innerHTML = sentToEndpoint
-      ? `
-        <strong>Inquiry sent.</strong>
-        <span>Your message was sent through the connected inquiry receiver.</span>
-      `
-      : `
-        <strong>Inquiry prepared.</strong>
-        <span>Your email app will open with the message. A direct form receiver can be connected before final launch.</span>
-      `;
+    const sentToEndpoint = await sendContactToEndpoint(inquiry, formData.get("website")?.toString() || "");
+    if (!sentToEndpoint) throw new Error("Automatic inquiry receiver is not configured");
+    status.innerHTML = `
+      <strong>Inquiry received.</strong>
+      <span>Herui Lighting has received your message. We will contact you as soon as possible.</span>
+    `;
+    contactForm.reset();
   } catch (error) {
     console.warn("Contact endpoint failed; falling back to email draft.", error);
     openContactEmail(inquiry);
     status.innerHTML = `
-      <strong>Inquiry prepared.</strong>
-      <span>The direct receiver was unavailable, so your email app will open with the message.</span>
+      <strong>Automatic sending was unavailable.</strong>
+      <span>Your email app will open with the prepared message. Please send it to complete your inquiry.</span>
     `;
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = "Submit inquiry";
   }
 }
 
@@ -373,19 +379,28 @@ function openContactEmail(inquiry) {
   window.location.href = mailto;
 }
 
-async function sendContactToEndpoint(inquiry) {
+async function sendContactToEndpoint(inquiry, website = "") {
   if (!inquiryEndpoint) return false;
 
+  return postInquiryPayload(buildInquiryPayload("contact-inquiry", {
+      inquiry,
+      messageText: contactInquiryText(inquiry),
+      website,
+  }));
+}
+
+async function postInquiryPayload(payload) {
   const response = await fetch(inquiryEndpoint, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(buildInquiryPayload("contact-inquiry", {
-      inquiry,
-      messageText: contactInquiryText(inquiry),
-    })),
+    body: JSON.stringify(payload),
   });
 
-  if (!response.ok) throw new Error(`Contact endpoint returned ${response.status}`);
+  const result = await response.json().catch(() => null);
+  if (!response.ok || result?.ok !== true) {
+    throw new Error(`Inquiry endpoint returned ${response.status}`);
+  }
+
   return true;
 }
 
@@ -537,17 +552,11 @@ function openQuoteEmail(submission) {
 async function sendQuoteToEndpoint(submission) {
   if (!inquiryEndpoint) return false;
 
-  const response = await fetch(inquiryEndpoint, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(buildInquiryPayload("quote-cart", {
-      submission,
-      messageText: quoteListText(submission),
-    })),
-  });
-
-  if (!response.ok) throw new Error(`Quote endpoint returned ${response.status}`);
-  return true;
+  return postInquiryPayload(buildInquiryPayload("quote-cart", {
+    submission,
+    messageText: quoteListText(submission),
+    website: "",
+  }));
 }
 
 async function submitQuoteList() {
@@ -556,17 +565,23 @@ async function submitQuoteList() {
     return;
   }
 
+  if (state.quoteSubmitting) return;
+
   const submission = buildQuoteSubmission();
   saveQuoteSubmission(submission);
+  state.quoteSubmitting = true;
+  renderCart();
 
   try {
     const sentToEndpoint = await sendQuoteToEndpoint(submission);
-    if (!sentToEndpoint) openQuoteEmail(submission);
-    state.lastSubmission.delivery = sentToEndpoint ? "endpoint" : "email";
+    if (!sentToEndpoint) throw new Error("Automatic inquiry receiver is not configured");
+    state.lastSubmission.delivery = "endpoint";
   } catch (error) {
     console.warn("Quote endpoint failed; falling back to email draft.", error);
     openQuoteEmail(submission);
     state.lastSubmission.delivery = "email-fallback";
+  } finally {
+    state.quoteSubmitting = false;
   }
 
   renderCart();
@@ -914,8 +929,10 @@ function renderCart() {
   if (mobileCartBadge) mobileCartBadge.textContent = total;
   document.querySelector("#drawerCartCount").textContent =
     state.cart.length === 0 ? "0 products" : `${state.cart.length} models / ${total} pcs`;
-  submitCart.disabled = state.cart.length === 0;
-  drawerSubmitCart.disabled = state.cart.length === 0;
+  submitCart.disabled = state.cart.length === 0 || state.quoteSubmitting;
+  drawerSubmitCart.disabled = state.cart.length === 0 || state.quoteSubmitting;
+  submitCart.textContent = state.quoteSubmitting ? "Sending..." : "Submit quote list";
+  drawerSubmitCart.textContent = state.quoteSubmitting ? "Sending..." : "Submit quote list";
   copyCart.disabled = state.cart.length === 0;
   drawerCopyCart.disabled = state.cart.length === 0;
   downloadCart.disabled = state.cart.length === 0;
@@ -975,13 +992,21 @@ function renderCartList(list) {
 }
 
 function renderSubmitStatus(status) {
+  if (state.quoteSubmitting) {
+    status.innerHTML = `
+      <strong>Sending quote request...</strong>
+      <span>Please keep this page open while Herui Lighting receives your list.</span>
+    `;
+    return;
+  }
+
   if (!state.lastSubmission) {
     status.innerHTML = "";
     return;
   }
 
   const deliveryMessages = {
-    endpoint: "Your quote list was sent through the connected inquiry receiver.",
+    endpoint: "Herui Lighting has received your quote request and will contact you as soon as possible.",
     email: "Your email app will open with the complete quote list. You can also copy or download the list.",
     "email-fallback": "The direct receiver was unavailable, so your email app will open with the complete quote list.",
     copied: "The quote list is ready to paste into email, WhatsApp or chat.",
@@ -989,9 +1014,11 @@ function renderSubmitStatus(status) {
   };
   const deliveryText = deliveryMessages[state.lastSubmission.delivery] || "Your quote list is prepared for follow-up.";
 
+  const title = state.lastSubmission.delivery === "endpoint" ? "Quote request received." : "Quote list prepared.";
+
   status.innerHTML = state.lastSubmission
     ? `
-      <strong>Quote list submitted.</strong>
+      <strong>${title}</strong>
       <span>${state.lastSubmission.items.length} models / ${cartCount()} pcs ready for wholesale quotation. ${deliveryText}</span>
     `
     : "";
