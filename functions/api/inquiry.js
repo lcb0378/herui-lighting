@@ -58,8 +58,9 @@ function safeFilename(value) {
     .slice(0, 80) || "quote";
 }
 
-async function findPriceRecords(database, models) {
+async function findPriceRecords(database, items) {
   if (!database) return [];
+  const models = items.map((item) => item.model);
   const uniqueModels = [...new Set(models)];
   const records = [];
   for (let offset = 0; offset < uniqueModels.length; offset += 50) {
@@ -69,6 +70,24 @@ async function findPriceRecords(database, models) {
       `SELECT model, source_price_rmb AS sourcePriceRmb, source_price_text AS sourcePriceText, price_status AS priceStatus, source_row AS sourceRow FROM product_prices WHERE model IN (${placeholders})`,
     ).bind(...chunk).all();
     records.push(...(result.results || []));
+  }
+  const selectedVariants = items.filter((item) => item.variantId);
+  for (let offset = 0; offset < selectedVariants.length; offset += 40) {
+    const chunk = selectedVariants.slice(offset, offset + 40);
+    const conditions = chunk.map(() => "(model = ? AND variant_id = ?)").join(" OR ");
+    try {
+      const result = await database.prepare(
+        `SELECT model, variant_id AS variantId, variant_label AS variantLabel,
+          source_price_rmb AS sourcePriceRmb, source_price_text AS sourcePriceText,
+          price_status AS priceStatus, quantity_unit AS quantityUnit,
+          effective_unit AS effectiveUnit, quote_catalog_row AS sourceRow,
+          mapping_note AS mappingNote
+        FROM product_variants WHERE ${conditions}`,
+      ).bind(...chunk.flatMap((item) => [item.model, item.variantId])).all();
+      records.push(...(result.results || []));
+    } catch {
+      // Phase-1 fallback while a new database schema is being deployed.
+    }
   }
   return records;
 }
@@ -116,7 +135,7 @@ async function fetchProductImages(items) {
 
 async function buildQuoteAttachment(submission, database) {
   const [priceRecords, imageAssets] = await Promise.all([
-    findPriceRecords(database, submission.items.map((item) => item.model)),
+    findPriceRecords(database, submission.items),
     fetchProductImages(submission.items),
   ]);
   const workbook = buildQuoteWorkbook({ submission, priceRecords, imageAssets });
@@ -149,6 +168,14 @@ function validatePayload(payload) {
     if (submission.items.length < 1 || submission.items.length > 200) return null;
     const buyerContact = String(submission.buyer?.contact || "").trim();
     if (!buyerContact || buyerContact.length > 300) return null;
+    const invalidVariant = submission.items.some((item) => {
+      const variantId = String(item?.variantId || "").trim();
+      const selectedVariant = String(item?.selectedVariant || "").trim();
+      if (variantId && !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(variantId)) return true;
+      if (variantId.length > 100 || selectedVariant.length > 500) return true;
+      return Boolean(variantId) !== Boolean(selectedVariant);
+    });
+    if (invalidVariant) return null;
     return {
       inquiryId: String(submission.inquiryId).slice(0, 80),
       subject: `[Herui Quote] ${submission.items.length} model${submission.items.length === 1 ? "" : "s"} - ${String(submission.inquiryId).slice(0, 80)}`,

@@ -210,14 +210,19 @@ function zipStore(entries) {
   return concatBytes([...localParts, centralDirectory, end]);
 }
 
-function requestedSpecification(item) {
+function requestedSpecification(item, record = null) {
+  if (record?.variantLabel) return record.variantLabel;
   if (item.selectedVariant) return item.selectedVariant;
   if (item.variants) return `Selection to confirm. Available: ${item.variants}`;
   return "Standard product / to confirm";
 }
 
 export function buildQuoteWorkbook({ submission, priceRecords = [], imageAssets = [] }) {
-  const priceMap = new Map(priceRecords.map((record) => [record.model, record]));
+  const priceMap = new Map(priceRecords.filter((record) => !record.variantId).map((record) => [record.model, record]));
+  const variantPriceMap = new Map(priceRecords.filter((record) => record.variantId).map((record) => [`${record.model}::${record.variantId}`, record]));
+  const priceRecordFor = (item) => item.variantId
+    ? variantPriceMap.get(`${item.model}::${item.variantId}`)
+    : priceMap.get(item.model);
   const imageMap = new Map(imageAssets.map((asset) => [asset.itemIndex, asset]));
   const embeddedImages = [];
 
@@ -240,6 +245,7 @@ export function buildQuoteWorkbook({ submission, priceRecords = [], imageAssets 
   submission.items.forEach((item, itemIndex) => {
     const rowNumber = itemIndex + 9;
     const asset = imageMap.get(itemIndex);
+    const record = priceRecordFor(item);
     if (asset?.bytes?.length) embeddedImages.push({ ...asset, rowNumber });
     customerRows.push({
       number: rowNumber,
@@ -248,7 +254,7 @@ export function buildQuoteWorkbook({ submission, priceRecords = [], imageAssets 
         inlineCell(`A${rowNumber}`, asset?.bytes?.length ? "" : "See website image", 4),
         inlineCell(`B${rowNumber}`, item.model, 4),
         inlineCell(`C${rowNumber}`, item.name || item.model, 4),
-        inlineCell(`D${rowNumber}`, requestedSpecification(item), 4),
+        inlineCell(`D${rowNumber}`, requestedSpecification(item, record), 4),
         inlineCell(`E${rowNumber}`, Number(item.quantity) || 1, 5),
       ],
     });
@@ -273,17 +279,19 @@ export function buildQuoteWorkbook({ submission, priceRecords = [], imageAssets 
 
   submission.items.forEach((item, itemIndex) => {
     const rowNumber = itemIndex + 7;
-    const record = priceMap.get(item.model);
+    const record = priceRecordFor(item);
     const matched = record?.priceStatus === "matched" && Number.isFinite(record.sourcePriceRmb);
     const status = matched ? "Matched automatically" : record?.priceStatus === "missing" ? "Missing price" : "Manual review required";
     const statusStyle = matched ? 7 : record?.priceStatus === "missing" ? 9 : 8;
     const note = matched
-      ? `Quote Catalog row ${record.sourceRow}`
+      ? `${record.variantId ? `Exact option matched; ${record.effectiveUnit || "per piece"}; ` : ""}Quote Catalog row ${record.sourceRow}`
       : record?.sourcePriceText
-        ? `Multiple or labelled source prices; review Quote Catalog row ${record.sourceRow}`
+        ? `${record.mappingNote || "Multiple or labelled source prices; supplier confirmation required."} Review Quote Catalog row ${record.sourceRow}`
         : record
           ? `No source price; Quote Catalog row ${record.sourceRow}`
-          : "Model not found in private price catalog";
+          : item.variantId
+            ? "Selected option was not found in the private variant price map"
+            : "Model not found in private price catalog";
 
     internalRows.push({
       number: rowNumber,
@@ -291,7 +299,7 @@ export function buildQuoteWorkbook({ submission, priceRecords = [], imageAssets 
       cells: [
         inlineCell(`A${rowNumber}`, item.model, 4),
         inlineCell(`B${rowNumber}`, item.name || item.model, 4),
-        inlineCell(`C${rowNumber}`, requestedSpecification(item), 4),
+        inlineCell(`C${rowNumber}`, requestedSpecification(item, record), 4),
         inlineCell(`D${rowNumber}`, Number(item.quantity) || 1, 5),
         matched ? inlineCell(`E${rowNumber}`, record.sourcePriceRmb, 6) : inlineCell(`E${rowNumber}`, "", 6),
         matched ? formulaCell(`F${rowNumber}`, `D${rowNumber}*E${rowNumber}`, 6) : inlineCell(`F${rowNumber}`, "", 6),

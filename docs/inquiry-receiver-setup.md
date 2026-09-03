@@ -15,21 +15,22 @@ This website is hosted on Cloudflare Pages from the connected GitHub repository.
 - Mail Worker private variable: `INQUIRY_RECIPIENT`
 - Pages D1 binding: `QUOTE_DB` -> `herui-private-price-catalog`
 - Pages secret: `PRICE_SYNC_TOKEN`, used only by the authenticated private catalog sync endpoint
-- Quote List emails include an internal `.xlsx` attachment with product thumbnails, buyer details, selected models, quantities, price-match status, and matched `Source Price / RMB`
-- Frontend quote-validation cache version: `20260903-quote-contact-required`
+- Quote List emails include an internal `.xlsx` attachment with product thumbnails, buyer details, selected models, exact selected specifications, quantities, price-match status, and matched `Source Price / RMB`
+- Structured variant map: 60 multi-spec products, 270 valid combinations, 226 exact automatic price matches, and 44 supplier-confirmation combinations
+- Frontend structured-variant cache version: `20260903-structured-variants`
 
 No product data, category data, or internal quote catalog pricing changed in this setup.
 
 The private destination address must never be committed to GitHub. Cloudflare stores it only in the dedicated Worker's configuration. The Pages Function cannot choose or see a destination address; the Send Email binding is also restricted to the same verified inbox.
 
-Internal prices must also never be committed to the public repository or added to `data.js`. The desktop all-in-one quote catalog remains the master price source. A private extracted copy is synchronized to D1 through `/api/price-sync`, protected by `PRICE_SYNC_TOKEN`. The sync endpoint accepts at most 100 validated product rows per request.
+Internal prices must also never be committed to the public repository or added to `data.js` or `variant-options.js`. The desktop all-in-one quote catalog remains the master price source. `variant-options.js` contains only public option IDs and buyer-facing specification labels. A private extracted copy of both base products and exact variant prices is synchronized to D1 through `/api/price-sync`, protected by `PRICE_SYNC_TOKEN`. The sync endpoint accepts at most 100 validated rows per request.
 
 For each Quote List submission, the Pages Function looks up selected Herui models in D1, fetches a bounded set of public product images, creates the Excel workbook, and sends the workbook to the private mail Worker through the existing service binding. Contact Us messages remain text-only. If workbook generation fails, the original inquiry text is still sent with an internal warning instead of losing the inquiry.
 
 The generated workbook contains:
 
-- `Customer Request`: inquiry ID, submitted time, buyer contact, destination, notes, product image, Herui catalog model, product name, specification/option text, and quantity.
-- `Internal Price Match`: internal `Source Price / RMB`, formula-driven cost subtotal, match status, and source row. Automatically matched rows are green; compound or labelled source prices are flagged for manual review; missing prices are flagged separately.
+- `Customer Request`: inquiry ID, submitted time, buyer contact, destination, notes, product image, Herui catalog model, product name, exact selected specification, and quantity.
+- `Internal Price Match`: internal `Source Price / RMB`, formula-driven cost subtotal, match status, effective unit, and source row. Exact matches are green; source combinations that cannot be attributed safely are flagged for supplier confirmation; missing prices are flagged separately.
 
 Image attachment limits are deliberately conservative to remain within email limits: up to 40 JPEG thumbnails, 220 KiB per image, and approximately 2.2 MiB total source image bytes. If an image cannot be embedded, the product row is still preserved.
 
@@ -95,7 +96,9 @@ For quote cart submissions, the payload also contains:
         "size": "41 x 41 x 30 cm",
         "material": "aluminum + acrylic",
         "light": "88W tri-color LED",
-        "finish": "gold"
+        "finish": "gold",
+        "variantId": "with-spotlight",
+        "selectedVariant": "With spotlight"
       }
     ]
   }
@@ -131,7 +134,18 @@ The receiver:
 - Returns success only after Cloudflare Email Service accepts the message.
 - Does not log or store the customer's inquiry content in the public repository.
 - Keeps internal prices in private D1 only and never returns them to the browser.
+- Accepts only paired variant IDs and labels, then uses the canonical private D1 label and price for the generated workbook.
 - Sends the enriched workbook only to the fixed verified private recipient.
+
+## Structured Variant Workflow
+
+- Products with more than one valid combination show `Choose options` instead of adding directly to the cart.
+- The product detail requires one complete combination before `Add selected option` becomes available.
+- A product with one mapped option uses that option automatically.
+- The same Herui model may appear on separate cart lines when the buyer selects different specifications.
+- Quote payloads include both `variantId` and `selectedVariant`; the private D1 lookup uses `(model, variant_id)` as the exact key.
+- The exact private price is inserted only when the mapping status is `matched`. A `manual_review` option stays selectable for the buyer but its price cell remains blank and the internal worksheet states that supplier confirmation is required.
+- Length-based products retain their true pricing basis. For example, a 3 m channel uses the private per-metre rate multiplied by 3, and a 10 m strip reel uses the per-metre rate multiplied by 10.
 
 ## Testing Checklist
 
@@ -144,6 +158,9 @@ The receiver:
 7. Confirm the website shows `Quote request received.`
 8. Confirm the receiver email gets the selected models and buyer details plus an `.xlsx` attachment.
 9. Open the workbook and confirm `Customer Request` contains images/model/name/specification/quantity, while `Internal Price Match` contains the internal RMB cost fields.
-10. Test one simple-price model, one compound-price model, and the missing-price model `HR-TL-0005`; confirm the workbook shows `Matched automatically`, `Manual review required`, and `Missing price` respectively.
-11. Open `Contact Us`, submit a message, and confirm the receiver email gets it without a quote workbook.
-12. Confirm failed automatic sends do not display a false success message and instead fall back to a prepared email draft.
+10. Open a mapped multi-spec product and confirm the Add button stays disabled until a complete option is selected.
+11. Add two different options of the same model and confirm they remain two separate cart lines.
+12. Submit one exact-price option and one supplier-confirmation option; confirm the workbook shows the selected labels, inserts only the exact price, and leaves the ambiguous price blank.
+13. Test the missing-price model `HR-TL-0005` and confirm the workbook shows `Missing price`.
+14. Open `Contact Us`, submit a message, and confirm the receiver email gets it without a quote workbook.
+15. Confirm failed automatic sends do not display a false success message and instead fall back to a prepared email draft.

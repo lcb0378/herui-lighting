@@ -89,7 +89,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="./styles.css?v=20260903-quote-contact-required" />
+    <link rel="stylesheet" href="./styles.css?v=20260903-structured-variants" />
   </head>
   <body>
     <header class="topbar">
@@ -343,6 +343,12 @@
           <p class="modal-model" id="modalModel"></p>
           <p id="modalMarket"></p>
           <dl id="modalSpecs"></dl>
+          <div class="variant-picker" id="modalVariantPicker" hidden>
+            <label for="modalVariantSelect">Choose exact specification <span>Required</span></label>
+            <select id="modalVariantSelect"></select>
+            <small>Select one complete, valid combination. Only combinations listed here can be added.</small>
+            <p id="modalVariantStatus" role="alert"></p>
+          </div>
           <div class="modal-note">
             <strong>Public price:</strong> hidden. Buyer sends inquiry for MOQ,
             quantity, packing and latest wholesale quote.
@@ -432,6 +438,7 @@
 
     <script src="./inquiry-config.js?v=20260902-automatic-inquiries"></script>
     <script src="./data.js?v=20260902-led-strip-reclass"></script>
-    <script src="./app.js?v=20260903-quote-contact-required"></script>
+    <script src="./variant-options.js?v=20260903-structured-variants"></script>
+    <script src="./app.js?v=20260903-structured-variants"></script>
   </body>
 </html>

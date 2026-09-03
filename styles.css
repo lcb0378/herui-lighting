@@ -1275,6 +1275,13 @@ dd {
   font-size: 13px;
 }
 
+.cart-copy .cart-variant {
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
 .quantity-control {
   align-items: center;
   border: 1px solid var(--line);
@@ -1752,6 +1759,60 @@ dd {
   line-height: 1.45;
   margin-top: 14px;
   padding: 14px;
+}
+
+.variant-picker {
+  background: #f7f4ec;
+  border: 1px solid rgba(200, 152, 67, 0.5);
+  border-radius: 8px;
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 14px;
+}
+
+.variant-picker[hidden] {
+  display: none;
+}
+
+.variant-picker label {
+  color: var(--green);
+  font-weight: 900;
+}
+
+.variant-picker label span {
+  color: var(--terra);
+  font-size: 11px;
+  margin-left: 6px;
+  text-transform: uppercase;
+}
+
+.variant-picker select {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--text);
+  font: inherit;
+  min-height: 46px;
+  padding: 10px 38px 10px 12px;
+  width: 100%;
+}
+
+.variant-picker small {
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+#modalVariantStatus {
+  color: var(--terra);
+  font-size: 13px;
+  font-weight: 800;
+  margin: 0;
+}
+
+#addSelected:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
 }
 
 @media (max-width: 980px) {

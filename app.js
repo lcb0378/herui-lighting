@@ -13,6 +13,7 @@ const state = {
   quoteSubmitting: false,
   cartOpen: false,
   mobileCategoryMenuForcedCompact: false,
+  selectedVariantId: "",
 };
 
 const filterGroups = [
@@ -68,6 +69,9 @@ const miniList = document.querySelector("#miniList");
 const searchInput = document.querySelector("#search");
 const modeButtons = document.querySelectorAll(".mode-switch button");
 const addSelected = document.querySelector("#addSelected");
+const modalVariantPicker = document.querySelector("#modalVariantPicker");
+const modalVariantSelect = document.querySelector("#modalVariantSelect");
+const modalVariantStatus = document.querySelector("#modalVariantStatus");
 const modal = document.querySelector("#productModal");
 const categoryPanel = document.querySelector("#categoryPanel");
 const mobileCategoryPanel = document.querySelector("#mobileCategoryPanel");
@@ -141,7 +145,12 @@ document.addEventListener("keydown", (event) => {
 });
 
 cartToggle.addEventListener("click", openCartDrawer);
-addSelected.addEventListener("click", () => addToCart(state.selected, addSelected));
+addSelected.addEventListener("click", addSelectedProductToCart);
+modalVariantSelect.addEventListener("change", () => {
+  state.selectedVariantId = modalVariantSelect.value;
+  modalVariantStatus.textContent = "";
+  updateModalAddButton();
+});
 submitCart.addEventListener("click", submitQuoteList);
 drawerSubmitCart.addEventListener("click", submitQuoteList);
 copyCart.addEventListener("click", copyQuoteList);
@@ -189,6 +198,7 @@ function productSearchText(product) {
     product.material,
     product.size,
     product.variants,
+    ...productVariantOptions(product).map((option) => option.label),
     product.light,
     product.finish,
     product.description,
@@ -266,12 +276,33 @@ function cartCount() {
   return state.cart.reduce((total, item) => total + item.quantity, 0);
 }
 
-function addToCart(product, source) {
-  const existing = state.cart.find((item) => item.product.slug === product.slug);
+function productVariantOptions(product) {
+  return window.HERUI_VARIANT_OPTIONS?.[product.code] || [];
+}
+
+function selectedVariant(product, variantId) {
+  return productVariantOptions(product).find((option) => option.id === variantId) || null;
+}
+
+function cartLineKey(product, variant) {
+  return `${product.slug}--${variant?.id || "standard"}`;
+}
+
+function addToCart(product, source, variant = null) {
+  const options = productVariantOptions(product);
+  const resolvedVariant = variant || (options.length === 1 ? options[0] : null);
+  if (options.length > 1 && !resolvedVariant) {
+    selectProduct(product);
+    modalVariantStatus.textContent = "Please choose the exact specification before adding this product.";
+    modalVariantSelect.focus();
+    return;
+  }
+  const key = cartLineKey(product, resolvedVariant);
+  const existing = state.cart.find((item) => item.key === key);
   if (existing) {
     existing.quantity += 1;
   } else {
-    state.cart.push({ product, quantity: 1 });
+    state.cart.push({ key, product, variant: resolvedVariant, quantity: 1 });
   }
   state.lastSubmission = null;
   renderCart();
@@ -279,8 +310,8 @@ function addToCart(product, source) {
   pulseCartButton();
 }
 
-function updateCartQuantity(slug, quantity) {
-  const item = state.cart.find((entry) => entry.product.slug === slug);
+function updateCartQuantity(key, quantity) {
+  const item = state.cart.find((entry) => entry.key === key);
   if (!item) return;
   item.quantity = Math.max(1, Math.min(9999, Number(quantity) || 1));
   state.lastSubmission = null;
@@ -473,8 +504,8 @@ function animateCartAdd(product, source) {
   flyer.addEventListener("transitionend", () => flyer.remove(), { once: true });
 }
 
-function removeFromCart(slug) {
-  state.cart = state.cart.filter((item) => item.product.slug !== slug);
+function removeFromCart(key) {
+  state.cart = state.cart.filter((item) => item.key !== key);
   state.lastSubmission = null;
   renderCart();
 }
@@ -484,7 +515,7 @@ function buildQuoteSubmission() {
     inquiryId: createInquiryId("quote"),
     submittedAt: new Date().toISOString(),
     buyer: { ...state.quoteDetails },
-    items: state.cart.map(({ product, quantity }) => ({
+    items: state.cart.map(({ product, variant, quantity }) => ({
       model: product.code,
       name: product.title,
       category: product.category,
@@ -495,6 +526,8 @@ function buildQuoteSubmission() {
       light: product.light,
       finish: displayFinish(product),
       variants: product.variants,
+      variantId: variant?.id || "",
+      selectedVariant: variant?.label || "",
     })),
   };
 }
@@ -527,7 +560,8 @@ function quoteListText(submission = buildQuoteSubmission()) {
       `Light source: ${item.light || "To confirm"}`,
     );
     if (item.finish) lines.push(`Finish / Color: ${item.finish}`);
-    if (item.variants) lines.push(`Available variants: ${item.variants}`);
+    if (item.selectedVariant) lines.push(`Selected specification: ${item.selectedVariant}`);
+    else if (item.variants) lines.push(`Available variants: ${item.variants}`);
     lines.push(`Image: ${item.image}`);
   });
 
@@ -676,9 +710,31 @@ function syncQuoteFields(source) {
 
 function selectProduct(product) {
   state.selected = product;
+  const options = productVariantOptions(product);
+  state.selectedVariantId = options.length === 1 ? options[0].id : "";
   renderModal();
   modal.classList.add("open");
   modal.setAttribute("aria-hidden", "false");
+}
+
+function updateModalAddButton() {
+  const options = productVariantOptions(state.selected);
+  const selectionRequired = options.length > 1 && !selectedVariant(state.selected, state.selectedVariantId);
+  addSelected.disabled = selectionRequired;
+  addSelected.textContent = options.length ? "Add selected option" : "Add to cart";
+}
+
+function addSelectedProductToCart() {
+  const product = state.selected;
+  const options = productVariantOptions(product);
+  const variant = selectedVariant(product, state.selectedVariantId);
+  if (options.length > 1 && !variant) {
+    modalVariantStatus.textContent = "Please choose the exact specification before adding this product.";
+    modalVariantSelect.focus();
+    return;
+  }
+  addToCart(product, addSelected, variant);
+  closeModal();
 }
 
 function closeModal() {
@@ -879,7 +935,7 @@ function renderCatalog() {
             <h3>${hasSpecificProductName(product) ? product.title : product.code}</h3>
             ${hasSpecificProductName(product) ? `<span class="product-code">${product.code}</span>` : ""}
             <span class="open-detail">View specifications</span>
-            <button class="quote" data-add="${product.slug}">Add to cart</button>
+            <button class="quote" data-add="${product.slug}">${productVariantOptions(product).length > 1 ? "Choose options" : "Add to cart"}</button>
           </div>
         </article>
       `,
@@ -897,7 +953,9 @@ function renderCatalog() {
     button.addEventListener("click", (event) => {
       event.stopPropagation();
       const product = window.PRODUCTS.find((item) => item.slug === button.dataset.add);
-      addToCart(product, button);
+      const options = productVariantOptions(product);
+      if (options.length > 1) selectProduct(product);
+      else addToCart(product, button, options[0] || null);
     });
   });
 }
@@ -928,6 +986,7 @@ function renderMini() {
 function renderModal() {
   const product = state.selected;
   const finish = displayFinish(product);
+  const options = productVariantOptions(product);
   document.querySelector("#modalImage").src = product.image;
   document.querySelector("#modalImage").alt = product.title;
   document.querySelector("#modalCode").textContent = hasSpecificProductName(product) ? product.title : product.code;
@@ -937,6 +996,7 @@ function renderModal() {
     ["Category", product.category],
     ["Model", product.model || product.code],
     ["Size", product.size],
+    ["Exact selectable options", options.length ? `${options.length} valid specification combination${options.length === 1 ? "" : "s"}; choose below.` : ""],
     ["Available variants", product.variants],
     ["Net weight", product.weight],
     ["Package size", product.packageSize],
@@ -948,12 +1008,26 @@ function renderModal() {
   ]
     .filter(([, value]) => value && value !== "To confirm from supplier")
     .map(([label, value]) => `
-      <div class="${["Available variants", "Description"].includes(label) ? "spec-wide" : ""}">
+      <div class="${["Exact selectable options", "Available variants", "Description"].includes(label) ? "spec-wide" : ""}">
         <dt>${label}</dt>
         <dd>${value}</dd>
       </div>
     `)
     .join("");
+
+  if (options.length) {
+    modalVariantPicker.hidden = false;
+    modalVariantSelect.innerHTML = [
+      ...(options.length > 1 ? ['<option value="">Select an exact specification</option>'] : []),
+      ...options.map((option) => `<option value="${option.id}">${option.label}</option>`),
+    ].join("");
+    modalVariantSelect.value = state.selectedVariantId;
+  } else {
+    modalVariantPicker.hidden = true;
+    modalVariantSelect.innerHTML = "";
+  }
+  modalVariantStatus.textContent = "";
+  updateModalAddButton();
 }
 
 function renderCart() {
@@ -984,19 +1058,20 @@ function renderCartList(list) {
 
   list.innerHTML = state.cart
     .map(
-      ({ product, quantity }) => `
+      ({ key, product, variant, quantity }) => `
         <article class="cart-item">
           <img src="${product.image}" alt="${product.title}">
           <div class="cart-copy">
             <strong>${hasSpecificProductName(product) ? product.title : product.code}</strong>
             <span>${hasSpecificProductName(product) ? `${product.code} · ${product.category}` : product.category}</span>
+            ${variant ? `<small class="cart-variant">Specification: ${variant.label}</small>` : ""}
           </div>
           <div class="quantity-control" aria-label="Quantity for ${product.code}">
-            <button data-qty-minus="${product.slug}" aria-label="Decrease quantity">-</button>
-            <input data-qty-input="${product.slug}" type="number" min="1" max="9999" value="${quantity}">
-            <button data-qty-plus="${product.slug}" aria-label="Increase quantity">+</button>
+            <button data-qty-minus="${key}" aria-label="Decrease quantity">-</button>
+            <input data-qty-input="${key}" type="number" min="1" max="9999" value="${quantity}">
+            <button data-qty-plus="${key}" aria-label="Increase quantity">+</button>
           </div>
-          <button class="remove-cart" data-remove="${product.slug}">Remove</button>
+          <button class="remove-cart" data-remove="${key}">Remove</button>
         </article>
       `,
     )
@@ -1007,13 +1082,13 @@ function renderCartList(list) {
   });
   list.querySelectorAll("[data-qty-minus]").forEach((button) => {
     button.addEventListener("click", () => {
-      const item = state.cart.find((entry) => entry.product.slug === button.dataset.qtyMinus);
+      const item = state.cart.find((entry) => entry.key === button.dataset.qtyMinus);
       updateCartQuantity(button.dataset.qtyMinus, (item?.quantity || 1) - 1);
     });
   });
   list.querySelectorAll("[data-qty-plus]").forEach((button) => {
     button.addEventListener("click", () => {
-      const item = state.cart.find((entry) => entry.product.slug === button.dataset.qtyPlus);
+      const item = state.cart.find((entry) => entry.key === button.dataset.qtyPlus);
       updateCartQuantity(button.dataset.qtyPlus, (item?.quantity || 1) + 1);
     });
   });
