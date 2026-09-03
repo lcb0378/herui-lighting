@@ -155,6 +155,7 @@ quoteFields.forEach((field) => {
     state.quoteDetails[field.dataset.quoteField] = field.value.trim();
     syncQuoteFields(field);
     state.lastSubmission = null;
+    updateQuoteSubmitButtons();
     renderSubmitStatus(document.querySelector("#submitStatus"));
     renderSubmitStatus(document.querySelector("#drawerSubmitStatus"));
   });
@@ -565,6 +566,12 @@ async function submitQuoteList() {
     return;
   }
 
+  if (!hasBuyerContact()) {
+    setCartStatus("Buyer contact is required.", "Please enter an email, WhatsApp number or phone number before submitting.");
+    focusVisibleQuoteContact();
+    return;
+  }
+
   if (state.quoteSubmitting) return;
 
   const submission = buildQuoteSubmission();
@@ -630,6 +637,33 @@ function setCartStatus(title, message = "") {
   document.querySelectorAll("#submitStatus, #drawerSubmitStatus").forEach((status) => {
     status.innerHTML = message ? `<strong>${title}</strong><span>${message}</span>` : title;
   });
+}
+
+function hasBuyerContact() {
+  return Boolean(state.quoteDetails.contact.trim());
+}
+
+function updateQuoteSubmitButtons() {
+  const missingProducts = state.cart.length === 0;
+  const missingContact = !hasBuyerContact();
+  const disabled = missingProducts || missingContact || state.quoteSubmitting;
+  const title = missingProducts
+    ? "Add products before submitting."
+    : missingContact
+      ? "Enter your contact details before submitting."
+      : "Submit this quote list to Herui Lighting.";
+
+  [submitCart, drawerSubmitCart].forEach((button) => {
+    button.disabled = disabled;
+    button.title = title;
+    button.textContent = state.quoteSubmitting ? "Sending..." : "Submit quote list";
+  });
+}
+
+function focusVisibleQuoteContact() {
+  const contactFields = [...document.querySelectorAll('[data-quote-field="contact"]')];
+  const visibleField = contactFields.find((field) => field.getClientRects().length > 0) || contactFields[0];
+  visibleField?.focus();
 }
 
 function syncQuoteFields(source) {
@@ -929,10 +963,7 @@ function renderCart() {
   if (mobileCartBadge) mobileCartBadge.textContent = total;
   document.querySelector("#drawerCartCount").textContent =
     state.cart.length === 0 ? "0 products" : `${state.cart.length} models / ${total} pcs`;
-  submitCart.disabled = state.cart.length === 0 || state.quoteSubmitting;
-  drawerSubmitCart.disabled = state.cart.length === 0 || state.quoteSubmitting;
-  submitCart.textContent = state.quoteSubmitting ? "Sending..." : "Submit quote list";
-  drawerSubmitCart.textContent = state.quoteSubmitting ? "Sending..." : "Submit quote list";
+  updateQuoteSubmitButtons();
   copyCart.disabled = state.cart.length === 0;
   drawerCopyCart.disabled = state.cart.length === 0;
   downloadCart.disabled = state.cart.length === 0;
@@ -996,6 +1027,14 @@ function renderSubmitStatus(status) {
     status.innerHTML = `
       <strong>Sending quote request...</strong>
       <span>Please keep this page open while Herui Lighting receives your list.</span>
+    `;
+    return;
+  }
+
+  if (state.cart.length > 0 && !hasBuyerContact()) {
+    status.innerHTML = `
+      <strong>Buyer contact required.</strong>
+      <span>Enter an email, WhatsApp number or phone number before submitting this quote list.</span>
     `;
     return;
   }

@@ -89,7 +89,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="./styles.css?v=20260902-product-names" />
+    <link rel="stylesheet" href="./styles.css?v=20260903-quote-contact-required" />
   </head>
   <body>
     <header class="topbar">
@@ -232,8 +232,9 @@
           <div class="quote-details" aria-label="Buyer quote details">
             <h3>Buyer details</h3>
             <label>
-              <span>Your contact</span>
-              <input data-quote-field="contact" placeholder="Email, WhatsApp or phone" />
+              <span>Your contact (required)</span>
+              <input data-quote-field="contact" required aria-required="true" maxlength="300" placeholder="Email, WhatsApp or phone" />
+              <small class="field-help">Please provide a contact method before submitting.</small>
             </label>
             <label>
               <span>Destination</span>
@@ -374,8 +375,9 @@
         <div class="quote-details drawer-quote-details" aria-label="Buyer quote details">
           <h3>Buyer details</h3>
           <label>
-            <span>Your contact</span>
-            <input data-quote-field="contact" placeholder="Email, WhatsApp or phone" />
+            <span>Your contact (required)</span>
+            <input data-quote-field="contact" required aria-required="true" maxlength="300" placeholder="Email, WhatsApp or phone" />
+            <small class="field-help">Please provide a contact method before submitting.</small>
           </label>
           <label>
             <span>Destination</span>
@@ -430,6 +432,6 @@
 
     <script src="./inquiry-config.js?v=20260902-automatic-inquiries"></script>
     <script src="./data.js?v=20260902-led-strip-reclass"></script>
-    <script src="./app.js?v=20260902-automatic-inquiries"></script>
+    <script src="./app.js?v=20260903-quote-contact-required"></script>
   </body>
 </html>

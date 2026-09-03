@@ -13,7 +13,7 @@ This website is hosted on Cloudflare Pages from the connected GitHub repository.
 - Cloudflare Pages production service binding: `INQUIRY_MAILER` -> `herui-inquiry-mailer`
 - Mail Worker binding: `SEND_EMAIL`, restricted to the verified destination
 - Mail Worker private variable: `INQUIRY_RECIPIENT`
-- Frontend cache version for this setup: `20260902-automatic-inquiries`
+- Frontend quote-validation cache version: `20260903-quote-contact-required`
 
 No product data, category data, or internal quote catalog pricing changed in this setup.
 
@@ -111,6 +111,7 @@ The receiver:
 - Ignores any receiver address supplied by the browser, so the endpoint cannot be used to send mail to arbitrary recipients.
 - Includes the inquiry ID in the message and quote email subject.
 - Accepts production and Cloudflare Pages origins only.
+- Requires a non-empty buyer contact for every quote-cart submission; destination and project notes remain optional.
 - Validates the inquiry type, required fields, item count, content type, and request size.
 - Uses a hidden honeypot field for basic bot filtering.
 - Returns success only after Cloudflare Email Service accepts the message.
@@ -121,9 +122,10 @@ The receiver:
 1. Confirm the Pages `INQUIRY_MAILER` service binding and Worker `SEND_EMAIL` binding are present.
 2. Open `https://heruilighting.com/` after the production deployment completes.
 3. Add at least one product to the cart.
-4. Fill buyer contact, destination, and project notes.
-5. Click `Submit quote list`.
-6. Confirm the website shows `Quote request received.`
-7. Confirm the receiver email gets the selected models and buyer details.
-8. Open `Contact Us`, submit a message, and confirm the receiver email gets it.
-9. Confirm failed automatic sends do not display a false success message and instead fall back to a prepared email draft.
+4. Leave buyer contact blank and confirm both `Submit quote list` buttons remain disabled and the page shows a required-contact message.
+5. Fill buyer contact and confirm both quote forms stay synchronized and their submit buttons become available. Destination and project notes may remain blank.
+6. Click `Submit quote list`.
+7. Confirm the website shows `Quote request received.`
+8. Confirm the receiver email gets the selected models and buyer details.
+9. Open `Contact Us`, submit a message, and confirm the receiver email gets it.
+10. Confirm failed automatic sends do not display a false success message and instead fall back to a prepared email draft.

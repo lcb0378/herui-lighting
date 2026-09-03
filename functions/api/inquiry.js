@@ -58,6 +58,8 @@ function validatePayload(payload) {
     const submission = payload.submission;
     if (!submission?.inquiryId || !Array.isArray(submission.items)) return null;
     if (submission.items.length < 1 || submission.items.length > 200) return null;
+    const buyerContact = String(submission.buyer?.contact || "").trim();
+    if (!buyerContact || buyerContact.length > 300) return null;
     return {
       inquiryId: String(submission.inquiryId).slice(0, 80),
       subject: `[Herui Quote] ${submission.items.length} model${submission.items.length === 1 ? "" : "s"} - ${String(submission.inquiryId).slice(0, 80)}`,

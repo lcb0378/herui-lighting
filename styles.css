@@ -1103,6 +1103,12 @@ dd {
   font-weight: 900;
 }
 
+.quote-details .field-help {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
 .quote-details input,
 .quote-details textarea {
   background: white;
