@@ -13,11 +13,25 @@ This website is hosted on Cloudflare Pages from the connected GitHub repository.
 - Cloudflare Pages production service binding: `INQUIRY_MAILER` -> `herui-inquiry-mailer`
 - Mail Worker binding: `SEND_EMAIL`, restricted to the verified destination
 - Mail Worker private variable: `INQUIRY_RECIPIENT`
+- Pages D1 binding: `QUOTE_DB` -> `herui-private-price-catalog`
+- Pages secret: `PRICE_SYNC_TOKEN`, used only by the authenticated private catalog sync endpoint
+- Quote List emails include an internal `.xlsx` attachment with product thumbnails, buyer details, selected models, quantities, price-match status, and matched `Source Price / RMB`
 - Frontend quote-validation cache version: `20260903-quote-contact-required`
 
 No product data, category data, or internal quote catalog pricing changed in this setup.
 
 The private destination address must never be committed to GitHub. Cloudflare stores it only in the dedicated Worker's configuration. The Pages Function cannot choose or see a destination address; the Send Email binding is also restricted to the same verified inbox.
+
+Internal prices must also never be committed to the public repository or added to `data.js`. The desktop all-in-one quote catalog remains the master price source. A private extracted copy is synchronized to D1 through `/api/price-sync`, protected by `PRICE_SYNC_TOKEN`. The sync endpoint accepts at most 100 validated product rows per request.
+
+For each Quote List submission, the Pages Function looks up selected Herui models in D1, fetches a bounded set of public product images, creates the Excel workbook, and sends the workbook to the private mail Worker through the existing service binding. Contact Us messages remain text-only. If workbook generation fails, the original inquiry text is still sent with an internal warning instead of losing the inquiry.
+
+The generated workbook contains:
+
+- `Customer Request`: inquiry ID, submitted time, buyer contact, destination, notes, product image, Herui catalog model, product name, specification/option text, and quantity.
+- `Internal Price Match`: internal `Source Price / RMB`, formula-driven cost subtotal, match status, and source row. Automatically matched rows are green; compound or labelled source prices are flagged for manual review; missing prices are flagged separately.
+
+Image attachment limits are deliberately conservative to remain within email limits: up to 40 JPEG thumbnails, 220 KiB per image, and approximately 2.2 MiB total source image bytes. If an image cannot be embedded, the product row is still preserved.
 
 ## Public Configuration
 
@@ -116,6 +130,8 @@ The receiver:
 - Uses a hidden honeypot field for basic bot filtering.
 - Returns success only after Cloudflare Email Service accepts the message.
 - Does not log or store the customer's inquiry content in the public repository.
+- Keeps internal prices in private D1 only and never returns them to the browser.
+- Sends the enriched workbook only to the fixed verified private recipient.
 
 ## Testing Checklist
 
@@ -126,6 +142,8 @@ The receiver:
 5. Fill buyer contact and confirm both quote forms stay synchronized and their submit buttons become available. Destination and project notes may remain blank.
 6. Click `Submit quote list`.
 7. Confirm the website shows `Quote request received.`
-8. Confirm the receiver email gets the selected models and buyer details.
-9. Open `Contact Us`, submit a message, and confirm the receiver email gets it.
-10. Confirm failed automatic sends do not display a false success message and instead fall back to a prepared email draft.
+8. Confirm the receiver email gets the selected models and buyer details plus an `.xlsx` attachment.
+9. Open the workbook and confirm `Customer Request` contains images/model/name/specification/quantity, while `Internal Price Match` contains the internal RMB cost fields.
+10. Test one simple-price model, one compound-price model, and the missing-price model `HR-TL-0005`; confirm the workbook shows `Matched automatically`, `Manual review required`, and `Missing price` respectively.
+11. Open `Contact Us`, submit a message, and confirm the receiver email gets it without a quote workbook.
+12. Confirm failed automatic sends do not display a false success message and instead fall back to a prepared email draft.
