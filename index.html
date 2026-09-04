@@ -89,7 +89,8 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="./styles.css?v=20260903-structured-variants" />
+    <link rel="stylesheet" href="./styles.css?v=20260904-analytics-foundation" />
+    <script src="./analytics.js?v=20260904-analytics-foundation"></script>
   </head>
   <body>
     <header class="topbar">
@@ -301,8 +302,22 @@
           <span aria-hidden="true">↑</span>
           Back to top
         </a>
+        <a href="./privacy.html">Privacy</a>
+        <button type="button" data-manage-analytics>Analytics choices</button>
       </div>
     </footer>
+
+    <div class="analytics-consent" id="analyticsConsent" role="dialog" aria-labelledby="analyticsConsentTitle" hidden>
+      <div>
+        <strong id="analyticsConsentTitle">Optional website analytics</strong>
+        <p>Help us understand catalog interest and improve the inquiry experience. We do not send your contact details or inquiry text to Google Analytics.</p>
+        <a href="./privacy.html">Privacy notice</a>
+      </div>
+      <div class="analytics-consent-actions">
+        <button type="button" data-analytics-consent="denied">Only necessary</button>
+        <button class="primary" type="button" data-analytics-consent="granted">Accept analytics</button>
+      </div>
+    </div>
 
     <div class="mobile-jump-nav" aria-label="Mobile page shortcuts">
       <a href="#top" aria-label="Back to top" title="Back to top">
@@ -439,6 +454,6 @@
     <script src="./inquiry-config.js?v=20260902-automatic-inquiries"></script>
     <script src="./data.js?v=20260902-led-strip-reclass"></script>
     <script src="./variant-options.js?v=20260903-structured-variants"></script>
-    <script src="./app.js?v=20260903-structured-variants"></script>
+    <script src="./app.js?v=20260904-analytics-foundation"></script>
   </body>
 </html>

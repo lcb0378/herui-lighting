@@ -111,10 +111,25 @@ const mobileProductTypeCategoryIds = [
 ];
 const mobileVisualCategoryIds = ["hot-picks", "all", ...mobileProductTypeCategoryIds];
 const mobileQuickCategoryIds = ["home", ...mobileVisualCategoryIds];
+let searchAnalyticsTimer;
+
+function trackAnalytics(eventName, parameters = {}) {
+  window.HERUI_ANALYTICS?.track(eventName, parameters);
+}
 
 searchInput.addEventListener("input", (event) => {
   state.query = event.target.value;
   render();
+  window.clearTimeout(searchAnalyticsTimer);
+  searchAnalyticsTimer = window.setTimeout(() => {
+    const normalizedQuery = state.query.trim();
+    if (normalizedQuery.length < 2) return;
+    trackAnalytics("catalog_search", {
+      query_length: normalizedQuery.length,
+      result_count: filteredProducts().length,
+      catalog_filter: state.filterId,
+    });
+  }, 800);
 });
 
 modeButtons.forEach((button) => {
@@ -308,6 +323,12 @@ function addToCart(product, source, variant = null) {
   renderCart();
   animateCartAdd(product, source);
   pulseCartButton();
+  trackAnalytics("add_to_cart", {
+    item_id: product.code,
+    item_category: product.category,
+    cart_models: state.cart.length,
+    cart_quantity: cartCount(),
+  });
 }
 
 function updateCartQuantity(key, quantity) {
@@ -323,6 +344,10 @@ function openCartDrawer() {
   cartDrawer.classList.add("open");
   cartDrawer.setAttribute("aria-hidden", "false");
   cartToggle.setAttribute("aria-expanded", "true");
+  trackAnalytics("view_cart", {
+    cart_models: state.cart.length,
+    cart_quantity: cartCount(),
+  });
 }
 
 function closeCartDrawer() {
@@ -348,6 +373,7 @@ function openContactModal() {
   contactModal.classList.add("open");
   contactModal.setAttribute("aria-hidden", "false");
   document.querySelector("#contactStatus").innerHTML = "";
+  trackAnalytics("begin_lead_form", { inquiry_type: "contact" });
 }
 
 function closeContactModal() {
@@ -391,6 +417,7 @@ async function submitContactForm(event) {
       <strong>Inquiry received.</strong>
       <span>Herui Lighting has received your message. We will contact you as soon as possible.</span>
     `;
+    trackAnalytics("generate_lead", { inquiry_type: "contact" });
     contactForm.reset();
   } catch (error) {
     console.warn("Contact endpoint failed; falling back to email draft.", error);
@@ -505,9 +532,18 @@ function animateCartAdd(product, source) {
 }
 
 function removeFromCart(key) {
+  const removedItem = state.cart.find((item) => item.key === key);
   state.cart = state.cart.filter((item) => item.key !== key);
   state.lastSubmission = null;
   renderCart();
+  if (removedItem) {
+    trackAnalytics("remove_from_cart", {
+      item_id: removedItem.product.code,
+      item_category: removedItem.product.category,
+      cart_models: state.cart.length,
+      cart_quantity: cartCount(),
+    });
+  }
 }
 
 function buildQuoteSubmission() {
@@ -617,6 +653,11 @@ async function submitQuoteList() {
     const sentToEndpoint = await sendQuoteToEndpoint(submission);
     if (!sentToEndpoint) throw new Error("Automatic inquiry receiver is not configured");
     state.lastSubmission.delivery = "endpoint";
+    trackAnalytics("generate_lead", {
+      inquiry_type: "quote_cart",
+      cart_models: submission.items.length,
+      cart_quantity: submission.items.reduce((total, item) => total + item.quantity, 0),
+    });
   } catch (error) {
     console.warn("Quote endpoint failed; falling back to email draft.", error);
     openQuoteEmail(submission);
@@ -715,6 +756,10 @@ function selectProduct(product) {
   renderModal();
   modal.classList.add("open");
   modal.setAttribute("aria-hidden", "false");
+  trackAnalytics("view_item", {
+    item_id: product.code,
+    item_category: product.category,
+  });
 }
 
 function updateModalAddButton() {
@@ -862,6 +907,10 @@ function returnToMobileDirectoryHome() {
 function selectCategoryFilter(filterId) {
   const isMobileCategoryLayout = isMobileCatalogLayout();
   state.filterId = filterId;
+  trackAnalytics("select_content", {
+    content_type: "catalog_category",
+    item_id: filterId,
+  });
   state.mobileCategoryMenuForcedCompact = isMobileCategoryLayout;
   closeMobileCategoryDrawer();
   render();
